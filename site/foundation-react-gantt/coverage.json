@@ -1,0 +1,122 @@
+{
+  "coverage": "59.48%",
+  "expectCount": 116,
+  "actualCount": 69,
+  "files": {
+    "src/components/body.js": {
+      "expectCount": 4,
+      "actualCount": 0,
+      "undocumentLines": [
+        10,
+        11,
+        14,
+        35
+      ]
+    },
+    "src/components/marker.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        4
+      ]
+    },
+    "src/components/renderers.js": {
+      "expectCount": 7,
+      "actualCount": 5,
+      "undocumentLines": [
+        35,
+        58
+      ]
+    },
+    "src/components/selector.js": {
+      "expectCount": 10,
+      "actualCount": 5,
+      "undocumentLines": [
+        8,
+        10,
+        11,
+        12,
+        13
+      ]
+    },
+    "src/components/timebar.js": {
+      "expectCount": 12,
+      "actualCount": 9,
+      "undocumentLines": [
+        15,
+        17,
+        25
+      ]
+    },
+    "src/consts/timebarConsts.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/setupTests.js": {
+      "expectCount": 4,
+      "actualCount": 0,
+      "undocumentLines": [
+        7,
+        8,
+        10,
+        26
+      ]
+    },
+    "src/timeline.js": {
+      "expectCount": 56,
+      "actualCount": 31,
+      "undocumentLines": [
+        41,
+        58,
+        183,
+        230,
+        232,
+        233,
+        269,
+        273,
+        286,
+        293,
+        407,
+        426,
+        427,
+        428,
+        540,
+        551,
+        552,
+        910,
+        1031,
+        1050,
+        1051,
+        1059,
+        1078,
+        1090,
+        1113
+      ]
+    },
+    "src/utils/commonUtils.js": {
+      "expectCount": 3,
+      "actualCount": 3,
+      "undocumentLines": []
+    },
+    "src/utils/itemUtils.js": {
+      "expectCount": 7,
+      "actualCount": 7,
+      "undocumentLines": []
+    },
+    "src/utils/itemUtils.test.js": {
+      "expectCount": 3,
+      "actualCount": 0,
+      "undocumentLines": [
+        8,
+        12,
+        22
+      ]
+    },
+    "src/utils/timeUtils.js": {
+      "expectCount": 8,
+      "actualCount": 8,
+      "undocumentLines": []
+    }
+  }
+}
