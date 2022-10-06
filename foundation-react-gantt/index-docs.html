@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl">
+  <title data-ice="title">Home | @crispico/react-timeline-10000</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Performance focused timeline for react"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="@crispico/react-timeline-10000"><meta property="twitter:description" content="Performance focused timeline for react"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/React9k/react-timeline-9000"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/timeline.js~Timeline.html">Timeline</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components">components</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/body.js~TimelineBody.html">TimelineBody</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/renderers.js~DefaultColumnHeaderRenderer.html">DefaultColumnHeaderRenderer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/renderers.js~DefaultGroupRenderer.html">DefaultGroupRenderer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/selector.js~SelectBox.html">SelectBox</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/timebar.js~Timebar.html">Timebar</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Marker">Marker</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-DefaultItemRenderer">DefaultItemRenderer</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#consts">consts</a><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-timebarFormat">timebarFormat</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#utils">utils</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-intToPix">intToPix</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-pixToInt">pixToInt</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-sumStyle">sumStyle</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getMaxOverlappingItems">getMaxOverlappingItems</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getNearestRowNumber">getNearestRowNumber</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getNearestRowObject">getNearestRowObject</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getRowObjectRowNumber">getRowObjectRowNumber</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getTrueBottom">getTrueBottom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getVerticalMarginBorder">getVerticalMarginBorder</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-rowLayerRenderer">rowLayerRenderer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-convertDateToMoment">convertDateToMoment</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-convertMomentToDateType">convertMomentToDateType</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getDurationFromPixels">getDurationFromPixels</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getPixelAtTime">getPixelAtTime</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getSnapPixelFromDelta">getSnapPixelFromDelta</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getTimeAtPixel">getTimeAtPixel</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-pixelsPerMillisecond">pixelsPerMillisecond</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-timeSnap">timeSnap</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="http://momentjs.com/">moment</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><div data-ice="index" class="github-markdown"><h1 id="react-timeline-10000--forked-by-the-flower-platform-team-">React Timeline 10000 (forked by the Flower Platform team)</h1><h2 id="intro">Intro</h2><p>This fork is developed and maintained by the &quot;Flower Platform&quot; team (which FYI has authored in the past <a href="http://gantt4flex.crispico.com/">Gantt4Flex</a>, a popular (at that time) commercial Gantt diagramming component during the <a href="http://flex.apache.org/">Adobe Flex</a> era). The motivation of our contributions is driven by the fact that we use &quot;react-timeline-9000&quot; in some of our industrial projects. The intention is to develop new features that we can use ASAP in our software. ALL our contributions are meant to be integrated in the upstream repo, so they are developed having this constraint in mind. The upstream repo is the <strong>official</strong> one (for releases, clone, adding issues, etc.). And this is to be considered as an internal repo for us = the Flower Platform team.</p>
+<p>Admin discussions w/ the upstream repo team are held in <a href="https://github.com/React9k/react-timeline-9000/discussions/255">this discussion</a>.</p>
+<h2 id="process-and-versioning">Process and versioning</h2><p><code>package.json</code> on the <strong>upstream repo</strong> / <code>master</code> branch looks like this:</p>
+<pre><code><code class="source-code prettyprint">{
+  &quot;name&quot;: &quot;react-timeline-9000&quot;,
+  &quot;version&quot;: &quot;1.1.3&quot;,
+  ...</code>
+</code></pre><p>But in <strong>this repo</strong> / <code>master-flower-platform</code> branch (which is considered to be the main branch of this repo) we have:</p>
+<pre><code><code class="source-code prettyprint">{
+  &quot;name&quot;: &quot;@crispico/react-timeline-10000&quot;,
+  &quot;version&quot;: &quot;1.1.3-fp-ver-3&quot;,
+  ...</code>
+</code></pre><p>The <code>name</code> is changed so that we can publish it in our local NPM repo. We append to the original <code>version</code> the suffix <code>-fp-ver-N</code>. Where N is the version from Flower Platform. E.g. 3 means we added 3 commits compared to the original upstream. When a new contribution is added to our main branch = <code>master-flower-platform</code>, we increment this number. So we&apos;ll have e.g.: <em>1.1.3-fp-ver-<strong>4</strong></em>, <em>1.1.3-fp-ver-<strong>5</strong></em>, <em>1.1.<strong>4</strong>-fp-ver-<strong>5</strong></em>, <em>1.1.<strong>4</strong>-fp-ver-<strong>6</strong></em>, etc.</p>
+<p>Before we begin new work, we should first create an issue in the upstream repo:</p>
+<ul>
+<li>we prefix it w/ <em>[rt10000]</em>, like in this <a href="https://github.com/React9k/react-timeline-9000/issues/190">example</a>;</li>
+<li>we explain what we want to do and ask for advice if needed.</li>
+</ul>
+<p>New work is always done on new branches. E.g. <code>my-new-branch</code>. At the end of the work we <strong>squash everything into a single commit</strong> and perform a pull request towards upstream (mentioning the original issue cf. above). If we need the commit ASAP into our main branch:</p>
+<ul>
+<li>we don&apos;t need to wait for their approval of the PR;</li>
+<li>we make a PR and/or merge it into <code>master-flower-platform</code>;</li>
+<li>then, we increment <em>fp-ver-N</em> to <em>fp-ver-N+1</em> cf. above.</li>
+</ul>
+<h2 id="tracking-of-the-pull-requests-submitted-to-the-upstream-repo">Tracking of the pull requests submitted to the upstream repo</h2><p>We prefix our issues in the upstream repo w/ <code>[rt10000]</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Issue (mouse hover for title)</th>
+<th>Pull request</th>
+<th>Merged</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>React9k/react-timeline-9000#190</td>
+<td>React9k/react-timeline-9000#243</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>React9k/react-timeline-9000#196</td>
+<td>React9k/react-timeline-9000#239</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>React9k/react-timeline-9000#221</td>
+<td>React9k/react-timeline-9000#241</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>React9k/react-timeline-9000#234</td>
+<td>React9k/react-timeline-9000#237</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>minor</td>
+<td>React9k/react-timeline-9000#257</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>minor</td>
+<td>React9k/react-timeline-9000#260</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>React9k/react-timeline-9000#271</td>
+<td>React9k/react-timeline-9000#272</td>
+</tr>
+</tbody>
+</table>
+<h2 id="original--code-readme-md--code--of-the-upstream-repo-is-below">Original <code>README.md</code> of the upstream repo is below</h2><hr>
+<p>A performance focused timeline component in react</p>
+<h2 id="build-status">Build Status</h2><p><a href="https://travis-ci.org/BHP-DevHub/react-timeline-9000"><img src="https://travis-ci.org/BHP-DevHub/react-timeline-9000.svg?branch=master" alt="Build Status"></a>
+<a href="https://www.codefactor.io/repository/github/bhp-devhub/react-timeline-9000"><img src="https://www.codefactor.io/repository/github/bhp-devhub/react-timeline-9000/badge" alt="CodeFactor"></a>
+<a href="https://www.npmjs.com/package/react-timeline-9000"><img src="https://img.shields.io/npm/v/react-timeline-9000.svg" alt="npm (scoped)"></a></p>
+<h2 id="demo">Demo</h2><ul>
+<li><a href="http://react-timeline-9000.s3-website-ap-southeast-2.amazonaws.com/">http://react-timeline-9000.s3-website-ap-southeast-2.amazonaws.com/</a></li>
+</ul>
+<h2 id="documentation">Documentation</h2><ul>
+<li><a href="http://react-timeline-9000.s3-website-ap-southeast-2.amazonaws.com/docs/">http://react-timeline-9000.s3-website-ap-southeast-2.amazonaws.com/docs/</a></li>
+</ul>
+<h2 id="getting-started">Getting Started</h2><table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Build</td>
+<td><code>$ make</code></td>
+</tr>
+<tr>
+<td>Test</td>
+<td><code>$ make test</code> or  <code>$ make test-watch</code></td>
+</tr>
+<tr>
+<td>Run dev server</td>
+<td><code>$ make run</code></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Add <code>import react-timeline-9000/lib/style.css</code> (or use your own styles based on this file)</li>
+</ul>
+<h2 id="contributing">Contributing</h2><p>Feel free to make a PR :)</p>
+<h1 id="interaction">Interaction</h1><p>Default interaction for multiple selection is largely governed by the leading item, which is defined as the item that is directly interacted with when multiple items are selected.</p>
+<h2 id="dragging">Dragging</h2><p>All items will move by the same horizontal delta and row changes will be calculated by the row delta of the leading item</p>
+<h2 id="resizing">Resizing</h2><p>All items will gain the resize delta from the leading item.</p>
+<h3 id="overriding-the-default-behaviour">Overriding the default behaviour</h3><p>TBA</p>
+<p><code>onInteraction(type, changes, leadTimeDelta, leaderGroupDelta,selectedItems)</code> </p>
+<h1 id="props-summary">Props Summary</h1><p>See <a href="http://react-timeline-9000.s3-website-ap-southeast-2.amazonaws.com/docs/">http://react-timeline-9000.s3-website-ap-southeast-2.amazonaws.com/docs/</a> for detailed docs</p>
+<h2 id="props">Props</h2><table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>groupOffset</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>startDate</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>endDate</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>snapMinutes</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>showCursorTime</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>cursorTimeFormat</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>itemHeight</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>timelineMode</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>timebarFormat</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>itemRenderer</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>groupRenderer</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>shallowUpdateCheck</td>
+<td>False</td>
+<td>If true timeline will try to minimize re-renders . Set to false if items don&apos;t show up/update on prop change</td>
+</tr>
+<tr>
+<td>forceRedrawFunc</td>
+<td>() =&gt; False</td>
+<td>Function called when <code>shallowUpdateCheck</code>==true. If returns true the timeline will be redrawn. If false the library will decide if redrawing is required</td>
+</tr>
+<tr>
+<td>useMoment</td>
+<td>True</td>
+<td>If true timeline will use moment for dates (including for items and rowLayers); otherwise the type for dates is number</td>
+</tr>
+</tbody>
+</table>
+<h2 id="data">Data</h2><table>
+<thead>
+<tr>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>items</td>
+</tr>
+<tr>
+<td>groups</td>
+</tr>
+<tr>
+<td>selectedItems</td>
+</tr>
+</tbody>
+</table>
+<h2 id="callbacks">Callbacks</h2><table>
+<thead>
+<tr>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>onItemClick</td>
+</tr>
+<tr>
+<td>onItemDoubleClick</td>
+</tr>
+<tr>
+<td>onItemContext</td>
+</tr>
+<tr>
+<td>onInteraction</td>
+</tr>
+<tr>
+<td>onRowClick</td>
+</tr>
+<tr>
+<td>onRowContext</td>
+</tr>
+<tr>
+<td>onRowDoubleClick</td>
+</tr>
+<tr>
+<td>onItemHover</td>
+</tr>
+<tr>
+<td>onItemLeave</td>
+</tr>
+</tbody>
+</table>
+<h1 id="styling">Styling</h1><ul>
+<li>View <code>src/style.css</code> for styling examples.</li>
+<li>For the default styles, import <code>react-timeline-9000/lib/style.css</code></li>
+</ul>
+<h3 id="default-z-indexes">Default Z-indexes</h3><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Index</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Row Layers</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Vertical markers</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Timeline items</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Timeline items when dragging/resizing</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Selection box (for multi-select)</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Group column</td>
+<td>6</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>
