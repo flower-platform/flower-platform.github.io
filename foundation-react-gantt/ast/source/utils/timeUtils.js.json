@@ -1,28 +1,28 @@
 {
   "type": "File",
   "start": 0,
-  "end": 4409,
+  "end": 4396,
   "loc": {
     "start": {
       "line": 1,
       "column": 0
     },
     "end": {
-      "line": 114,
+      "line": 118,
       "column": 0
     }
   },
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 4409,
+    "end": 4396,
     "loc": {
       "start": {
         "line": 1,
         "column": 0
       },
       "end": {
-        "line": 114,
+        "line": 118,
         "column": 0
       }
     },
@@ -4222,16 +4222,16 @@
           "trailingComments": [
             {
               "type": "CommentBlock",
-              "value": "*\n * If useMoment is true returns the date, otherwise converts date to moment.\n * @param {moment|number} date\n * @param {boolean} useMoment\n * @returns moment\n ",
+              "value": "*\n * If `useMoment` is `true` then returns `date` as is. Otherwise converts `date` to \n * a moment object.\n * \n * @param {moment|number} date\n * @param {boolean} useMoment\n * @returns moment\n ",
               "start": 3677,
-              "end": 3841,
+              "end": 3873,
               "loc": {
                 "start": {
                   "line": 89,
                   "column": 0
                 },
                 "end": {
-                  "line": 94,
+                  "line": 96,
                   "column": 3
                 }
               }
@@ -4259,16 +4259,16 @@
         "trailingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\n * If useMoment is true returns the date, otherwise converts date to moment.\n * @param {moment|number} date\n * @param {boolean} useMoment\n * @returns moment\n ",
+            "value": "*\n * If `useMoment` is `true` then returns `date` as is. Otherwise converts `date` to \n * a moment object.\n * \n * @param {moment|number} date\n * @param {boolean} useMoment\n * @returns moment\n ",
             "start": 3677,
-            "end": 3841,
+            "end": 3873,
             "loc": {
               "start": {
                 "line": 89,
                 "column": 0
               },
               "end": {
-                "line": 94,
+                "line": 96,
                 "column": 3
               }
             }
@@ -4277,15 +4277,15 @@
       },
       {
         "type": "ExportNamedDeclaration",
-        "start": 3842,
-        "end": 3961,
+        "start": 3874,
+        "end": 3993,
         "loc": {
           "start": {
-            "line": 95,
+            "line": 97,
             "column": 0
           },
           "end": {
-            "line": 100,
+            "line": 102,
             "column": 1
           }
         },
@@ -4293,29 +4293,29 @@
         "source": null,
         "declaration": {
           "type": "FunctionDeclaration",
-          "start": 3849,
-          "end": 3961,
+          "start": 3881,
+          "end": 3993,
           "loc": {
             "start": {
-              "line": 95,
+              "line": 97,
               "column": 7
             },
             "end": {
-              "line": 100,
+              "line": 102,
               "column": 1
             }
           },
           "id": {
             "type": "Identifier",
-            "start": 3858,
-            "end": 3877,
+            "start": 3890,
+            "end": 3909,
             "loc": {
               "start": {
-                "line": 95,
+                "line": 97,
                 "column": 16
               },
               "end": {
-                "line": 95,
+                "line": 97,
                 "column": 35
               },
               "identifierName": "convertDateToMoment"
@@ -4329,15 +4329,15 @@
           "params": [
             {
               "type": "Identifier",
-              "start": 3878,
-              "end": 3882,
+              "start": 3910,
+              "end": 3914,
               "loc": {
                 "start": {
-                  "line": 95,
+                  "line": 97,
                   "column": 36
                 },
                 "end": {
-                  "line": 95,
+                  "line": 97,
                   "column": 40
                 },
                 "identifierName": "date"
@@ -4346,15 +4346,15 @@
             },
             {
               "type": "Identifier",
-              "start": 3884,
-              "end": 3893,
+              "start": 3916,
+              "end": 3925,
               "loc": {
                 "start": {
-                  "line": 95,
+                  "line": 97,
                   "column": 42
                 },
                 "end": {
-                  "line": 95,
+                  "line": 97,
                   "column": 51
                 },
                 "identifierName": "useMoment"
@@ -4364,44 +4364,44 @@
           ],
           "body": {
             "type": "BlockStatement",
-            "start": 3895,
-            "end": 3961,
+            "start": 3927,
+            "end": 3993,
             "loc": {
               "start": {
-                "line": 95,
+                "line": 97,
                 "column": 53
               },
               "end": {
-                "line": 100,
+                "line": 102,
                 "column": 1
               }
             },
             "body": [
               {
                 "type": "IfStatement",
-                "start": 3899,
-                "end": 3936,
+                "start": 3931,
+                "end": 3968,
                 "loc": {
                   "start": {
-                    "line": 96,
+                    "line": 98,
                     "column": 2
                   },
                   "end": {
-                    "line": 98,
+                    "line": 100,
                     "column": 3
                   }
                 },
                 "test": {
                   "type": "Identifier",
-                  "start": 3903,
-                  "end": 3912,
+                  "start": 3935,
+                  "end": 3944,
                   "loc": {
                     "start": {
-                      "line": 96,
+                      "line": 98,
                       "column": 6
                     },
                     "end": {
-                      "line": 96,
+                      "line": 98,
                       "column": 15
                     },
                     "identifierName": "useMoment"
@@ -4410,44 +4410,44 @@
                 },
                 "consequent": {
                   "type": "BlockStatement",
-                  "start": 3914,
-                  "end": 3936,
+                  "start": 3946,
+                  "end": 3968,
                   "loc": {
                     "start": {
-                      "line": 96,
+                      "line": 98,
                       "column": 17
                     },
                     "end": {
-                      "line": 98,
+                      "line": 100,
                       "column": 3
                     }
                   },
                   "body": [
                     {
                       "type": "ReturnStatement",
-                      "start": 3920,
-                      "end": 3932,
+                      "start": 3952,
+                      "end": 3964,
                       "loc": {
                         "start": {
-                          "line": 97,
+                          "line": 99,
                           "column": 4
                         },
                         "end": {
-                          "line": 97,
+                          "line": 99,
                           "column": 16
                         }
                       },
                       "argument": {
                         "type": "Identifier",
-                        "start": 3927,
-                        "end": 3931,
+                        "start": 3959,
+                        "end": 3963,
                         "loc": {
                           "start": {
-                            "line": 97,
+                            "line": 99,
                             "column": 11
                           },
                           "end": {
-                            "line": 97,
+                            "line": 99,
                             "column": 15
                           },
                           "identifierName": "date"
@@ -4462,43 +4462,43 @@
               },
               {
                 "type": "ReturnStatement",
-                "start": 3939,
-                "end": 3959,
+                "start": 3971,
+                "end": 3991,
                 "loc": {
                   "start": {
-                    "line": 99,
+                    "line": 101,
                     "column": 2
                   },
                   "end": {
-                    "line": 99,
+                    "line": 101,
                     "column": 22
                   }
                 },
                 "argument": {
                   "type": "CallExpression",
-                  "start": 3946,
-                  "end": 3958,
+                  "start": 3978,
+                  "end": 3990,
                   "loc": {
                     "start": {
-                      "line": 99,
+                      "line": 101,
                       "column": 9
                     },
                     "end": {
-                      "line": 99,
+                      "line": 101,
                       "column": 21
                     }
                   },
                   "callee": {
                     "type": "Identifier",
-                    "start": 3946,
-                    "end": 3952,
+                    "start": 3978,
+                    "end": 3984,
                     "loc": {
                       "start": {
-                        "line": 99,
+                        "line": 101,
                         "column": 9
                       },
                       "end": {
-                        "line": 99,
+                        "line": 101,
                         "column": 15
                       },
                       "identifierName": "moment"
@@ -4508,15 +4508,15 @@
                   "arguments": [
                     {
                       "type": "Identifier",
-                      "start": 3953,
-                      "end": 3957,
+                      "start": 3985,
+                      "end": 3989,
                       "loc": {
                         "start": {
-                          "line": 99,
+                          "line": 101,
                           "column": 16
                         },
                         "end": {
-                          "line": 99,
+                          "line": 101,
                           "column": 20
                         },
                         "identifierName": "date"
@@ -4533,16 +4533,16 @@
           "leadingComments": [
             {
               "type": "CommentBlock",
-              "value": "*\n * If useMoment is true returns the date, otherwise converts date to moment.\n * @param {moment|number} date\n * @param {boolean} useMoment\n * @returns moment\n ",
+              "value": "*\n * If `useMoment` is `true` then returns `date` as is. Otherwise converts `date` to \n * a moment object.\n * \n * @param {moment|number} date\n * @param {boolean} useMoment\n * @returns moment\n ",
               "start": 3677,
-              "end": 3841,
+              "end": 3873,
               "loc": {
                 "start": {
                   "line": 89,
                   "column": 0
                 },
                 "end": {
-                  "line": 94,
+                  "line": 96,
                   "column": 3
                 }
               }
@@ -4551,16 +4551,16 @@
           "trailingComments": [
             {
               "type": "CommentBlock",
-              "value": "*\n * If useMoment is true returns dateAsMoment, otherwise it converts dateAsMoment to milliseconds.\n * @param {moment} dateAsMoment moment to be converted\n * @param {boolean} useMoment if true return dateAsMoment, otherwise return millis\n * @returns a moment object or date in milliseconds\n ",
-              "start": 3963,
-              "end": 4258,
+              "value": "*\n * If `useMoment` is `true` returns `dateAsMoment` as is. Otherwise it converts `dateAsMoment` to \n * number/milliseconds.\n * \n * @param {moment} dateAsMoment \n * @param {boolean} useMoment\n * @returns a moment object or a number/milliseconds\n ",
+              "start": 3995,
+              "end": 4245,
               "loc": {
                 "start": {
-                  "line": 102,
+                  "line": 104,
                   "column": 0
                 },
                 "end": {
-                  "line": 107,
+                  "line": 111,
                   "column": 3
                 }
               }
@@ -4570,16 +4570,16 @@
         "leadingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\n * If useMoment is true returns the date, otherwise converts date to moment.\n * @param {moment|number} date\n * @param {boolean} useMoment\n * @returns moment\n ",
+            "value": "*\n * If `useMoment` is `true` then returns `date` as is. Otherwise converts `date` to \n * a moment object.\n * \n * @param {moment|number} date\n * @param {boolean} useMoment\n * @returns moment\n ",
             "start": 3677,
-            "end": 3841,
+            "end": 3873,
             "loc": {
               "start": {
                 "line": 89,
                 "column": 0
               },
               "end": {
-                "line": 94,
+                "line": 96,
                 "column": 3
               }
             }
@@ -4588,16 +4588,16 @@
         "trailingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\n * If useMoment is true returns dateAsMoment, otherwise it converts dateAsMoment to milliseconds.\n * @param {moment} dateAsMoment moment to be converted\n * @param {boolean} useMoment if true return dateAsMoment, otherwise return millis\n * @returns a moment object or date in milliseconds\n ",
-            "start": 3963,
-            "end": 4258,
+            "value": "*\n * If `useMoment` is `true` returns `dateAsMoment` as is. Otherwise it converts `dateAsMoment` to \n * number/milliseconds.\n * \n * @param {moment} dateAsMoment \n * @param {boolean} useMoment\n * @returns a moment object or a number/milliseconds\n ",
+            "start": 3995,
+            "end": 4245,
             "loc": {
               "start": {
-                "line": 102,
+                "line": 104,
                 "column": 0
               },
               "end": {
-                "line": 107,
+                "line": 111,
                 "column": 3
               }
             }
@@ -4606,15 +4606,15 @@
       },
       {
         "type": "ExportNamedDeclaration",
-        "start": 4259,
-        "end": 4408,
+        "start": 4246,
+        "end": 4395,
         "loc": {
           "start": {
-            "line": 108,
+            "line": 112,
             "column": 0
           },
           "end": {
-            "line": 113,
+            "line": 117,
             "column": 1
           }
         },
@@ -4622,29 +4622,29 @@
         "source": null,
         "declaration": {
           "type": "FunctionDeclaration",
-          "start": 4266,
-          "end": 4408,
+          "start": 4253,
+          "end": 4395,
           "loc": {
             "start": {
-              "line": 108,
+              "line": 112,
               "column": 7
             },
             "end": {
-              "line": 113,
+              "line": 117,
               "column": 1
             }
           },
           "id": {
             "type": "Identifier",
-            "start": 4275,
-            "end": 4298,
+            "start": 4262,
+            "end": 4285,
             "loc": {
               "start": {
-                "line": 108,
+                "line": 112,
                 "column": 16
               },
               "end": {
-                "line": 108,
+                "line": 112,
                 "column": 39
               },
               "identifierName": "convertMomentToDateType"
@@ -4658,15 +4658,15 @@
           "params": [
             {
               "type": "Identifier",
-              "start": 4299,
-              "end": 4311,
+              "start": 4286,
+              "end": 4298,
               "loc": {
                 "start": {
-                  "line": 108,
+                  "line": 112,
                   "column": 40
                 },
                 "end": {
-                  "line": 108,
+                  "line": 112,
                   "column": 52
                 },
                 "identifierName": "dateAsMoment"
@@ -4675,15 +4675,15 @@
             },
             {
               "type": "Identifier",
-              "start": 4313,
-              "end": 4322,
+              "start": 4300,
+              "end": 4309,
               "loc": {
                 "start": {
-                  "line": 108,
+                  "line": 112,
                   "column": 54
                 },
                 "end": {
-                  "line": 108,
+                  "line": 112,
                   "column": 63
                 },
                 "identifierName": "useMoment"
@@ -4693,44 +4693,44 @@
           ],
           "body": {
             "type": "BlockStatement",
-            "start": 4324,
-            "end": 4408,
+            "start": 4311,
+            "end": 4395,
             "loc": {
               "start": {
-                "line": 108,
+                "line": 112,
                 "column": 65
               },
               "end": {
-                "line": 113,
+                "line": 117,
                 "column": 1
               }
             },
             "body": [
               {
                 "type": "IfStatement",
-                "start": 4328,
-                "end": 4373,
+                "start": 4315,
+                "end": 4360,
                 "loc": {
                   "start": {
-                    "line": 109,
+                    "line": 113,
                     "column": 2
                   },
                   "end": {
-                    "line": 111,
+                    "line": 115,
                     "column": 3
                   }
                 },
                 "test": {
                   "type": "Identifier",
-                  "start": 4332,
-                  "end": 4341,
+                  "start": 4319,
+                  "end": 4328,
                   "loc": {
                     "start": {
-                      "line": 109,
+                      "line": 113,
                       "column": 6
                     },
                     "end": {
-                      "line": 109,
+                      "line": 113,
                       "column": 15
                     },
                     "identifierName": "useMoment"
@@ -4739,44 +4739,44 @@
                 },
                 "consequent": {
                   "type": "BlockStatement",
-                  "start": 4343,
-                  "end": 4373,
+                  "start": 4330,
+                  "end": 4360,
                   "loc": {
                     "start": {
-                      "line": 109,
+                      "line": 113,
                       "column": 17
                     },
                     "end": {
-                      "line": 111,
+                      "line": 115,
                       "column": 3
                     }
                   },
                   "body": [
                     {
                       "type": "ReturnStatement",
-                      "start": 4349,
-                      "end": 4369,
+                      "start": 4336,
+                      "end": 4356,
                       "loc": {
                         "start": {
-                          "line": 110,
+                          "line": 114,
                           "column": 4
                         },
                         "end": {
-                          "line": 110,
+                          "line": 114,
                           "column": 24
                         }
                       },
                       "argument": {
                         "type": "Identifier",
-                        "start": 4356,
-                        "end": 4368,
+                        "start": 4343,
+                        "end": 4355,
                         "loc": {
                           "start": {
-                            "line": 110,
+                            "line": 114,
                             "column": 11
                           },
                           "end": {
-                            "line": 110,
+                            "line": 114,
                             "column": 23
                           },
                           "identifierName": "dateAsMoment"
@@ -4791,57 +4791,57 @@
               },
               {
                 "type": "ReturnStatement",
-                "start": 4376,
-                "end": 4406,
+                "start": 4363,
+                "end": 4393,
                 "loc": {
                   "start": {
-                    "line": 112,
+                    "line": 116,
                     "column": 2
                   },
                   "end": {
-                    "line": 112,
+                    "line": 116,
                     "column": 32
                   }
                 },
                 "argument": {
                   "type": "CallExpression",
-                  "start": 4383,
-                  "end": 4405,
+                  "start": 4370,
+                  "end": 4392,
                   "loc": {
                     "start": {
-                      "line": 112,
+                      "line": 116,
                       "column": 9
                     },
                     "end": {
-                      "line": 112,
+                      "line": 116,
                       "column": 31
                     }
                   },
                   "callee": {
                     "type": "MemberExpression",
-                    "start": 4383,
-                    "end": 4403,
+                    "start": 4370,
+                    "end": 4390,
                     "loc": {
                       "start": {
-                        "line": 112,
+                        "line": 116,
                         "column": 9
                       },
                       "end": {
-                        "line": 112,
+                        "line": 116,
                         "column": 29
                       }
                     },
                     "object": {
                       "type": "Identifier",
-                      "start": 4383,
-                      "end": 4395,
+                      "start": 4370,
+                      "end": 4382,
                       "loc": {
                         "start": {
-                          "line": 112,
+                          "line": 116,
                           "column": 9
                         },
                         "end": {
-                          "line": 112,
+                          "line": 116,
                           "column": 21
                         },
                         "identifierName": "dateAsMoment"
@@ -4850,15 +4850,15 @@
                     },
                     "property": {
                       "type": "Identifier",
-                      "start": 4396,
-                      "end": 4403,
+                      "start": 4383,
+                      "end": 4390,
                       "loc": {
                         "start": {
-                          "line": 112,
+                          "line": 116,
                           "column": 22
                         },
                         "end": {
-                          "line": 112,
+                          "line": 116,
                           "column": 29
                         },
                         "identifierName": "valueOf"
@@ -4876,16 +4876,16 @@
           "leadingComments": [
             {
               "type": "CommentBlock",
-              "value": "*\n * If useMoment is true returns dateAsMoment, otherwise it converts dateAsMoment to milliseconds.\n * @param {moment} dateAsMoment moment to be converted\n * @param {boolean} useMoment if true return dateAsMoment, otherwise return millis\n * @returns a moment object or date in milliseconds\n ",
-              "start": 3963,
-              "end": 4258,
+              "value": "*\n * If `useMoment` is `true` returns `dateAsMoment` as is. Otherwise it converts `dateAsMoment` to \n * number/milliseconds.\n * \n * @param {moment} dateAsMoment \n * @param {boolean} useMoment\n * @returns a moment object or a number/milliseconds\n ",
+              "start": 3995,
+              "end": 4245,
               "loc": {
                 "start": {
-                  "line": 102,
+                  "line": 104,
                   "column": 0
                 },
                 "end": {
-                  "line": 107,
+                  "line": 111,
                   "column": 3
                 }
               }
@@ -4896,16 +4896,16 @@
         "leadingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\n * If useMoment is true returns dateAsMoment, otherwise it converts dateAsMoment to milliseconds.\n * @param {moment} dateAsMoment moment to be converted\n * @param {boolean} useMoment if true return dateAsMoment, otherwise return millis\n * @returns a moment object or date in milliseconds\n ",
-            "start": 3963,
-            "end": 4258,
+            "value": "*\n * If `useMoment` is `true` returns `dateAsMoment` as is. Otherwise it converts `dateAsMoment` to \n * number/milliseconds.\n * \n * @param {moment} dateAsMoment \n * @param {boolean} useMoment\n * @returns a moment object or a number/milliseconds\n ",
+            "start": 3995,
+            "end": 4245,
             "loc": {
               "start": {
-                "line": 102,
+                "line": 104,
                 "column": 0
               },
               "end": {
-                "line": 107,
+                "line": 111,
                 "column": 3
               }
             }
@@ -5030,32 +5030,32 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\n * If useMoment is true returns the date, otherwise converts date to moment.\n * @param {moment|number} date\n * @param {boolean} useMoment\n * @returns moment\n ",
+      "value": "*\n * If `useMoment` is `true` then returns `date` as is. Otherwise converts `date` to \n * a moment object.\n * \n * @param {moment|number} date\n * @param {boolean} useMoment\n * @returns moment\n ",
       "start": 3677,
-      "end": 3841,
+      "end": 3873,
       "loc": {
         "start": {
           "line": 89,
           "column": 0
         },
         "end": {
-          "line": 94,
+          "line": 96,
           "column": 3
         }
       }
     },
     {
       "type": "CommentBlock",
-      "value": "*\n * If useMoment is true returns dateAsMoment, otherwise it converts dateAsMoment to milliseconds.\n * @param {moment} dateAsMoment moment to be converted\n * @param {boolean} useMoment if true return dateAsMoment, otherwise return millis\n * @returns a moment object or date in milliseconds\n ",
-      "start": 3963,
-      "end": 4258,
+      "value": "*\n * If `useMoment` is `true` returns `dateAsMoment` as is. Otherwise it converts `dateAsMoment` to \n * number/milliseconds.\n * \n * @param {moment} dateAsMoment \n * @param {boolean} useMoment\n * @returns a moment object or a number/milliseconds\n ",
+      "start": 3995,
+      "end": 4245,
       "loc": {
         "start": {
-          "line": 102,
+          "line": 104,
           "column": 0
         },
         "end": {
-          "line": 107,
+          "line": 111,
           "column": 3
         }
       }
@@ -13403,16 +13403,16 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\n * If useMoment is true returns the date, otherwise converts date to moment.\n * @param {moment|number} date\n * @param {boolean} useMoment\n * @returns moment\n ",
+      "value": "*\n * If `useMoment` is `true` then returns `date` as is. Otherwise converts `date` to \n * a moment object.\n * \n * @param {moment|number} date\n * @param {boolean} useMoment\n * @returns moment\n ",
       "start": 3677,
-      "end": 3841,
+      "end": 3873,
       "loc": {
         "start": {
           "line": 89,
           "column": 0
         },
         "end": {
-          "line": 94,
+          "line": 96,
           "column": 3
         }
       }
@@ -13432,15 +13432,15 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 3842,
-      "end": 3848,
+      "start": 3874,
+      "end": 3880,
       "loc": {
         "start": {
-          "line": 95,
+          "line": 97,
           "column": 0
         },
         "end": {
-          "line": 95,
+          "line": 97,
           "column": 6
         }
       }
@@ -13459,15 +13459,15 @@
         "binop": null
       },
       "value": "function",
-      "start": 3849,
-      "end": 3857,
+      "start": 3881,
+      "end": 3889,
       "loc": {
         "start": {
-          "line": 95,
+          "line": 97,
           "column": 7
         },
         "end": {
-          "line": 95,
+          "line": 97,
           "column": 15
         }
       }
@@ -13485,15 +13485,15 @@
         "binop": null
       },
       "value": "convertDateToMoment",
-      "start": 3858,
-      "end": 3877,
+      "start": 3890,
+      "end": 3909,
       "loc": {
         "start": {
-          "line": 95,
+          "line": 97,
           "column": 16
         },
         "end": {
-          "line": 95,
+          "line": 97,
           "column": 35
         }
       }
@@ -13510,15 +13510,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 3877,
-      "end": 3878,
+      "start": 3909,
+      "end": 3910,
       "loc": {
         "start": {
-          "line": 95,
+          "line": 97,
           "column": 35
         },
         "end": {
-          "line": 95,
+          "line": 97,
           "column": 36
         }
       }
@@ -13536,15 +13536,15 @@
         "binop": null
       },
       "value": "date",
-      "start": 3878,
-      "end": 3882,
+      "start": 3910,
+      "end": 3914,
       "loc": {
         "start": {
-          "line": 95,
+          "line": 97,
           "column": 36
         },
         "end": {
-          "line": 95,
+          "line": 97,
           "column": 40
         }
       }
@@ -13562,15 +13562,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 3882,
-      "end": 3883,
+      "start": 3914,
+      "end": 3915,
       "loc": {
         "start": {
-          "line": 95,
+          "line": 97,
           "column": 40
         },
         "end": {
-          "line": 95,
+          "line": 97,
           "column": 41
         }
       }
@@ -13588,15 +13588,15 @@
         "binop": null
       },
       "value": "useMoment",
-      "start": 3884,
-      "end": 3893,
+      "start": 3916,
+      "end": 3925,
       "loc": {
         "start": {
-          "line": 95,
+          "line": 97,
           "column": 42
         },
         "end": {
-          "line": 95,
+          "line": 97,
           "column": 51
         }
       }
@@ -13613,15 +13613,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 3893,
-      "end": 3894,
+      "start": 3925,
+      "end": 3926,
       "loc": {
         "start": {
-          "line": 95,
+          "line": 97,
           "column": 51
         },
         "end": {
-          "line": 95,
+          "line": 97,
           "column": 52
         }
       }
@@ -13638,15 +13638,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 3895,
-      "end": 3896,
+      "start": 3927,
+      "end": 3928,
       "loc": {
         "start": {
-          "line": 95,
+          "line": 97,
           "column": 53
         },
         "end": {
-          "line": 95,
+          "line": 97,
           "column": 54
         }
       }
@@ -13666,15 +13666,15 @@
         "updateContext": null
       },
       "value": "if",
-      "start": 3899,
-      "end": 3901,
+      "start": 3931,
+      "end": 3933,
       "loc": {
         "start": {
-          "line": 96,
+          "line": 98,
           "column": 2
         },
         "end": {
-          "line": 96,
+          "line": 98,
           "column": 4
         }
       }
@@ -13691,15 +13691,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 3902,
-      "end": 3903,
+      "start": 3934,
+      "end": 3935,
       "loc": {
         "start": {
-          "line": 96,
+          "line": 98,
           "column": 5
         },
         "end": {
-          "line": 96,
+          "line": 98,
           "column": 6
         }
       }
@@ -13717,15 +13717,15 @@
         "binop": null
       },
       "value": "useMoment",
-      "start": 3903,
-      "end": 3912,
+      "start": 3935,
+      "end": 3944,
       "loc": {
         "start": {
-          "line": 96,
+          "line": 98,
           "column": 6
         },
         "end": {
-          "line": 96,
+          "line": 98,
           "column": 15
         }
       }
@@ -13742,15 +13742,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 3912,
-      "end": 3913,
+      "start": 3944,
+      "end": 3945,
       "loc": {
         "start": {
-          "line": 96,
+          "line": 98,
           "column": 15
         },
         "end": {
-          "line": 96,
+          "line": 98,
           "column": 16
         }
       }
@@ -13767,15 +13767,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 3914,
-      "end": 3915,
+      "start": 3946,
+      "end": 3947,
       "loc": {
         "start": {
-          "line": 96,
+          "line": 98,
           "column": 17
         },
         "end": {
-          "line": 96,
+          "line": 98,
           "column": 18
         }
       }
@@ -13795,15 +13795,15 @@
         "updateContext": null
       },
       "value": "return",
-      "start": 3920,
-      "end": 3926,
+      "start": 3952,
+      "end": 3958,
       "loc": {
         "start": {
-          "line": 97,
+          "line": 99,
           "column": 4
         },
         "end": {
-          "line": 97,
+          "line": 99,
           "column": 10
         }
       }
@@ -13821,15 +13821,15 @@
         "binop": null
       },
       "value": "date",
-      "start": 3927,
-      "end": 3931,
+      "start": 3959,
+      "end": 3963,
       "loc": {
         "start": {
-          "line": 97,
+          "line": 99,
           "column": 11
         },
         "end": {
-          "line": 97,
+          "line": 99,
           "column": 15
         }
       }
@@ -13847,15 +13847,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 3931,
-      "end": 3932,
+      "start": 3963,
+      "end": 3964,
       "loc": {
         "start": {
-          "line": 97,
+          "line": 99,
           "column": 15
         },
         "end": {
-          "line": 97,
+          "line": 99,
           "column": 16
         }
       }
@@ -13872,15 +13872,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 3935,
-      "end": 3936,
+      "start": 3967,
+      "end": 3968,
       "loc": {
         "start": {
-          "line": 98,
+          "line": 100,
           "column": 2
         },
         "end": {
-          "line": 98,
+          "line": 100,
           "column": 3
         }
       }
@@ -13900,15 +13900,15 @@
         "updateContext": null
       },
       "value": "return",
-      "start": 3939,
-      "end": 3945,
+      "start": 3971,
+      "end": 3977,
       "loc": {
         "start": {
-          "line": 99,
+          "line": 101,
           "column": 2
         },
         "end": {
-          "line": 99,
+          "line": 101,
           "column": 8
         }
       }
@@ -13926,15 +13926,15 @@
         "binop": null
       },
       "value": "moment",
-      "start": 3946,
-      "end": 3952,
+      "start": 3978,
+      "end": 3984,
       "loc": {
         "start": {
-          "line": 99,
+          "line": 101,
           "column": 9
         },
         "end": {
-          "line": 99,
+          "line": 101,
           "column": 15
         }
       }
@@ -13951,15 +13951,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 3952,
-      "end": 3953,
+      "start": 3984,
+      "end": 3985,
       "loc": {
         "start": {
-          "line": 99,
+          "line": 101,
           "column": 15
         },
         "end": {
-          "line": 99,
+          "line": 101,
           "column": 16
         }
       }
@@ -13977,15 +13977,15 @@
         "binop": null
       },
       "value": "date",
-      "start": 3953,
-      "end": 3957,
+      "start": 3985,
+      "end": 3989,
       "loc": {
         "start": {
-          "line": 99,
+          "line": 101,
           "column": 16
         },
         "end": {
-          "line": 99,
+          "line": 101,
           "column": 20
         }
       }
@@ -14002,15 +14002,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 3957,
-      "end": 3958,
+      "start": 3989,
+      "end": 3990,
       "loc": {
         "start": {
-          "line": 99,
+          "line": 101,
           "column": 20
         },
         "end": {
-          "line": 99,
+          "line": 101,
           "column": 21
         }
       }
@@ -14028,15 +14028,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 3958,
-      "end": 3959,
+      "start": 3990,
+      "end": 3991,
       "loc": {
         "start": {
-          "line": 99,
+          "line": 101,
           "column": 21
         },
         "end": {
-          "line": 99,
+          "line": 101,
           "column": 22
         }
       }
@@ -14053,31 +14053,31 @@
         "postfix": false,
         "binop": null
       },
-      "start": 3960,
-      "end": 3961,
-      "loc": {
-        "start": {
-          "line": 100,
-          "column": 0
-        },
-        "end": {
-          "line": 100,
-          "column": 1
-        }
-      }
-    },
-    {
-      "type": "CommentBlock",
-      "value": "*\n * If useMoment is true returns dateAsMoment, otherwise it converts dateAsMoment to milliseconds.\n * @param {moment} dateAsMoment moment to be converted\n * @param {boolean} useMoment if true return dateAsMoment, otherwise return millis\n * @returns a moment object or date in milliseconds\n ",
-      "start": 3963,
-      "end": 4258,
+      "start": 3992,
+      "end": 3993,
       "loc": {
         "start": {
           "line": 102,
           "column": 0
         },
         "end": {
-          "line": 107,
+          "line": 102,
+          "column": 1
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * If `useMoment` is `true` returns `dateAsMoment` as is. Otherwise it converts `dateAsMoment` to \n * number/milliseconds.\n * \n * @param {moment} dateAsMoment \n * @param {boolean} useMoment\n * @returns a moment object or a number/milliseconds\n ",
+      "start": 3995,
+      "end": 4245,
+      "loc": {
+        "start": {
+          "line": 104,
+          "column": 0
+        },
+        "end": {
+          "line": 111,
           "column": 3
         }
       }
@@ -14097,15 +14097,15 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 4259,
-      "end": 4265,
+      "start": 4246,
+      "end": 4252,
       "loc": {
         "start": {
-          "line": 108,
+          "line": 112,
           "column": 0
         },
         "end": {
-          "line": 108,
+          "line": 112,
           "column": 6
         }
       }
@@ -14124,15 +14124,15 @@
         "binop": null
       },
       "value": "function",
-      "start": 4266,
-      "end": 4274,
+      "start": 4253,
+      "end": 4261,
       "loc": {
         "start": {
-          "line": 108,
+          "line": 112,
           "column": 7
         },
         "end": {
-          "line": 108,
+          "line": 112,
           "column": 15
         }
       }
@@ -14150,15 +14150,15 @@
         "binop": null
       },
       "value": "convertMomentToDateType",
-      "start": 4275,
-      "end": 4298,
+      "start": 4262,
+      "end": 4285,
       "loc": {
         "start": {
-          "line": 108,
+          "line": 112,
           "column": 16
         },
         "end": {
-          "line": 108,
+          "line": 112,
           "column": 39
         }
       }
@@ -14175,15 +14175,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 4298,
-      "end": 4299,
+      "start": 4285,
+      "end": 4286,
       "loc": {
         "start": {
-          "line": 108,
+          "line": 112,
           "column": 39
         },
         "end": {
-          "line": 108,
+          "line": 112,
           "column": 40
         }
       }
@@ -14201,15 +14201,15 @@
         "binop": null
       },
       "value": "dateAsMoment",
-      "start": 4299,
-      "end": 4311,
+      "start": 4286,
+      "end": 4298,
       "loc": {
         "start": {
-          "line": 108,
+          "line": 112,
           "column": 40
         },
         "end": {
-          "line": 108,
+          "line": 112,
           "column": 52
         }
       }
@@ -14227,15 +14227,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 4311,
-      "end": 4312,
+      "start": 4298,
+      "end": 4299,
       "loc": {
         "start": {
-          "line": 108,
+          "line": 112,
           "column": 52
         },
         "end": {
-          "line": 108,
+          "line": 112,
           "column": 53
         }
       }
@@ -14253,15 +14253,15 @@
         "binop": null
       },
       "value": "useMoment",
-      "start": 4313,
-      "end": 4322,
+      "start": 4300,
+      "end": 4309,
       "loc": {
         "start": {
-          "line": 108,
+          "line": 112,
           "column": 54
         },
         "end": {
-          "line": 108,
+          "line": 112,
           "column": 63
         }
       }
@@ -14278,15 +14278,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 4322,
-      "end": 4323,
+      "start": 4309,
+      "end": 4310,
       "loc": {
         "start": {
-          "line": 108,
+          "line": 112,
           "column": 63
         },
         "end": {
-          "line": 108,
+          "line": 112,
           "column": 64
         }
       }
@@ -14303,15 +14303,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 4324,
-      "end": 4325,
+      "start": 4311,
+      "end": 4312,
       "loc": {
         "start": {
-          "line": 108,
+          "line": 112,
           "column": 65
         },
         "end": {
-          "line": 108,
+          "line": 112,
           "column": 66
         }
       }
@@ -14331,15 +14331,15 @@
         "updateContext": null
       },
       "value": "if",
-      "start": 4328,
-      "end": 4330,
+      "start": 4315,
+      "end": 4317,
       "loc": {
         "start": {
-          "line": 109,
+          "line": 113,
           "column": 2
         },
         "end": {
-          "line": 109,
+          "line": 113,
           "column": 4
         }
       }
@@ -14356,15 +14356,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 4331,
-      "end": 4332,
+      "start": 4318,
+      "end": 4319,
       "loc": {
         "start": {
-          "line": 109,
+          "line": 113,
           "column": 5
         },
         "end": {
-          "line": 109,
+          "line": 113,
           "column": 6
         }
       }
@@ -14382,15 +14382,15 @@
         "binop": null
       },
       "value": "useMoment",
-      "start": 4332,
-      "end": 4341,
+      "start": 4319,
+      "end": 4328,
       "loc": {
         "start": {
-          "line": 109,
+          "line": 113,
           "column": 6
         },
         "end": {
-          "line": 109,
+          "line": 113,
           "column": 15
         }
       }
@@ -14407,15 +14407,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 4341,
-      "end": 4342,
+      "start": 4328,
+      "end": 4329,
       "loc": {
         "start": {
-          "line": 109,
+          "line": 113,
           "column": 15
         },
         "end": {
-          "line": 109,
+          "line": 113,
           "column": 16
         }
       }
@@ -14432,15 +14432,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 4343,
-      "end": 4344,
+      "start": 4330,
+      "end": 4331,
       "loc": {
         "start": {
-          "line": 109,
+          "line": 113,
           "column": 17
         },
         "end": {
-          "line": 109,
+          "line": 113,
           "column": 18
         }
       }
@@ -14460,15 +14460,15 @@
         "updateContext": null
       },
       "value": "return",
-      "start": 4349,
-      "end": 4355,
+      "start": 4336,
+      "end": 4342,
       "loc": {
         "start": {
-          "line": 110,
+          "line": 114,
           "column": 4
         },
         "end": {
-          "line": 110,
+          "line": 114,
           "column": 10
         }
       }
@@ -14486,15 +14486,15 @@
         "binop": null
       },
       "value": "dateAsMoment",
-      "start": 4356,
-      "end": 4368,
+      "start": 4343,
+      "end": 4355,
       "loc": {
         "start": {
-          "line": 110,
+          "line": 114,
           "column": 11
         },
         "end": {
-          "line": 110,
+          "line": 114,
           "column": 23
         }
       }
@@ -14512,15 +14512,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 4368,
-      "end": 4369,
+      "start": 4355,
+      "end": 4356,
       "loc": {
         "start": {
-          "line": 110,
+          "line": 114,
           "column": 23
         },
         "end": {
-          "line": 110,
+          "line": 114,
           "column": 24
         }
       }
@@ -14537,15 +14537,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 4372,
-      "end": 4373,
+      "start": 4359,
+      "end": 4360,
       "loc": {
         "start": {
-          "line": 111,
+          "line": 115,
           "column": 2
         },
         "end": {
-          "line": 111,
+          "line": 115,
           "column": 3
         }
       }
@@ -14565,15 +14565,15 @@
         "updateContext": null
       },
       "value": "return",
-      "start": 4376,
-      "end": 4382,
+      "start": 4363,
+      "end": 4369,
       "loc": {
         "start": {
-          "line": 112,
+          "line": 116,
           "column": 2
         },
         "end": {
-          "line": 112,
+          "line": 116,
           "column": 8
         }
       }
@@ -14591,15 +14591,15 @@
         "binop": null
       },
       "value": "dateAsMoment",
-      "start": 4383,
-      "end": 4395,
+      "start": 4370,
+      "end": 4382,
       "loc": {
         "start": {
-          "line": 112,
+          "line": 116,
           "column": 9
         },
         "end": {
-          "line": 112,
+          "line": 116,
           "column": 21
         }
       }
@@ -14617,15 +14617,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 4395,
-      "end": 4396,
+      "start": 4382,
+      "end": 4383,
       "loc": {
         "start": {
-          "line": 112,
+          "line": 116,
           "column": 21
         },
         "end": {
-          "line": 112,
+          "line": 116,
           "column": 22
         }
       }
@@ -14643,15 +14643,15 @@
         "binop": null
       },
       "value": "valueOf",
-      "start": 4396,
-      "end": 4403,
+      "start": 4383,
+      "end": 4390,
       "loc": {
         "start": {
-          "line": 112,
+          "line": 116,
           "column": 22
         },
         "end": {
-          "line": 112,
+          "line": 116,
           "column": 29
         }
       }
@@ -14668,15 +14668,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 4403,
-      "end": 4404,
+      "start": 4390,
+      "end": 4391,
       "loc": {
         "start": {
-          "line": 112,
+          "line": 116,
           "column": 29
         },
         "end": {
-          "line": 112,
+          "line": 116,
           "column": 30
         }
       }
@@ -14693,15 +14693,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 4404,
-      "end": 4405,
+      "start": 4391,
+      "end": 4392,
       "loc": {
         "start": {
-          "line": 112,
+          "line": 116,
           "column": 30
         },
         "end": {
-          "line": 112,
+          "line": 116,
           "column": 31
         }
       }
@@ -14719,15 +14719,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 4405,
-      "end": 4406,
+      "start": 4392,
+      "end": 4393,
       "loc": {
         "start": {
-          "line": 112,
+          "line": 116,
           "column": 31
         },
         "end": {
-          "line": 112,
+          "line": 116,
           "column": 32
         }
       }
@@ -14744,15 +14744,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 4407,
-      "end": 4408,
+      "start": 4394,
+      "end": 4395,
       "loc": {
         "start": {
-          "line": 113,
+          "line": 117,
           "column": 0
         },
         "end": {
-          "line": 113,
+          "line": 117,
           "column": 1
         }
       }
@@ -14770,15 +14770,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 4409,
-      "end": 4409,
+      "start": 4396,
+      "end": 4396,
       "loc": {
         "start": {
-          "line": 114,
+          "line": 118,
           "column": 0
         },
         "end": {
-          "line": 114,
+          "line": 118,
           "column": 0
         }
       }

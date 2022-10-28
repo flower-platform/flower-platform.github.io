@@ -8,7 +8,7 @@
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
   <script src="script/manual.js"></script>
-<meta name="description" content="Performance focused timeline for react"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="@crispico/react-timeline-10000"><meta property="twitter:description" content="Performance focused timeline for react"></head>
+<link rel="stylesheet" href="./inject/css/0-esdoc.css"><meta name="description" content="Performance focused timeline for react"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="@crispico/react-timeline-10000"><meta property="twitter:description" content="Performance focused timeline for react"></head>
 <body class="layout-container" data-ice="rootContainer">
 
 <header>
@@ -24,12 +24,13 @@
   </span>
     <ul class="search-result"></ul>
   </div>
-<a style="position:relative; top:3px;" href="https://github.com/React9k/react-timeline-9000"><img width="20px" src="./image/github.png"></a></header>
+</header>
 
 <nav class="navigation" data-ice="nav"><div>
   <ul>
     
   <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/timeline.js~Timeline.html">Timeline</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-timelineScenarios">timelineScenarios</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components">components</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/body.js~TimelineBody.html">TimelineBody</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/renderers.js~DefaultColumnHeaderRenderer.html">DefaultColumnHeaderRenderer</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/renderers.js~DefaultGroupRenderer.html">DefaultGroupRenderer</a></span></span></li>
@@ -38,6 +39,8 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Marker">Marker</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-DefaultItemRenderer">DefaultItemRenderer</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#consts">consts</a><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-timebarFormat">timebarFormat</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#stories">stories</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-encodeApiDocURIForSubpath">encodeApiDocURIForSubpath</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-parametersDocPage">parametersDocPage</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#utils">utils</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-intToPix">intToPix</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-pixToInt">pixToInt</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-sumStyle">sumStyle</a></span></span></li>
@@ -151,7 +154,9 @@ export function getDurationFromPixels(pixels, vis_start, vis_end, total_width) {
 }
 
 /**
- * If useMoment is true returns the date, otherwise converts date to moment.
+ * If `useMoment` is `true` then returns `date` as is. Otherwise converts `date` to 
+ * a moment object.
+ * 
  * @param {moment|number} date
  * @param {boolean} useMoment
  * @returns moment
@@ -164,10 +169,12 @@ export function convertDateToMoment(date, useMoment) {
 }
 
 /**
- * If useMoment is true returns dateAsMoment, otherwise it converts dateAsMoment to milliseconds.
- * @param {moment} dateAsMoment moment to be converted
- * @param {boolean} useMoment if true return dateAsMoment, otherwise return millis
- * @returns a moment object or date in milliseconds
+ * If `useMoment` is `true` returns `dateAsMoment` as is. Otherwise it converts `dateAsMoment` to 
+ * number/milliseconds.
+ * 
+ * @param {moment} dateAsMoment 
+ * @param {boolean} useMoment
+ * @returns a moment object or a number/milliseconds
  */
 export function convertMomentToDateType(dateAsMoment, useMoment) {
   if (useMoment) {

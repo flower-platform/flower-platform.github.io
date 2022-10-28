@@ -1,8 +1,15 @@
 {
-  "coverage": "59.48%",
-  "expectCount": 116,
-  "actualCount": 69,
+  "coverage": "58.82%",
+  "expectCount": 119,
+  "actualCount": 70,
   "files": {
+    "src/TimelineScenarios.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        2
+      ]
+    },
     "src/components/body.js": {
       "expectCount": 4,
       "actualCount": 0,
@@ -63,35 +70,42 @@
         26
       ]
     },
+    "src/stories/StorybookUtils.js": {
+      "expectCount": 2,
+      "actualCount": 1,
+      "undocumentLines": [
+        12
+      ]
+    },
     "src/timeline.js": {
       "expectCount": 56,
       "actualCount": 31,
       "undocumentLines": [
         41,
         58,
-        183,
-        230,
-        232,
-        233,
-        269,
-        273,
-        286,
-        293,
-        407,
-        426,
-        427,
-        428,
-        540,
-        551,
-        552,
-        910,
-        1031,
-        1050,
-        1051,
-        1059,
-        1078,
-        1090,
-        1113
+        209,
+        260,
+        262,
+        263,
+        299,
+        303,
+        316,
+        323,
+        449,
+        468,
+        469,
+        470,
+        582,
+        593,
+        594,
+        952,
+        1073,
+        1092,
+        1093,
+        1101,
+        1120,
+        1132,
+        1155
       ]
     },
     "src/utils/commonUtils.js": {
