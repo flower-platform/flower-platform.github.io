@@ -30,14 +30,13 @@
   <ul>
     
   <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/timeline.js~Timeline.html">Timeline</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-timelineScenarios">timelineScenarios</a></span></span></li>
-<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components">components</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/body.js~TimelineBody.html">TimelineBody</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/renderers.js~DefaultColumnHeaderRenderer.html">DefaultColumnHeaderRenderer</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/renderers.js~DefaultGroupRenderer.html">DefaultGroupRenderer</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components">components</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/ColumnRenderer.js~ColumnHeaderRenderer.html">ColumnHeaderRenderer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/GroupRenderer.js~GroupRenderer.html">GroupRenderer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/ItemRenderer.js~ItemRenderer.html">ItemRenderer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/body.js~TimelineBody.html">TimelineBody</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/selector.js~SelectBox.html">SelectBox</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/timebar.js~Timebar.html">Timebar</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Marker">Marker</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-DefaultItemRenderer">DefaultItemRenderer</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#consts">consts</a><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-timebarFormat">timebarFormat</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#stories">stories</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-encodeApiDocURIForSubpath">encodeApiDocURIForSubpath</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-parametersDocPage">parametersDocPage</a></span></span></li>
@@ -74,6 +73,9 @@ import PropTypes from &apos;prop-types&apos;;
 
 import {Grid} from &apos;react-virtualized&apos;;
 
+/**
+ * @extends Component&lt;TimelineBody.propTypes&gt;
+ */
 class TimelineBody extends Component {
   componentDidMount() {
     this.forceUpdate();
@@ -120,15 +122,63 @@ class TimelineBody extends Component {
 }
 
 TimelineBody.propTypes = {
+  /**
+   * The total width of the body; mandatory field.
+   * @type { number }
+   */
   width: PropTypes.number.isRequired,
+
+  /**
+   * Function that returns the width of each column, mandatory field.
+   * @type { Function }
+   */
   columnWidth: PropTypes.func.isRequired,
+
+  /**
+   * The total number of columns, including the timeline (gantt).
+   * @type { number }
+   */
   columnCount: PropTypes.number,
+
+  /**
+   * The total height of the body (without timebar), mandatory field.
+   * @type { number }
+   */
   height: PropTypes.number.isRequired,
+
+  /**
+   * Function that returns the height for each row, mandatory field.
+   * @type { Function }
+   */
   rowHeight: PropTypes.func.isRequired,
+
+  /**
+   * Number of rows in timeline, mandatory field.
+   * @type { number }
+   */
   rowCount: PropTypes.number.isRequired,
+
+  /**
+   * @type { Function }
+   */
   grid_ref_callback: PropTypes.func.isRequired,
+
+  /**
+   * Renderer for each cell of the grid.
+   * @type { Function }
+   */
   cellRenderer: PropTypes.func.isRequired,
+
+  /**
+   * As e.g. @see Timeline.props.shallowUpdateCheck
+   * @type { boolean }
+   */
   shallowUpdateCheck: PropTypes.bool,
+
+  /**
+   * As e.g. @see Timeline.props.shallowUpdateCheck
+   * @type { Function }
+   */
   forceRedrawFunc: PropTypes.func
 };
 

@@ -30,14 +30,13 @@
   <ul>
     
   <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/timeline.js~Timeline.html">Timeline</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-timelineScenarios">timelineScenarios</a></span></span></li>
-<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components">components</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/body.js~TimelineBody.html">TimelineBody</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/renderers.js~DefaultColumnHeaderRenderer.html">DefaultColumnHeaderRenderer</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/renderers.js~DefaultGroupRenderer.html">DefaultGroupRenderer</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components">components</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/ColumnRenderer.js~ColumnHeaderRenderer.html">ColumnHeaderRenderer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/GroupRenderer.js~GroupRenderer.html">GroupRenderer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/ItemRenderer.js~ItemRenderer.html">ItemRenderer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/body.js~TimelineBody.html">TimelineBody</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/selector.js~SelectBox.html">SelectBox</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/timebar.js~Timebar.html">Timebar</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Marker">Marker</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-DefaultItemRenderer">DefaultItemRenderer</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#consts">consts</a><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-timebarFormat">timebarFormat</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#stories">stories</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-encodeApiDocURIForSubpath">encodeApiDocURIForSubpath</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-parametersDocPage">parametersDocPage</a></span></span></li>
@@ -83,36 +82,7 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-DefaultItemRenderer">DefaultItemRenderer</a></span></span><span class="code" data-ice="signature">(props: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></span>): <span>*</span></span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>Default item renderer class</p>
-</div>
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-          
-          
-          
-          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-Marker">Marker</a></span></span><span class="code" data-ice="signature">(props: <span>*</span>): <span>*</span></span>
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-Marker">Marker</a></span></span><span class="code" data-ice="signature">(props: <span> Marker.propTypes </span>): <span>*</span></span>
         </p>
       </div>
       <div>
@@ -256,7 +226,7 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-getMaxOverlappingItems">getMaxOverlappingItems</a></span></span><span class="code" data-ice="signature">(items: <span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span><span>[]</span></span>, getStartFromItem: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">function</a></span>, getEndFromItem: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">function</a></span>, useMoment: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-getMaxOverlappingItems">getMaxOverlappingItems</a></span></span><span class="code" data-ice="signature">(items: <span><span>Item</span><span>[]</span></span>, getStartFromItem: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">function</a></span>, getEndFromItem: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">function</a></span>, useMoment: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
         </p>
       </div>
       <div>
@@ -603,7 +573,7 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-rowLayerRenderer">rowLayerRenderer</a></span></span><span class="code" data-ice="signature">(layers: <span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span><span>[]</span></span>, vis_start: <span><a href="http://momentjs.com/">moment</a></span>, vis_end: <span><a href="http://momentjs.com/">moment</a></span>, total_width: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>, itemHeight: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>, getStartFromRowLayer: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">function</a></span>, getEndFromRowLayer: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">function</a></span>): <span>*</span></span>
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-rowLayerRenderer">rowLayerRenderer</a></span></span><span class="code" data-ice="signature">(layers: <span><span>RowLayer</span><span>[]</span></span>, vis_start: <span><a href="http://momentjs.com/">moment</a></span>, vis_end: <span><a href="http://momentjs.com/">moment</a></span>, total_width: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>, itemHeight: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>, getStartFromRowLayer: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">function</a></span>, getEndFromRowLayer: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">function</a></span>): <span>*</span></span>
         </p>
       </div>
       <div>
@@ -682,100 +652,6 @@
 <div data-ice="details"><h2 data-ice="title">Static Public </h2>
 
 <div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="static-function-DefaultItemRenderer">
-    <span class="access" data-ice="access">public</span>
-    
-    
-    
-    
-    
-    <span class="code" data-ice="name">DefaultItemRenderer</span><span class="code" data-ice="signature">(props: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></span>): <span>*</span></span>
-    <span class="right-info">
-      
-      
-      <span data-ice="source"><span><a href="file/src/components/renderers.js.html#lineNumber10">source</a></span></span>
-    </span>
-  </h3>
-
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {DefaultItemRenderer} from &apos;<span><a href="file/src/components/renderers.js.html#lineNumber10">@crispico/react-timeline-10000/src/components/renderers.js</a></span>&apos;</code></pre></div>
-  
-  
-  <div data-ice="description"><p>Default item renderer class</p>
-</div>
-
-  
-
-  <div data-ice="properties"><div data-ice="properties">
-  <h4 data-ice="title">Params:</h4>
-  <table class="params">
-    <thead>
-    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
-    </thead>
-    <tbody>
-    
-    <tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">props</td>
-      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></span></td>
-      <td data-ice="appendix"></td>
-      <td data-ice="description"><p>Component props</p>
-</td>
-    </tr>
-<tr data-ice="property" data-depth="1">
-      <td data-ice="name" class="code" data-depth="1">props.item</td>
-      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></span></td>
-      <td data-ice="appendix"></td>
-      <td data-ice="description"><p>The item to be rendered</p>
-</td>
-    </tr>
-<tr data-ice="property" data-depth="2">
-      <td data-ice="name" class="code" data-depth="2">props.item.title</td>
-      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></td>
-      <td data-ice="appendix"></td>
-      <td data-ice="description"><p>The item&apos;s title</p>
-</td>
-    </tr>
-<tr data-ice="property" data-depth="1">
-      <td data-ice="name" class="code" data-depth="1">props.rest</td>
-      <td data-ice="type" class="code">...<span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></span></td>
-      <td data-ice="appendix"><ul><li>nullable: true</li></ul></td>
-      <td data-ice="description"><p>Any other arguments for the span tag</p>
-</td>
-    </tr>
-</tbody>
-  </table>
-</div>
-</div>
-
-  <div class="return-params" data-ice="returnParams">
-    <h4>Return:</h4>
-    <table>
-      <tbody>
-        <tr>
-          <td class="return-type code" data-ice="returnType"><span>*</span></td>
-          
-        </tr>
-      </tbody>
-    </table>
-    <div data-ice="returnProperties">
-</div>
-  </div>
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-</div>
-<div class="detail" data-ice="detail">
   <h3 data-ice="anchor" id="static-function-Marker">
     <span class="access" data-ice="access">public</span>
     
@@ -783,15 +659,15 @@
     
     
     
-    <span class="code" data-ice="name">Marker</span><span class="code" data-ice="signature">(props: <span>*</span>): <span>*</span></span>
+    <span class="code" data-ice="name">Marker</span><span class="code" data-ice="signature">(props: <span> Marker.propTypes </span>): <span>*</span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/components/marker.js.html#lineNumber4">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/components/marker.js.html#lineNumber7">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import Marker from &apos;<span><a href="file/src/components/marker.js.html#lineNumber4">@crispico/react-timeline-10000/src/components/marker.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import Marker from &apos;<span><a href="file/src/components/marker.js.html#lineNumber7">@crispico/react-timeline-10000/src/components/marker.js</a></span>&apos;</code></pre></div>
   
   
   
@@ -808,7 +684,7 @@
     
     <tr data-ice="property" data-depth="0">
       <td data-ice="name" class="code" data-depth="0">props</td>
-      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="type" class="code"><span> Marker.propTypes </span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
@@ -858,14 +734,14 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/timeUtils.js.html#lineNumber97">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/timeUtils.js.html#lineNumber99">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {convertDateToMoment} from &apos;<span><a href="file/src/utils/timeUtils.js.html#lineNumber97">@crispico/react-timeline-10000/src/utils/timeUtils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {convertDateToMoment} from &apos;<span><a href="file/src/utils/timeUtils.js.html#lineNumber99">@crispico/react-timeline-10000/src/utils/timeUtils.js</a></span>&apos;</code></pre></div>
   
   
-  <div data-ice="description"><p>If <code>useMoment</code> is <code>true</code> then returns <code>date</code> as is. Otherwise converts <code>date</code> to 
+  <div data-ice="description"><p>If <code>useMoment</code> is <code>true</code> then returns <code>date</code> as is. Otherwise converts <code>date</code> to
 a moment object.</p>
 </div>
 
@@ -938,14 +814,14 @@ a moment object.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/timeUtils.js.html#lineNumber112">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/timeUtils.js.html#lineNumber114">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {convertMomentToDateType} from &apos;<span><a href="file/src/utils/timeUtils.js.html#lineNumber112">@crispico/react-timeline-10000/src/utils/timeUtils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {convertMomentToDateType} from &apos;<span><a href="file/src/utils/timeUtils.js.html#lineNumber114">@crispico/react-timeline-10000/src/utils/timeUtils.js</a></span>&apos;</code></pre></div>
   
   
-  <div data-ice="description"><p>If <code>useMoment</code> is <code>true</code> returns <code>dateAsMoment</code> as is. Otherwise it converts <code>dateAsMoment</code> to 
+  <div data-ice="description"><p>If <code>useMoment</code> is <code>true</code> returns <code>dateAsMoment</code> as is. Otherwise it converts <code>dateAsMoment</code> to
 number/milliseconds.</p>
 </div>
 
@@ -1092,11 +968,11 @@ API documentation.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/timeUtils.js.html#lineNumber81">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/timeUtils.js.html#lineNumber83">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {getDurationFromPixels} from &apos;<span><a href="file/src/utils/timeUtils.js.html#lineNumber81">@crispico/react-timeline-10000/src/utils/timeUtils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {getDurationFromPixels} from &apos;<span><a href="file/src/utils/timeUtils.js.html#lineNumber83">@crispico/react-timeline-10000/src/utils/timeUtils.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Returns the duration from the <span>vis_start</span></p>
@@ -1182,15 +1058,15 @@ API documentation.</p>
     
     
     
-    <span class="code" data-ice="name">getMaxOverlappingItems</span><span class="code" data-ice="signature">(items: <span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span><span>[]</span></span>, getStartFromItem: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">function</a></span>, getEndFromItem: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">function</a></span>, useMoment: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
+    <span class="code" data-ice="name">getMaxOverlappingItems</span><span class="code" data-ice="signature">(items: <span><span>Item</span><span>[]</span></span>, getStartFromItem: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">function</a></span>, getEndFromItem: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">function</a></span>, useMoment: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/itemUtils.js.html#lineNumber233">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/itemUtils.js.html#lineNumber240">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {getMaxOverlappingItems} from &apos;<span><a href="file/src/utils/itemUtils.js.html#lineNumber233">@crispico/react-timeline-10000/src/utils/itemUtils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {getMaxOverlappingItems} from &apos;<span><a href="file/src/utils/itemUtils.js.html#lineNumber240">@crispico/react-timeline-10000/src/utils/itemUtils.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Use to find the height of a row, given a set of items</p>
@@ -1208,7 +1084,7 @@ API documentation.</p>
     
     <tr data-ice="property" data-depth="0">
       <td data-ice="name" class="code" data-depth="0">items</td>
-      <td data-ice="type" class="code"><span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span><span>[]</span></span></td>
+      <td data-ice="type" class="code"><span><span>Item</span><span>[]</span></span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"><p>List of items</p>
 </td>
@@ -1282,11 +1158,11 @@ the component receives new props.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/itemUtils.js.html#lineNumber215">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/itemUtils.js.html#lineNumber222">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {getNearestRowNumber} from &apos;<span><a href="file/src/utils/itemUtils.js.html#lineNumber215">@crispico/react-timeline-10000/src/utils/itemUtils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {getNearestRowNumber} from &apos;<span><a href="file/src/utils/itemUtils.js.html#lineNumber222">@crispico/react-timeline-10000/src/utils/itemUtils.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Gets the row number for a given x and y pixel location</p>
@@ -1370,11 +1246,11 @@ the component receives new props.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/itemUtils.js.html#lineNumber156">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/itemUtils.js.html#lineNumber163">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {getNearestRowObject} from &apos;<span><a href="file/src/utils/itemUtils.js.html#lineNumber156">@crispico/react-timeline-10000/src/utils/itemUtils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {getNearestRowObject} from &apos;<span><a href="file/src/utils/itemUtils.js.html#lineNumber163">@crispico/react-timeline-10000/src/utils/itemUtils.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Gets the row object for a given x and y pixel location</p>
@@ -1458,11 +1334,11 @@ the component receives new props.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/timeUtils.js.html#lineNumber69">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/timeUtils.js.html#lineNumber70">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {getPixelAtTime} from &apos;<span><a href="file/src/utils/timeUtils.js.html#lineNumber69">@crispico/react-timeline-10000/src/utils/timeUtils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {getPixelAtTime} from &apos;<span><a href="file/src/utils/timeUtils.js.html#lineNumber70">@crispico/react-timeline-10000/src/utils/timeUtils.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Get the pixel location at a specific time</p>
@@ -1553,11 +1429,11 @@ the component receives new props.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/itemUtils.js.html#lineNumber169">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/itemUtils.js.html#lineNumber176">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {getRowObjectRowNumber} from &apos;<span><a href="file/src/utils/itemUtils.js.html#lineNumber169">@crispico/react-timeline-10000/src/utils/itemUtils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {getRowObjectRowNumber} from &apos;<span><a href="file/src/utils/itemUtils.js.html#lineNumber176">@crispico/react-timeline-10000/src/utils/itemUtils.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Gets the row number for a given row object</p>
@@ -1829,11 +1705,11 @@ the component receives new props.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/itemUtils.js.html#lineNumber195">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/itemUtils.js.html#lineNumber202">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {getTrueBottom} from &apos;<span><a href="file/src/utils/itemUtils.js.html#lineNumber195">@crispico/react-timeline-10000/src/utils/itemUtils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {getTrueBottom} from &apos;<span><a href="file/src/utils/itemUtils.js.html#lineNumber202">@crispico/react-timeline-10000/src/utils/itemUtils.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Gets the true bottom location given an object</p>
@@ -1903,11 +1779,11 @@ the component receives new props.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/itemUtils.js.html#lineNumber178">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/itemUtils.js.html#lineNumber185">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {getVerticalMarginBorder} from &apos;<span><a href="file/src/utils/itemUtils.js.html#lineNumber178">@crispico/react-timeline-10000/src/utils/itemUtils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {getVerticalMarginBorder} from &apos;<span><a href="file/src/utils/itemUtils.js.html#lineNumber185">@crispico/react-timeline-10000/src/utils/itemUtils.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Gets the vertical margins and borders given an object</p>
@@ -1977,11 +1853,11 @@ the component receives new props.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/commonUtils.js.html#lineNumber24">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/commonUtils.js.html#lineNumber26">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {intToPix} from &apos;<span><a href="file/src/utils/commonUtils.js.html#lineNumber24">@crispico/react-timeline-10000/src/utils/commonUtils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {intToPix} from &apos;<span><a href="file/src/utils/commonUtils.js.html#lineNumber26">@crispico/react-timeline-10000/src/utils/commonUtils.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Convert integer to pixel string.
@@ -2052,11 +1928,11 @@ If not an integer the input is returned as is</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/commonUtils.js.html#lineNumber15">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/commonUtils.js.html#lineNumber16">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {pixToInt} from &apos;<span><a href="file/src/utils/commonUtils.js.html#lineNumber15">@crispico/react-timeline-10000/src/utils/commonUtils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {pixToInt} from &apos;<span><a href="file/src/utils/commonUtils.js.html#lineNumber16">@crispico/react-timeline-10000/src/utils/commonUtils.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Converts a pixel string to an int</p>
@@ -2210,15 +2086,15 @@ If not an integer the input is returned as is</p>
     
     
     
-    <span class="code" data-ice="name">rowLayerRenderer</span><span class="code" data-ice="signature">(layers: <span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span><span>[]</span></span>, vis_start: <span><a href="http://momentjs.com/">moment</a></span>, vis_end: <span><a href="http://momentjs.com/">moment</a></span>, total_width: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>, itemHeight: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>, getStartFromRowLayer: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">function</a></span>, getEndFromRowLayer: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">function</a></span>): <span>*</span></span>
+    <span class="code" data-ice="name">rowLayerRenderer</span><span class="code" data-ice="signature">(layers: <span><span>RowLayer</span><span>[]</span></span>, vis_start: <span><a href="http://momentjs.com/">moment</a></span>, vis_end: <span><a href="http://momentjs.com/">moment</a></span>, total_width: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>, itemHeight: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>, getStartFromRowLayer: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">function</a></span>, getEndFromRowLayer: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">function</a></span>): <span>*</span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/itemUtils.js.html#lineNumber96">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/itemUtils.js.html#lineNumber103">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {rowLayerRenderer} from &apos;<span><a href="file/src/utils/itemUtils.js.html#lineNumber96">@crispico/react-timeline-10000/src/utils/itemUtils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {rowLayerRenderer} from &apos;<span><a href="file/src/utils/itemUtils.js.html#lineNumber103">@crispico/react-timeline-10000/src/utils/itemUtils.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Render row layers</p>
@@ -2236,7 +2112,7 @@ If not an integer the input is returned as is</p>
     
     <tr data-ice="property" data-depth="0">
       <td data-ice="name" class="code" data-depth="0">layers</td>
-      <td data-ice="type" class="code"><span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span><span>[]</span></span></td>
+      <td data-ice="type" class="code"><span><span>RowLayer</span><span>[]</span></span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"><p>List of layers to render for this row</p>
 </td>

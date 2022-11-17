@@ -4,31 +4,31 @@
     "filePath": "src/components/timebar.js",
     "lines": [
       {
-        "lineNumber": 84,
+        "lineNumber": 89,
         "line": "  /**"
       },
       {
-        "lineNumber": 85,
+        "lineNumber": 90,
         "line": "   * Gets the number of pixels per segment of the timebar section (using the resolution)"
       },
       {
-        "lineNumber": 86,
+        "lineNumber": 91,
         "line": "   * @param {moment} date The date being rendered. This is used to figure out how many days are in the month"
       },
       {
-        "lineNumber": 87,
+        "lineNumber": 92,
         "line": "   * @param {string} resolutionType Timebar section resolution [Year; Month...]"
       },
       {
-        "lineNumber": 88,
+        "lineNumber": 93,
         "line": "   * @returns {number} The number of pixels per segment"
       },
       {
-        "lineNumber": 89,
+        "lineNumber": 94,
         "line": "   */"
       },
       {
-        "lineNumber": 90,
+        "lineNumber": 95,
         "line": "  getPixelIncrement(date, resolutionType, offset = 0) {"
       }
     ],
@@ -47,27 +47,27 @@
     "filePath": "src/components/timebar.js",
     "lines": [
       {
-        "lineNumber": 199,
+        "lineNumber": 205,
         "line": "  /**"
       },
       {
-        "lineNumber": 200,
+        "lineNumber": 206,
         "line": "   * It renders the header of a column in multi columns mode. Default renderer: props.groupTitleRenderer;"
       },
       {
-        "lineNumber": 201,
+        "lineNumber": 207,
         "line": "   * which may be overriden per column: column.headerRender (react element or function)."
       },
       {
-        "lineNumber": 202,
+        "lineNumber": 208,
         "line": "   * @param {object} column"
       },
       {
-        "lineNumber": 203,
+        "lineNumber": 209,
         "line": "   */"
       },
       {
-        "lineNumber": 204,
+        "lineNumber": 210,
         "line": "  renderColumnHeader(column, index) {"
       }
     ],

@@ -1,21 +1,21 @@
 window.esdocSearchIndex = [
   [
-    "@crispico/react-timeline-10000/src/components/renderers.js~defaultcolumnheaderrenderer",
-    "class/src/components/renderers.js~DefaultColumnHeaderRenderer.html",
-    "<span>DefaultColumnHeaderRenderer</span> <span class=\"search-result-import-path\">@crispico/react-timeline-10000/src/components/renderers.js</span>",
+    "@crispico/react-timeline-10000/src/components/columnrenderer.js~columnheaderrenderer",
+    "class/src/components/ColumnRenderer.js~ColumnHeaderRenderer.html",
+    "<span>ColumnHeaderRenderer</span> <span class=\"search-result-import-path\">@crispico/react-timeline-10000/src/components/ColumnRenderer.js</span>",
     "class"
   ],
   [
-    "@crispico/react-timeline-10000/src/components/renderers.js~defaultgrouprenderer",
-    "class/src/components/renderers.js~DefaultGroupRenderer.html",
-    "<span>DefaultGroupRenderer</span> <span class=\"search-result-import-path\">@crispico/react-timeline-10000/src/components/renderers.js</span>",
+    "@crispico/react-timeline-10000/src/components/grouprenderer.js~grouprenderer",
+    "class/src/components/GroupRenderer.js~GroupRenderer.html",
+    "<span>GroupRenderer</span> <span class=\"search-result-import-path\">@crispico/react-timeline-10000/src/components/GroupRenderer.js</span>",
     "class"
   ],
   [
-    "@crispico/react-timeline-10000/src/components/renderers.js~defaultitemrenderer",
-    "function/index.html#static-function-DefaultItemRenderer",
-    "<span>DefaultItemRenderer</span> <span class=\"search-result-import-path\">@crispico/react-timeline-10000/src/components/renderers.js</span>",
-    "function"
+    "@crispico/react-timeline-10000/src/components/itemrenderer.js~itemrenderer",
+    "class/src/components/ItemRenderer.js~ItemRenderer.html",
+    "<span>ItemRenderer</span> <span class=\"search-result-import-path\">@crispico/react-timeline-10000/src/components/ItemRenderer.js</span>",
+    "class"
   ],
   [
     "@crispico/react-timeline-10000/src/components/marker.js~marker",
@@ -171,12 +171,6 @@ window.esdocSearchIndex = [
     "@crispico/react-timeline-10000/src/consts/timebarconsts.js~timebarformat",
     "variable/index.html#static-variable-timebarFormat",
     "<span>timebarFormat</span> <span class=\"search-result-import-path\">@crispico/react-timeline-10000/src/consts/timebarConsts.js</span>",
-    "variable"
-  ],
-  [
-    "@crispico/react-timeline-10000/src/timelinescenarios.js~timelinescenarios",
-    "variable/index.html#static-variable-timelineScenarios",
-    "<span>timelineScenarios</span> <span class=\"search-result-import-path\">@crispico/react-timeline-10000/src/TimelineScenarios.js</span>",
     "variable"
   ],
   [
@@ -462,9 +456,147 @@ window.esdocSearchIndex = [
     "external"
   ],
   [
-    "src/timelinescenarios.js",
-    "file/src/TimelineScenarios.js.html",
-    "src/TimelineScenarios.js",
+    "src/components/columnrenderer.js",
+    "file/src/components/ColumnRenderer.js.html",
+    "src/components/ColumnRenderer.js",
+    "file"
+  ],
+  [
+    "src/components/columnrenderer.js~columnheaderrenderer#getlabel",
+    "class/src/components/ColumnRenderer.js~ColumnHeaderRenderer.html#instance-method-getLabel",
+    "src/components/ColumnRenderer.js~ColumnHeaderRenderer#getLabel",
+    "method"
+  ],
+  [
+    "src/components/columnrenderer.js~columnheaderrenderer#render",
+    "class/src/components/ColumnRenderer.js~ColumnHeaderRenderer.html#instance-method-render",
+    "src/components/ColumnRenderer.js~ColumnHeaderRenderer#render",
+    "method"
+  ],
+  [
+    "src/components/grouprenderer.js",
+    "file/src/components/GroupRenderer.js.html",
+    "src/components/GroupRenderer.js",
+    "file"
+  ],
+  [
+    "src/components/grouprenderer.js~grouprenderer#getlabel",
+    "class/src/components/GroupRenderer.js~GroupRenderer.html#instance-method-getLabel",
+    "src/components/GroupRenderer.js~GroupRenderer#getLabel",
+    "method"
+  ],
+  [
+    "src/components/grouprenderer.js~grouprenderer#render",
+    "class/src/components/GroupRenderer.js~GroupRenderer.html#instance-method-render",
+    "src/components/GroupRenderer.js~GroupRenderer#render",
+    "method"
+  ],
+  [
+    "src/components/grouprenderer.test.js",
+    "file/src/components/GroupRenderer.test.js.html",
+    "src/components/GroupRenderer.test.js",
+    "file"
+  ],
+  [
+    "src/components/itemrenderer.js",
+    "file/src/components/ItemRenderer.js.html",
+    "src/components/ItemRenderer.js",
+    "file"
+  ],
+  [
+    "src/components/itemrenderer.js~itemrenderer#getbackgroundgradient",
+    "class/src/components/ItemRenderer.js~ItemRenderer.html#instance-method-getBackgroundGradient",
+    "src/components/ItemRenderer.js~ItemRenderer#getBackgroundGradient",
+    "method"
+  ],
+  [
+    "src/components/itemrenderer.js~itemrenderer#getclassname",
+    "class/src/components/ItemRenderer.js~ItemRenderer.html#instance-method-getClassName",
+    "src/components/ItemRenderer.js~ItemRenderer#getClassName",
+    "method"
+  ],
+  [
+    "src/components/itemrenderer.js~itemrenderer#getcolor",
+    "class/src/components/ItemRenderer.js~ItemRenderer.html#instance-method-getColor",
+    "src/components/ItemRenderer.js~ItemRenderer#getColor",
+    "method"
+  ],
+  [
+    "src/components/itemrenderer.js~itemrenderer#getglowonhoverclassname",
+    "class/src/components/ItemRenderer.js~ItemRenderer.html#instance-method-getGlowOnHoverClassName",
+    "src/components/ItemRenderer.js~ItemRenderer#getGlowOnHoverClassName",
+    "method"
+  ],
+  [
+    "src/components/itemrenderer.js~itemrenderer#getgradientbrightness",
+    "class/src/components/ItemRenderer.js~ItemRenderer.html#instance-method-getGradientBrightness",
+    "src/components/ItemRenderer.js~ItemRenderer#getGradientBrightness",
+    "method"
+  ],
+  [
+    "src/components/itemrenderer.js~itemrenderer#getgradientreversedirection",
+    "class/src/components/ItemRenderer.js~ItemRenderer.html#instance-method-getGradientReverseDirection",
+    "src/components/ItemRenderer.js~ItemRenderer#getGradientReverseDirection",
+    "method"
+  ],
+  [
+    "src/components/itemrenderer.js~itemrenderer#getgradientstop",
+    "class/src/components/ItemRenderer.js~ItemRenderer.html#instance-method-getGradientStop",
+    "src/components/ItemRenderer.js~ItemRenderer#getGradientStop",
+    "method"
+  ],
+  [
+    "src/components/itemrenderer.js~itemrenderer#getheight",
+    "class/src/components/ItemRenderer.js~ItemRenderer.html#instance-method-getHeight",
+    "src/components/ItemRenderer.js~ItemRenderer#getHeight",
+    "method"
+  ],
+  [
+    "src/components/itemrenderer.js~itemrenderer#getstyle",
+    "class/src/components/ItemRenderer.js~ItemRenderer.html#instance-method-getStyle",
+    "src/components/ItemRenderer.js~ItemRenderer#getStyle",
+    "method"
+  ],
+  [
+    "src/components/itemrenderer.js~itemrenderer#gettextcolor",
+    "class/src/components/ItemRenderer.js~ItemRenderer.html#instance-method-getTextColor",
+    "src/components/ItemRenderer.js~ItemRenderer#getTextColor",
+    "method"
+  ],
+  [
+    "src/components/itemrenderer.js~itemrenderer#gettitle",
+    "class/src/components/ItemRenderer.js~ItemRenderer.html#instance-method-getTitle",
+    "src/components/ItemRenderer.js~ItemRenderer#getTitle",
+    "method"
+  ],
+  [
+    "src/components/itemrenderer.js~itemrenderer#gettooltip",
+    "class/src/components/ItemRenderer.js~ItemRenderer.html#instance-method-getTooltip",
+    "src/components/ItemRenderer.js~ItemRenderer#getTooltip",
+    "method"
+  ],
+  [
+    "src/components/itemrenderer.js~itemrenderer#render",
+    "class/src/components/ItemRenderer.js~ItemRenderer.html#instance-method-render",
+    "src/components/ItemRenderer.js~ItemRenderer#render",
+    "method"
+  ],
+  [
+    "src/components/itemrenderer.js~itemrenderer.defaultprops",
+    "class/src/components/ItemRenderer.js~ItemRenderer.html#static-member-defaultProps",
+    "src/components/ItemRenderer.js~ItemRenderer.defaultProps",
+    "member"
+  ],
+  [
+    "src/components/itemrenderer.js~itemrenderer.proptypes",
+    "class/src/components/ItemRenderer.js~ItemRenderer.html#static-member-propTypes",
+    "src/components/ItemRenderer.js~ItemRenderer.propTypes",
+    "member"
+  ],
+  [
+    "src/components/itemrenderer.test.js",
+    "file/src/components/ItemRenderer.test.js.html",
+    "src/components/ItemRenderer.test.js",
     "file"
   ],
   [
@@ -495,42 +627,6 @@ window.esdocSearchIndex = [
     "src/components/marker.js",
     "file/src/components/marker.js.html",
     "src/components/marker.js",
-    "file"
-  ],
-  [
-    "src/components/renderers.js",
-    "file/src/components/renderers.js.html",
-    "src/components/renderers.js",
-    "file"
-  ],
-  [
-    "src/components/renderers.js~defaultcolumnheaderrenderer#getlabel",
-    "class/src/components/renderers.js~DefaultColumnHeaderRenderer.html#instance-method-getLabel",
-    "src/components/renderers.js~DefaultColumnHeaderRenderer#getLabel",
-    "method"
-  ],
-  [
-    "src/components/renderers.js~defaultcolumnheaderrenderer#render",
-    "class/src/components/renderers.js~DefaultColumnHeaderRenderer.html#instance-method-render",
-    "src/components/renderers.js~DefaultColumnHeaderRenderer#render",
-    "method"
-  ],
-  [
-    "src/components/renderers.js~defaultgrouprenderer#getlabel",
-    "class/src/components/renderers.js~DefaultGroupRenderer.html#instance-method-getLabel",
-    "src/components/renderers.js~DefaultGroupRenderer#getLabel",
-    "method"
-  ],
-  [
-    "src/components/renderers.js~defaultgrouprenderer#render",
-    "class/src/components/renderers.js~DefaultGroupRenderer.html#instance-method-render",
-    "src/components/renderers.js~DefaultGroupRenderer#render",
-    "method"
-  ],
-  [
-    "src/components/renderers.test.js",
-    "file/src/components/renderers.test.js.html",
-    "src/components/renderers.test.js",
     "file"
   ],
   [
@@ -1023,6 +1119,12 @@ window.esdocSearchIndex = [
     "src/timeline.test.js",
     "file/src/timeline.test.js.html",
     "src/timeline.test.js",
+    "file"
+  ],
+  [
+    "src/types.js",
+    "file/src/types.js.html",
+    "src/types.js",
     "file"
   ],
   [

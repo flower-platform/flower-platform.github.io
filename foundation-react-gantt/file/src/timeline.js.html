@@ -30,14 +30,13 @@
   <ul>
     
   <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/timeline.js~Timeline.html">Timeline</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-timelineScenarios">timelineScenarios</a></span></span></li>
-<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components">components</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/body.js~TimelineBody.html">TimelineBody</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/renderers.js~DefaultColumnHeaderRenderer.html">DefaultColumnHeaderRenderer</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/renderers.js~DefaultGroupRenderer.html">DefaultGroupRenderer</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components">components</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/ColumnRenderer.js~ColumnHeaderRenderer.html">ColumnHeaderRenderer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/GroupRenderer.js~GroupRenderer.html">GroupRenderer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/ItemRenderer.js~ItemRenderer.html">ItemRenderer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/body.js~TimelineBody.html">TimelineBody</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/selector.js~SelectBox.html">SelectBox</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/timebar.js~Timebar.html">Timebar</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Marker">Marker</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-DefaultItemRenderer">DefaultItemRenderer</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#consts">consts</a><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-timebarFormat">timebarFormat</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#stories">stories</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-encodeApiDocURIForSubpath">encodeApiDocURIForSubpath</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-parametersDocPage">parametersDocPage</a></span></span></li>
@@ -70,13 +69,14 @@
 import React from &apos;react&apos;;
 import PropTypes from &apos;prop-types&apos;;
 import ReactDOM from &apos;react-dom&apos;;
-import { Grid, AutoSizer } from &apos;react-virtualized&apos;;
+import {Grid, AutoSizer} from &apos;react-virtualized&apos;;
 
 import moment from &apos;moment&apos;;
 import interact from &apos;interactjs&apos;;
 import _ from &apos;lodash&apos;;
+import {Column, Group, InteractOption, Item, RowLayer} from &apos;./index&apos;;
 
-import { pixToInt, intToPix } from &apos;./utils/commonUtils&apos;;
+import {pixToInt, intToPix} from &apos;./utils/commonUtils&apos;;
 import {
   rowItemsRenderer,
   rowLayerRenderer,
@@ -98,7 +98,8 @@ import {
 } from &apos;./utils/timeUtils&apos;;
 import Timebar from &apos;./components/timebar&apos;;
 import SelectBox from &apos;./components/selector&apos;;
-import { DefaultGroupRenderer, DefaultItemRenderer } from &apos;./components/renderers&apos;;
+import ItemRenderer from &apos;./components/ItemRenderer&apos;;
+import {GroupRenderer} from &apos;./components/GroupRenderer&apos;;
 import TimelineBody from &apos;./components/body&apos;;
 import Marker from &apos;./components/marker&apos;;
 
@@ -109,8 +110,8 @@ const SINGLE_COLUMN_LABEL_PROPERTY = &apos;title&apos;;
 
 /**
  * Timeline class
- * @reactProps {!number} items - this is prop1
- * @reactProps {string} prop2 - this is prop2
+ * @extends React.Component&lt;Timeline.propTypes&gt;
+ * @extends React.Component&lt;Timeline.propTypes&gt;
  */
 export default class Timeline extends React.Component {
   /**
@@ -124,37 +125,82 @@ export default class Timeline extends React.Component {
 
   static propTypes = {
     /**
-     * The rows (aka groups) of the Timeline. 
-     * 
+     * The rows (aka groups) of the Timeline.
+     *
      * `id` is mandatory, it should: be numeric, start with 0 and have consecutive values.
-     * 
+     *
      * `title` is used displayed by the default renderer. This is optional, i.e. you may use this and/or other fields, provided
      * you have a custom renderer.
+     * @type { Array.&lt;Group&gt; }
      */
-    groups: PropTypes.arrayOf(PropTypes.shape({
-      id: PropTypes.number.isRequired,
-      title: PropTypes.string
-    })).isRequired,
+    groups: PropTypes.arrayOf(
+      PropTypes.shape({
+        id: PropTypes.number.isRequired,
+        title: PropTypes.string
+      })
+    ).isRequired,
 
     /**
-     * The segments. A segment is associated with a row. Hence `row` is mandatory, pointing to an `id` of a row (group).
-     * 
+     * The segments (aka items). An item is associated with a row. Hence `row` is mandatory, pointing to an `id` of a row (group).
+     *
      * `key` is also needed and has the React standard meaning.
-     * 
+     *
      * `start` and `stop` are dates (numeric/millis or moment objects, cf. `useMoment`).
+     *
+     * All the props of an item are copied to the props of the item renderer. E.g. `&lt;ItemRenderer {...props.itemRendererDefaultProps } {...item}` ... /&gt;. See its
+     * doc, to see what props are known/rendered by `ItemRenderer` (such as `title`, `color`, etc.). The item renderer can be
+     * customized using the `itemRenderer` prop.
+     * @type { Array.&lt;Item&gt; }
      */
     items: PropTypes.arrayOf(
       PropTypes.shape({
         key: PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired,
+        row: PropTypes.number.isRequired,
         // start and end are not required because getStartFromItem() and getEndFromItem() functions
         // are being used and they can be overriden to use other fields
         start: PropTypes.oneOfType([PropTypes.number, PropTypes.object]),
         end: PropTypes.oneOfType([PropTypes.number, PropTypes.object])
       })
     ).isRequired,
+
+    /**
+     * @type { Array.&lt;number&gt; }
+     */
     selectedItems: PropTypes.arrayOf(PropTypes.number),
+
+    /**
+     * The component that is the item (segment) renderer. You can change the default component (i.e. `ItemRenderer`). We
+     * recommend to create a subclass of it, rather than creating one from scratch.
+     * @type { Function }
+     */
+    itemRenderer: PropTypes.oneOfType([PropTypes.object, PropTypes.func]),
+
+    /**
+     * This is used more or less like this:
+     *
+     * ```jsx
+     * &lt;ItemRenderer {...props.itemRendererDefaultProps } {...item} ... /&gt;
+     * ```
+     *
+     * This is the way to go if you want to set a property for all segments (items). E.g. `color`. Take a look at the props
+     * of `ItemRenderer` to see what are the possible options. If you override the item renderer, and it will accept additional
+     * props, you can of course specify them here.
+     * @type { object }
+     */
+    itemRendererDefaultProps: PropTypes.object,
+
+    /**
+     * The height of the items (segments) in pixels, it is used to calculate the height of the row.
+     *
+     * Items (segments) that are overlapping are displayed one below the other. In this case, the height of the row will
+     * be the maximum number of overlapping items (segments) multiplied by `itemHeight`.
+     * @type { number }
+     */
+    itemHeight: PropTypes.number,
+
     /**
      * List of layers that will be rendered for a row.
+     * @type { Array.&lt;RowLayer&gt; }
      */
     rowLayers: PropTypes.arrayOf(
       PropTypes.shape({
@@ -169,33 +215,41 @@ export default class Timeline extends React.Component {
 
     /**
      * Start of the displayed interval, as date (numeric/millis or moment object, cf. `useMoment`).
+     * @type {number | object}
      */
     startDate: PropTypes.oneOfType([PropTypes.number, PropTypes.object]).isRequired,
 
     /**
      * End of the displayed interval, as date (numeric/millis or moment object, cf. `useMoment`).
+     * @type { number | object }
      */
     endDate: PropTypes.oneOfType([PropTypes.number, PropTypes.object]).isRequired,
 
     /** If `false`, then when you &quot;talk&quot; dates/times to the Timeline, then you use
      * plain timestamps (i.e. number of millis, e.g. `new Date().valueOf()`). And this everywhere where
-     * a date/time is needed (e.g. for an item, for global start/end, etc.). This is the **recommended** (and the default) way to go, especially if you use Redux. 
+     * a date/time is needed (e.g. for an item, for global start/end, etc.). This is the **recommended** (and the default) way to go, especially if you use Redux.
      *
      * NOTE 1: the Timeline still uses &quot;moment&quot; internally. And this because it was quicker to refactor this way.
-     * This may change in the future, if we find reasons and time to refactor more.  
-     * 
+     * This may change in the future, if we find reasons and time to refactor more.
+     *
      * NOTE 2: The upstream repo, had this `true` by default, in order to maintain backward compatibility. But we discovered that w/ `false`, the component
      * actually works both w/ timestamps AND moment objects. And this is because we convert using `moment(date)`, which works in the 2 cases. Obviously it&apos;s
      * not a good idea to mix the date types, one of the reasons being that maybe in the future moment won&apos;t be used internally any more.
+     *
+     * @type { boolean }
      */
     useMoment: PropTypes.bool,
+
     /**
      * Single column mode: the width of the column.
      * Multiple columns mode: the default width of the columns (if column.width is not configured), which may be overridden on a per column basis.
+     * @type { number }
      */
     groupOffset: PropTypes.number.isRequired,
+
     /**
      * The columns that will be rendered using data from groups.
+     * @type { Array.&lt;Column&gt; }
      */
     tableColumns: PropTypes.arrayOf(
       PropTypes.shape({
@@ -211,65 +265,142 @@ export default class Timeline extends React.Component {
         // or a function or a class component that generates a React element.
         headerLabel: PropTypes.string,
         headerRenderer: PropTypes.oneOfType([PropTypes.func, PropTypes.element]),
+
         /**
          * Width of the column in px.
          */
         width: PropTypes.number
       })
     ),
+
     /**
      * Single column mode: the renderer of a cell.
      * Multiple columns mode: the default renderer of a cell, which may be overridden on a per column basis.
+     * @type { Function }
      */
     groupRenderer: PropTypes.func,
+
     /**
      * Single column mode: the renderer of the header cell.
      * Multiple columns mode: the default renderer of a header cell, which may be overridden on a per column basis.
+     * @type { Function }
      */
     groupTitleRenderer: PropTypes.func,
-    itemRenderer: PropTypes.func,
-    itemHeight: PropTypes.number,
+
+    /**
+     * @type { number }
+     */
     snap: PropTypes.number, //like snapMinutes, but for seconds; couldn&apos;t get it any lower because the pixels are not calculated correctly
+
+    /**
+     * @type { number }
+     */
     snapMinutes: PropTypes.number,
+
     /**
      * Shows the cursor time in the timebar and a red marker in the grid indicating the cursor time.
+     * @type { boolean }
      */
     showCursorTime: PropTypes.bool,
+
     /**
      * The format of the cursor time displayed in the timebar.
+     * @type { string }
      */
     cursorTimeFormat: PropTypes.string,
+
     /**
      * A unique key to identify the component. Only needed when 2 grids are mounted.
+     * @type { string }
      */
     componentId: PropTypes.string,
+
+    /**
+     * @type { number }
+     */
     timelineMode: PropTypes.number,
+
+    /**
+     * @type { object }
+     */
     timebarFormat: PropTypes.object,
+
+    /**
+     * @type { string }
+     */
     bottomResolution: PropTypes.string,
+
+    /**
+     * @type { string }
+     */
     topResolution: PropTypes.string,
+
     /**
      * If true timeline will try to minimize re-renders . Set to false if items don&apos;t show up/update on prop change.
+     * @type { boolean }
      */
     shallowUpdateCheck: PropTypes.bool,
+
     /**
      * Function called when shallowUpdateCheck==true. If returns true the timeline will be redrawn.
      * If false the library will decide if redrawing is required.
+     * @type { Function }
      */
     forceRedrawFunc: PropTypes.func,
+
+    /**
+     * @type { InteractOption }
+     */
     interactOptions: PropTypes.shape({
       draggable: PropTypes.object,
       pointerEvents: PropTypes.object,
       // TODO: this doesn&apos;t seem used; originally it was w/ &quot;required&quot;; I removed this to avoid warnings in console
       resizable: PropTypes.object
     }),
+
+    /**
+     * @type { Function }
+     */
     onItemClick: PropTypes.func,
+
+    /**
+     * @type { Function }
+     */
     onItemDoubleClick: PropTypes.func,
+
+    /**
+     * @type { Function }
+     */
     onItemContext: PropTypes.func,
+
+    /**
+     * @type { Function }
+     */
     onInteraction: PropTypes.func,
+
+    /**
+     * @type { Function }
+     */
     onRowClick: PropTypes.func,
+
+    /**
+     * @type { Function }
+     */
     onRowContext: PropTypes.func,
+
+    /**
+     * @type { Function }
+     */
     onRowDoubleClick: PropTypes.func,
+
+    /**
+     * @type { Function }
+     */
     onItemHover: PropTypes.func,
+
+    /**
+     * @type { Function }
+     */
     onItemLeave: PropTypes.func
   };
 
@@ -281,20 +412,35 @@ export default class Timeline extends React.Component {
     cursorTimeFormat: &apos;D MMM YYYY HH:mm&apos;,
     componentId: &apos;r9k1&apos;,
     showCursorTime: true,
-    groupRenderer: DefaultGroupRenderer,
-    itemRenderer: DefaultItemRenderer,
+    groupRenderer: GroupRenderer,
+    itemRenderer: ItemRenderer,
     timelineMode: Timeline.TIMELINE_MODES.SELECT | Timeline.TIMELINE_MODES.DRAG | Timeline.TIMELINE_MODES.RESIZE,
     // in rtl9k
     // shallowUpdateCheck: false,
     shallowUpdateCheck: true,
     forceRedrawFunc: null,
-    onItemHover() { },
-    onItemLeave() { },
+    onItemHover() {},
+    onItemLeave() {},
     interactOptions: {},
+    itemStyle: {},
     // in rtl9k:
     // useMoment: true,
     useMoment: false,
-    tableColumns: []
+    tableColumns: [],
+    selectedItems: [],
+    snap: undefined,
+    groupTitleRenderer: undefined,
+    timebarFormat: undefined,
+    bottomResolution: undefined,
+    topResolution: undefined,
+    onItemClick() {},
+    onItemDoubleClick() {},
+    onItemContext() {},
+    onRowClick() {},
+    onRowContext() {},
+    onRowDoubleClick() {},
+    onInteraction() {},
+    itemRendererDefaultProps: {}
   };
 
   /**
@@ -322,12 +468,12 @@ export default class Timeline extends React.Component {
   /**
    * Alias for no op function
    */
-  static no_op = () =&gt; { };
+  static no_op = () =&gt; {};
 
   constructor(props) {
     super(props);
     this.selecting = false;
-    this.state = { selection: [], cursorTime: null };
+    this.state = {selection: [], cursorTime: null};
 
     // These functions need to be bound because they are passed as parameters.
     // getStartFromItem and getEndFromItem are used in rowItemsRenderer function
@@ -388,7 +534,7 @@ export default class Timeline extends React.Component {
   }
 
   componentDidUpdate(prevProps, prevState) {
-    const { timelineMode, selectedItems } = this.props;
+    const {timelineMode, selectedItems} = this.props;
     const selectionChange = !_.isEqual(prevProps.selectedItems, selectedItems);
     const timelineModeChange = !_.isEqual(prevProps.timelineMode, timelineMode);
 
@@ -402,7 +548,7 @@ export default class Timeline extends React.Component {
 
   /**
    * Start of the displayed interval (as moment object).
-   * 
+   *
    * @return {moment}
    */
   getStartDate() {
@@ -411,7 +557,7 @@ export default class Timeline extends React.Component {
 
   /**
    * End of the displayed interval (as moment object).
-   * 
+   *
    * @return {moment}
    */
   getEndDate() {
@@ -420,8 +566,8 @@ export default class Timeline extends React.Component {
 
   /**
    * Start of the segment (item).
-   * 
-   * @param {object} item The segment (item).
+   *
+   * @param {Item} item The segment (item).
    * @param {boolean} useMoment This parameter is necessary because this method is also called when
    * the component receives new props. Default value: `this.props.useMoment`.
    * @return {moment}
@@ -433,8 +579,8 @@ export default class Timeline extends React.Component {
   /**
    * It assigns `newDateAsMoment` to the start of the segment (item), but first it converts it
    * to moment or number/milliseconds according to `useMoment`.
-   * 
-   * @param {object} item The segment (item).
+   *
+   * @param {Item} item The segment (item).
    * @param {moment} newDateAsMoment
    * @return {void}
    */
@@ -444,8 +590,8 @@ export default class Timeline extends React.Component {
 
   /**
    * End of the segment (item).
-   * 
-   * @param {object} item The segment (item).
+   *
+   * @param {Item} item The segment (item).
    * @param {boolean} useMoment This parameter is necessary because this method is also called when
    * the component receives new props. Default value: `this.props.useMoment`.
    * @return {moment}
@@ -457,8 +603,8 @@ export default class Timeline extends React.Component {
   /**
    * It assigns `newDateAsMoment` to the end of the segment (item), but first it converts it
    * to moment or number/milliseconds according to `useMoment`.
-   * 
-   * @param {object} item The segment (item).
+   *
+   * @param {Item} item The segment (item).
    * @param {moment} newDateAsMoment
    * @return {void}
    */
@@ -468,8 +614,8 @@ export default class Timeline extends React.Component {
 
   /**
    * Start of the layer as a moment object.
-   * 
-   * @param {object} layer
+   *
+   * @param {RowLayer} layer
    * @return {moment}
    */
   getStartFromRowLayer(layer) {
@@ -479,8 +625,8 @@ export default class Timeline extends React.Component {
   /**
    * It assigns `newDateAsMoment` to the start of the segment (item), but first it converts it
    * to moment or number/milliseconds according to `useMoment`.
-   * 
-   * @param {object} layer
+   *
+   * @param {RowLayer} layer
    * @param {moment} newDateAsMoment
    */
   setStartToRowLayer(layer, newDateAsMoment) {
@@ -489,8 +635,8 @@ export default class Timeline extends React.Component {
 
   /**
    * End of the layer as a moment object.
-   * 
-   * @param {object} layer
+   *
+   * @param {RowLayer} layer
    * @return {moment}
    */
   getEndFromRowLayer(layer) {
@@ -500,8 +646,8 @@ export default class Timeline extends React.Component {
   /**
    * It assigns `newDateAsMoment` to the end of the segment (item), but first it converts it
    * to moment or number/milliseconds according to `useMoment`.
-   * 
-   * @param {object} layer
+   *
+   * @param {RowLayer} layer
    * @param {moment} newDateAsMoment
    */
   setEndToRowLayer(layer, newDateAsMoment) {
@@ -521,7 +667,7 @@ export default class Timeline extends React.Component {
 
   /**
    * Sets the internal maps used by the component for looking up item &amp; row data
-   * @param {Object[]} items The items to be displayed in the grid
+   * @param {Item[]} items The items to be displayed in the grid
    * @param {moment} startDate The visible start date of the timeline
    * @param {moment} endDate The visible end date of the timeline
    * @param {boolean} useMoment This parameter is necessary because this method is also called when
@@ -562,7 +708,7 @@ export default class Timeline extends React.Component {
    * @prop {number|string} index The item&apos;s index
    * @prop {number} rowNo The row number the item is in
    * @prop {number} itemIndex Not really used - gets the index of the item in the row map
-   * @prop {Object} item The provided item object
+   * @prop {Item} item The provided item object
    */
   itemFromElement(e) {
     const index = e.getAttribute(&apos;data-item-index&apos;);
@@ -570,13 +716,13 @@ export default class Timeline extends React.Component {
     const itemIndex = _.findIndex(this.rowItemMap[rowNo], i =&gt; i.key == index);
     const item = this.rowItemMap[rowNo][itemIndex];
 
-    return { index, rowNo, itemIndex, item };
+    return {index, rowNo, itemIndex, item};
   }
 
   /**
    * Gets an item given its ID
    * @param {number} id item id
-   * @return {Object} Item object
+   * @return {Item} Item object
    */
   getItem(id) {
     // This is quite stupid and shouldn&apos;t really be needed
@@ -587,7 +733,7 @@ export default class Timeline extends React.Component {
 
   /**
    * Move an item from one row to another
-   * @param {object} item The item object whose groups is to be changed
+   * @param {Item} item The item object whose groups is to be changed
    * @param {number} curRow The item&apos;s current row index
    * @param {number} newRow The item&apos;s new row index
    */
@@ -604,16 +750,16 @@ export default class Timeline extends React.Component {
    */
   setSelection(selections) {
     let newSelection = _.map(selections, s =&gt; {
-      return { start: s[0].clone(), end: s[1].clone() };
+      return {start: s[0].clone(), end: s[1].clone()};
     });
-    this.setState({ selection: newSelection });
+    this.setState({selection: newSelection});
   }
 
   /**
    * Clears the currently selected time range state
    */
   clearSelection() {
-    this.setState({ selection: [] });
+    this.setState({selection: []});
   }
 
   /**
@@ -628,6 +774,7 @@ export default class Timeline extends React.Component {
 
   /**
    * Get the snap in milliseconds from snapMinutes or snap
+   * @returns { number }
    */
   getTimelineSnap() {
     if (this.props.snap) {
@@ -646,6 +793,11 @@ export default class Timeline extends React.Component {
     this._grid.recomputeGridSize(config);
   };
 
+  /**
+   * @param { boolean } canSelect
+   * @param { boolean } canDrag
+   * @param { boolean } canResize
+   */
   setUpDragging(canSelect, canDrag, canResize) {
     // No need to setUpDragging during SSR
     if (typeof window === &apos;undefined&apos;) {
@@ -671,7 +823,7 @@ export default class Timeline extends React.Component {
           allowFrom: selectedItemSelector,
           restrict: {
             restriction: `.${topDivClassId}`,
-            elementRect: { left: 0, right: 1, top: 0, bottom: 1 }
+            elementRect: {left: 0, right: 1, top: 0, bottom: 1}
           },
           ...this.props.interactOptions.draggable
         })
@@ -711,7 +863,7 @@ export default class Timeline extends React.Component {
           );
 
           _.forEach(animatedItems, domItem =&gt; {
-            const { item } = this.itemFromElement(domItem);
+            const {item} = this.itemFromElement(domItem);
             let itemDuration = this.getEndFromItem(item).diff(this.getStartFromItem(item));
             let newPixelOffset = pixToInt(domItem.style.left) + snapDx;
             let newStart = getTimeAtPixel(
@@ -735,7 +887,7 @@ export default class Timeline extends React.Component {
           this.setSelection(selections);
         })
         .on(&apos;dragend&apos;, e =&gt; {
-          const { item, rowNo } = this.itemFromElement(e.target);
+          const {item, rowNo} = this.itemFromElement(e.target);
           let animatedItems = this._gridDomNode.querySelectorAll(&quot;span[isDragging=&apos;True&apos;&quot;) || [];
 
           this.setSelection([[this.getStartFromItem(item), this.getEndFromItem(item)]]);
@@ -756,12 +908,12 @@ export default class Timeline extends React.Component {
           );
 
           const timeDelta = newStart.clone().diff(this.getStartFromItem(item), &apos;minutes&apos;);
-          const changes = { rowChangeDelta, timeDelta };
+          const changes = {rowChangeDelta, timeDelta};
           let items = [];
 
           // Default, all items move by the same offset during a drag
           _.forEach(animatedItems, domItem =&gt; {
-            const { item, rowNo } = this.itemFromElement(domItem);
+            const {item, rowNo} = this.itemFromElement(domItem);
 
             let itemDuration = this.getEndFromItem(item).diff(this.getStartFromItem(item));
             let newStart = this.getStartFromItem(item)
@@ -793,14 +945,14 @@ export default class Timeline extends React.Component {
             domItem.removeAttribute(&apos;isDragging&apos;);
           });
 
-          this._grid.recomputeGridSize({ rowIndex: 0 });
+          this._grid.recomputeGridSize({rowIndex: 0});
         });
     }
     if (canResize) {
       this._itemInteractable
         .resizable({
           allowFrom: selectedItemSelector,
-          edges: { left: true, right: true, bottom: false, top: false },
+          edges: {left: true, right: true, bottom: false, top: false},
           ...this.props.interactOptions.draggable
         })
         .on(&apos;resizestart&apos;, e =&gt; {
@@ -863,7 +1015,7 @@ export default class Timeline extends React.Component {
           // Calculate the default item positions
           _.forEach(animatedItems, domItem =&gt; {
             let startPixelOffset = pixToInt(domItem.style.left) + dx;
-            const { item, rowNo } = this.itemFromElement(domItem);
+            const {item, rowNo} = this.itemFromElement(domItem);
 
             minRowNo = Math.min(minRowNo, rowNo);
 
@@ -910,12 +1062,12 @@ export default class Timeline extends React.Component {
             items.push(item);
           });
           if (durationChange === null) durationChange = 0;
-          const changes = { isStartTimeChange, timeDelta: -durationChange };
+          const changes = {isStartTimeChange, timeDelta: -durationChange};
 
           this.props.onInteraction &amp;&amp; this.props.onInteraction(Timeline.changeTypes.resizeEnd, changes, items);
 
           e.target.setAttribute(&apos;delta-x&apos;, 0);
-          this._grid.recomputeGridSize({ rowIndex: minRowNo });
+          this._grid.recomputeGridSize({rowIndex: minRowNo});
         });
     }
 
@@ -938,9 +1090,9 @@ export default class Timeline extends React.Component {
           const magicalConstant = 2;
           // @bendog: I added this magical constant to solve the issue of selection bleed,
           // I don&apos;t understand why it works, but if frequentist statisticians can use imaginary numbers, so can i.
-          const { startX, startY } = this._selectBox;
+          const {startX, startY} = this._selectBox;
           const startRowObject = getNearestRowObject(startX, startY);
-          const { clientX, clientY } = e;
+          const {clientX, clientY} = e;
           const currentRowObject = getNearestRowObject(clientX, clientY);
           if (currentRowObject !== undefined &amp;&amp; startRowObject !== undefined) {
             // only run if you can detect the top row
@@ -969,7 +1121,7 @@ export default class Timeline extends React.Component {
           }
         })
         .on(&apos;dragend&apos;, e =&gt; {
-          let { top, left, width, height } = this._selectBox.end();
+          let {top, left, width, height} = this._selectBox.end();
           //Get the start and end row of the selection rectangle
           const topRowObject = getNearestRowObject(left, top);
           if (topRowObject !== undefined) {
@@ -1051,9 +1203,9 @@ export default class Timeline extends React.Component {
      * @param  {} rowIndex Vertical (row) index of cell
      * @param  {} style Style object to be applied to cell (to position it);
      */
-    const { timelineMode, onItemHover, onItemLeave, rowLayers } = this.props;
+    const {timelineMode, onItemHover, onItemLeave, rowLayers} = this.props;
     const canSelect = Timeline.isBitSet(Timeline.TIMELINE_MODES.SELECT, timelineMode);
-    return ({ columnIndex, key, parent, rowIndex, style }) =&gt; {
+    return ({columnIndex, key, parent, rowIndex, style}) =&gt; {
       // the items column is the last column in the grid; itemCol is the index of this column
       let itemCol = this.props.tableColumns &amp;&amp; this.props.tableColumns.length &gt; 0 ? this.props.tableColumns.length : 1;
       if (itemCol == columnIndex) {
@@ -1092,6 +1244,7 @@ export default class Timeline extends React.Component {
               this.props.itemHeight,
               this.props.itemRenderer,
               canSelect ? this.props.selectedItems : [],
+              this.props.itemRendererDefaultProps,
               this.getStartFromItem,
               this.getEndFromItem
             )}
@@ -1138,15 +1291,15 @@ export default class Timeline extends React.Component {
   }
 
   getCursor() {
-    const { showCursorTime, cursorTimeFormat } = this.props;
-    const { cursorTime } = this.state;
+    const {showCursorTime, cursorTimeFormat} = this.props;
+    const {cursorTime} = this.state;
     return showCursorTime &amp;&amp; cursorTime ? cursorTime.clone().format(cursorTimeFormat) : null;
   }
 
   /**
    * Helper for react virtuaized to get the row height given a row index
    */
-  rowHeight({ index }) {
+  rowHeight({index}) {
     let rh = this.rowHeightCache[index] ? this.rowHeightCache[index] : 1;
     return rh * this.props.itemHeight;
   }
@@ -1173,7 +1326,7 @@ export default class Timeline extends React.Component {
    * Only calls back if a new snap time is reached
    */
   throttledMouseMoveFunc(e) {
-    const { componentId } = this.props;
+    const {componentId} = this.props;
     const leftOffset = document.querySelector(`.rct9k-id-${componentId} .parent-div`).getBoundingClientRect().left;
     const cursorSnappedTime = getTimeAtPixel(
       e.clientX - this.calculateLeftOffset() - leftOffset,
@@ -1185,11 +1338,11 @@ export default class Timeline extends React.Component {
     if (!this.mouse_snapped_time || this.mouse_snapped_time.unix() !== cursorSnappedTime.unix()) {
       if (cursorSnappedTime.isSameOrAfter(this.getStartDate())) {
         this.mouse_snapped_time = cursorSnappedTime;
-        this.setState({ cursorTime: this.mouse_snapped_time });
+        this.setState({cursorTime: this.mouse_snapped_time});
         this.props.onInteraction &amp;&amp;
           this.props.onInteraction(
             Timeline.changeTypes.snappedMouseMove,
-            { snappedTime: this.mouse_snapped_time.clone() },
+            {snappedTime: this.mouse_snapped_time.clone()},
             null
           );
       }
@@ -1204,10 +1357,10 @@ export default class Timeline extends React.Component {
   /**
    * Calculates left offset of the timeline (group lists). If props.tableColumns is defined,
    * the left offset is the sum of the widths of all tableColumns; otherwise returns groupOffset.
-   * @returns left offset
+   * @returns {number} left offset
    */
   calculateLeftOffset() {
-    const { tableColumns, groupOffset } = this.props;
+    const {tableColumns, groupOffset} = this.props;
     if (!tableColumns || tableColumns.length == 0) {
       return groupOffset;
     }
@@ -1241,12 +1394,20 @@ export default class Timeline extends React.Component {
     if (bottomResolution) varTimebarProps[&apos;bottom_resolution&apos;] = bottomResolution;
     if (topResolution) varTimebarProps[&apos;top_resolution&apos;] = topResolution;
 
+    /**
+     * @param { Column } column
+     * @returns { number } width of a column
+     */
     function getColumnWidth(column) {
       return column.width ? column.width : groupOffset;
     }
 
+    /**
+     * @param { number } width
+     * @returns { Function }
+     */
     function columnWidth(width) {
-      return ({ index }) =&gt; {
+      return ({index}) =&gt; {
         // The width of the first column when tableColumns is not defined is groupOffset.
         if (index == 0 &amp;&amp; (!that.props.tableColumns || that.props.tableColumns.length == 0)) return groupOffset;
 
@@ -1268,6 +1429,10 @@ export default class Timeline extends React.Component {
       };
     }
 
+    /**
+     * @param { number } height
+     * @returns { number } height of the timeline w/o timebar
+     */
     function calculateHeight(height) {
       if (typeof window === &apos;undefined&apos;) {
         return 0;
@@ -1299,7 +1464,7 @@ export default class Timeline extends React.Component {
     return (
       &lt;div className={divCssClass}&gt;
         &lt;AutoSizer className=&quot;rct9k-autosizer&quot; onResize={this.refreshGrid}&gt;
-          {({ height, width }) =&gt; (
+          {({height, width}) =&gt; (
             &lt;div className=&quot;parent-div&quot; onMouseMove={this.mouseMoveFunc}&gt;
               &lt;SelectBox ref={this.select_ref_callback} /&gt;
               &lt;Timebar

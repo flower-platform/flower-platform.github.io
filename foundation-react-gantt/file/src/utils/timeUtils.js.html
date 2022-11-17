@@ -30,14 +30,13 @@
   <ul>
     
   <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/timeline.js~Timeline.html">Timeline</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-timelineScenarios">timelineScenarios</a></span></span></li>
-<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components">components</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/body.js~TimelineBody.html">TimelineBody</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/renderers.js~DefaultColumnHeaderRenderer.html">DefaultColumnHeaderRenderer</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/renderers.js~DefaultGroupRenderer.html">DefaultGroupRenderer</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components">components</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/ColumnRenderer.js~ColumnHeaderRenderer.html">ColumnHeaderRenderer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/GroupRenderer.js~GroupRenderer.html">GroupRenderer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/ItemRenderer.js~ItemRenderer.html">ItemRenderer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/body.js~TimelineBody.html">TimelineBody</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/selector.js~SelectBox.html">SelectBox</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/timebar.js~Timebar.html">Timebar</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Marker">Marker</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-DefaultItemRenderer">DefaultItemRenderer</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#consts">consts</a><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-timebarFormat">timebarFormat</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#stories">stories</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-encodeApiDocURIForSubpath">encodeApiDocURIForSubpath</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-parametersDocPage">parametersDocPage</a></span></span></li>
@@ -125,6 +124,7 @@ export function getTimeAtPixel(pixel_location, vis_start, vis_end, total_width, 
   if (snapMilliseconds !== 0) timeAtPix = timeSnap(timeAtPix, snapMilliseconds);
   return timeAtPix;
 }
+
 /**
  * Get the pixel location at a specific time
  * @param  {objects} time The time (moment) object
@@ -137,6 +137,7 @@ export function getPixelAtTime(time, vis_start, vis_end, total_width) {
   const min_from_start = time.diff(vis_start, &apos;milliseconds&apos;);
   return min_from_start * pixelsPerMillisecond(vis_start, vis_end, total_width);
 }
+
 /**
  * Returns the duration from the {@link vis_start}
  * @param  {number} pixels
@@ -154,9 +155,9 @@ export function getDurationFromPixels(pixels, vis_start, vis_end, total_width) {
 }
 
 /**
- * If `useMoment` is `true` then returns `date` as is. Otherwise converts `date` to 
+ * If `useMoment` is `true` then returns `date` as is. Otherwise converts `date` to
  * a moment object.
- * 
+ *
  * @param {moment|number} date
  * @param {boolean} useMoment
  * @returns moment
@@ -169,10 +170,10 @@ export function convertDateToMoment(date, useMoment) {
 }
 
 /**
- * If `useMoment` is `true` returns `dateAsMoment` as is. Otherwise it converts `dateAsMoment` to 
+ * If `useMoment` is `true` returns `dateAsMoment` as is. Otherwise it converts `dateAsMoment` to
  * number/milliseconds.
- * 
- * @param {moment} dateAsMoment 
+ *
+ * @param {moment} dateAsMoment
  * @param {boolean} useMoment
  * @returns a moment object or a number/milliseconds
  */

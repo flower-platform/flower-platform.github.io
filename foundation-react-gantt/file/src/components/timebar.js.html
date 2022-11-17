@@ -30,14 +30,13 @@
   <ul>
     
   <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/timeline.js~Timeline.html">Timeline</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-timelineScenarios">timelineScenarios</a></span></span></li>
-<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components">components</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/body.js~TimelineBody.html">TimelineBody</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/renderers.js~DefaultColumnHeaderRenderer.html">DefaultColumnHeaderRenderer</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/renderers.js~DefaultGroupRenderer.html">DefaultGroupRenderer</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components">components</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/ColumnRenderer.js~ColumnHeaderRenderer.html">ColumnHeaderRenderer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/GroupRenderer.js~GroupRenderer.html">GroupRenderer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/ItemRenderer.js~ItemRenderer.html">ItemRenderer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/body.js~TimelineBody.html">TimelineBody</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/selector.js~SelectBox.html">SelectBox</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/timebar.js~Timebar.html">Timebar</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Marker">Marker</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-DefaultItemRenderer">DefaultItemRenderer</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#consts">consts</a><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-timebarFormat">timebarFormat</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#stories">stories</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-encodeApiDocURIForSubpath">encodeApiDocURIForSubpath</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-parametersDocPage">parametersDocPage</a></span></span></li>
@@ -72,11 +71,13 @@ import PropTypes from &apos;prop-types&apos;;
 import _ from &apos;lodash&apos;;
 import moment from &apos;moment&apos;;
 import {intToPix} from &apos;../utils/commonUtils&apos;;
-import {DefaultColumnHeaderRenderer} from &apos;./renderers&apos;;
+import {ColumnHeaderRenderer} from &apos;./ColumnRenderer&apos;;
 import {timebarFormat as defaultTimebarFormat} from &apos;../consts/timebarConsts&apos;;
+import {Column} from &apos;../index&apos;;
 
 /**
- * Timebar component - displays the current time on top of the timeline
+ * Timebar component - displays the current time on top of the timeline.
+ * @extends React.Component&lt;Timebar.propTypes&gt;
  */
 export default class Timebar extends React.Component {
   constructor(props) {
@@ -92,6 +93,7 @@ export default class Timebar extends React.Component {
   componentWillMount() {
     this.guessResolution();
   }
+
   /**
    * On new props we check if a resolution is given, and if not we guess one
    * @param {Object} nextProps Props coming in
@@ -141,6 +143,7 @@ export default class Timebar extends React.Component {
     let res = this.state.resolution.top;
     return this.renderBar({format: this.props.timeFormats.majorLabels[res], type: res});
   }
+
   /**
    * Renderer for bottom bar.
    * @returns {Object} JSX for bottom menu bar - based of time format &amp; resolution
@@ -149,6 +152,7 @@ export default class Timebar extends React.Component {
     let res = this.state.resolution.bottom;
     return this.renderBar({format: this.props.timeFormats.minorLabels[res], type: res});
   }
+
   /**
    * Gets the number of pixels per segment of the timebar section (using the resolution)
    * @param {moment} date The date being rendered. This is used to figure out how many days are in the month
@@ -193,6 +197,7 @@ export default class Timebar extends React.Component {
     }
     return Math.min(inc, width);
   }
+
   /**
    * Renders an entire segment of the timebar (top or bottom)
    * @param {string} resolution The resolution to render at [Year; Month...]
@@ -351,24 +356,81 @@ export default class Timebar extends React.Component {
 }
 
 Timebar.propTypes = {
+  /**
+   * @type { any }
+   */
   cursorTime: PropTypes.any,
+
+  /**
+   * As e.g. @see Timeline.props.groupTitleRenderer
+   * @type { Function }
+   */
   groupTitleRenderer: PropTypes.func,
-  start: PropTypes.object.isRequired, //moment
-  end: PropTypes.object.isRequired, //moment
+
+  /**
+   * Start of the displayed interval, as moment object.
+   * @type { object }
+   */
+  start: PropTypes.object.isRequired,
+
+  /**
+   * End of the displayed interval, as moment object.
+   * @type { object }
+   */
+  end: PropTypes.object.isRequired,
+
+  /**
+   * Total width of the timeline (gantt), mandatory field.
+   * @type { number }
+   */
   width: PropTypes.number.isRequired,
+
+  /**
+   * The left side offset, this offset is subtracted from the total width of the timeline
+   * to obtain the width of the timebar.
+   * @type { number }
+   */
   leftOffset: PropTypes.number,
+
+  /**
+   * The time unit for the top timebar.
+   * @type { string }
+   */
   top_resolution: PropTypes.string,
+
+  /**
+   * The time unit for the bottom timebar.
+   * @type { string }
+   */
   bottom_resolution: PropTypes.string,
+
+  /**
+   * @type { Array.&lt;object&gt; }
+   */
   selectedRanges: PropTypes.arrayOf(PropTypes.object), // [start: moment ,end: moment (end)]
+
+  /**
+   * Formats for each time unit (@see defaultTimebarFormat)
+   * @type { object }
+   */
   timeFormats: PropTypes.object,
+
+  /**
+   * @type { Array.&lt;Column&gt; }
+   */
   tableColumns: PropTypes.arrayOf(PropTypes.object)
 };
+
 Timebar.defaultProps = {
   selectedRanges: [],
-  groupTitleRenderer: DefaultColumnHeaderRenderer,
+  groupTitleRenderer: ColumnHeaderRenderer,
   leftOffset: 0,
   timeFormats: defaultTimebarFormat,
-  tableColumns: []
+  tableColumns: [],
+  top_resolution: undefined,
+  bottom_resolution: undefined,
+  leftOffset: undefined,
+  cursorTime: undefined
 };
 </code></pre>
 

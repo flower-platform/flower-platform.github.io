@@ -1,39 +1,46 @@
 {
-  "coverage": "58.82%",
-  "expectCount": 119,
-  "actualCount": 70,
+  "coverage": "62.96%",
+  "expectCount": 135,
+  "actualCount": 85,
   "files": {
-    "src/TimelineScenarios.js": {
-      "expectCount": 1,
-      "actualCount": 0,
+    "src/components/ColumnRenderer.js": {
+      "expectCount": 3,
+      "actualCount": 2,
       "undocumentLines": [
-        2
+        19
+      ]
+    },
+    "src/components/GroupRenderer.js": {
+      "expectCount": 3,
+      "actualCount": 2,
+      "undocumentLines": [
+        20
+      ]
+    },
+    "src/components/ItemRenderer.js": {
+      "expectCount": 18,
+      "actualCount": 13,
+      "undocumentLines": [
+        6,
+        7,
+        18,
+        93,
+        222
       ]
     },
     "src/components/body.js": {
       "expectCount": 4,
-      "actualCount": 0,
+      "actualCount": 1,
       "undocumentLines": [
-        10,
-        11,
         14,
-        35
+        17,
+        38
       ]
     },
     "src/components/marker.js": {
       "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        4
-      ]
-    },
-    "src/components/renderers.js": {
-      "expectCount": 7,
-      "actualCount": 5,
-      "undocumentLines": [
-        35,
-        58
-      ]
+      "actualCount": 1,
+      "undocumentLines": []
     },
     "src/components/selector.js": {
       "expectCount": 10,
@@ -50,9 +57,9 @@
       "expectCount": 12,
       "actualCount": 9,
       "undocumentLines": [
-        15,
         17,
-        25
+        19,
+        27
       ]
     },
     "src/consts/timebarConsts.js": {
@@ -79,33 +86,32 @@
     },
     "src/timeline.js": {
       "expectCount": 56,
-      "actualCount": 31,
+      "actualCount": 32,
       "undocumentLines": [
-        41,
-        58,
-        209,
-        260,
-        262,
-        263,
-        299,
-        303,
-        316,
-        323,
-        449,
-        468,
-        469,
+        43,
+        60,
+        341,
+        407,
+        409,
+        410,
+        446,
+        450,
+        463,
         470,
-        582,
-        593,
-        594,
-        952,
-        1073,
-        1092,
-        1093,
-        1101,
-        1120,
-        1132,
-        1155
+        596,
+        615,
+        616,
+        617,
+        746,
+        747,
+        1105,
+        1227,
+        1246,
+        1247,
+        1255,
+        1274,
+        1286,
+        1309
       ]
     },
     "src/utils/commonUtils.js": {
