@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunksite=self.webpackChunksite||[]).push([[793],{2545:e=>{e.exports=JSON.parse('{"title":"Tests Are Demo","slug":"/category/tests-are-demo","permalink":"/site/docs/category/tests-are-demo","navigation":{"previous":{"title":"Intro","permalink":"/site/docs/intro"},"next":{"title":"Demo","permalink":"/site/docs/tests-are-demo/demo"}}}')}}]);
