@@ -1,8 +1,25 @@
 {
-  "coverage": "62.96%",
-  "expectCount": 135,
-  "actualCount": 85,
+  "coverage": "57.05%",
+  "expectCount": 170,
+  "actualCount": 97,
   "files": {
+    "src/components/BackgroundLayer.js": {
+      "expectCount": 14,
+      "actualCount": 3,
+      "undocumentLines": [
+        13,
+        149,
+        170,
+        172,
+        176,
+        180,
+        253,
+        276,
+        292,
+        315,
+        337
+      ]
+    },
     "src/components/ColumnRenderer.js": {
       "expectCount": 3,
       "actualCount": 2,
@@ -17,6 +34,16 @@
         20
       ]
     },
+    "src/components/HighlightedInterval.js": {
+      "expectCount": 7,
+      "actualCount": 3,
+      "undocumentLines": [
+        9,
+        68,
+        76,
+        111
+      ]
+    },
     "src/components/ItemRenderer.js": {
       "expectCount": 18,
       "actualCount": 13,
@@ -28,6 +55,16 @@
         222
       ]
     },
+    "src/components/Marker.js": {
+      "expectCount": 7,
+      "actualCount": 3,
+      "undocumentLines": [
+        11,
+        63,
+        72,
+        105
+      ]
+    },
     "src/components/body.js": {
       "expectCount": 4,
       "actualCount": 1,
@@ -36,11 +73,6 @@
         17,
         38
       ]
-    },
-    "src/components/marker.js": {
-      "expectCount": 1,
-      "actualCount": 1,
-      "undocumentLines": []
     },
     "src/components/selector.js": {
       "expectCount": 10,
@@ -54,12 +86,13 @@
       ]
     },
     "src/components/timebar.js": {
-      "expectCount": 12,
+      "expectCount": 13,
       "actualCount": 9,
       "undocumentLines": [
         17,
         19,
-        27
+        25,
+        44
       ]
     },
     "src/consts/timebarConsts.js": {
@@ -84,34 +117,43 @@
         12
       ]
     },
-    "src/timeline.js": {
-      "expectCount": 56,
-      "actualCount": 32,
+    "src/stories/backgroundLayer/BackgroundLayerScenarios.js": {
+      "expectCount": 1,
+      "actualCount": 0,
       "undocumentLines": [
-        43,
-        60,
-        341,
-        407,
-        409,
-        410,
-        446,
-        450,
-        463,
-        470,
-        596,
-        615,
-        616,
-        617,
-        746,
-        747,
-        1105,
-        1227,
-        1246,
-        1247,
-        1255,
-        1274,
-        1286,
-        1309
+        1
+      ]
+    },
+    "src/timeline.js": {
+      "expectCount": 60,
+      "actualCount": 34,
+      "undocumentLines": [
+        44,
+        45,
+        46,
+        63,
+        354,
+        421,
+        423,
+        424,
+        461,
+        465,
+        479,
+        486,
+        612,
+        631,
+        632,
+        633,
+        814,
+        815,
+        1173,
+        1295,
+        1314,
+        1315,
+        1323,
+        1342,
+        1354,
+        1385
       ]
     },
     "src/utils/commonUtils.js": {
@@ -120,8 +162,8 @@
       "undocumentLines": []
     },
     "src/utils/itemUtils.js": {
-      "expectCount": 7,
-      "actualCount": 7,
+      "expectCount": 9,
+      "actualCount": 9,
       "undocumentLines": []
     },
     "src/utils/itemUtils.test.js": {

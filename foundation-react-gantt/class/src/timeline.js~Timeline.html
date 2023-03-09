@@ -30,19 +30,24 @@
   <ul>
     
   <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/timeline.js~Timeline.html">Timeline</a></span></span></li>
-<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components">components</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/ColumnRenderer.js~ColumnHeaderRenderer.html">ColumnHeaderRenderer</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components">components</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/BackgroundLayer.js~BackgroundLayer.html">BackgroundLayer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/ColumnRenderer.js~ColumnHeaderRenderer.html">ColumnHeaderRenderer</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/GroupRenderer.js~GroupRenderer.html">GroupRenderer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/HighlightedInterval.js~HighlightedInterval.html">HighlightedInterval</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/ItemRenderer.js~ItemRenderer.html">ItemRenderer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/Marker.js~Marker.html">Marker</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/body.js~TimelineBody.html">TimelineBody</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/selector.js~SelectBox.html">SelectBox</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/timebar.js~Timebar.html">Timebar</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Marker">Marker</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#consts">consts</a><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-timebarFormat">timebarFormat</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#stories">stories</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-encodeApiDocURIForSubpath">encodeApiDocURIForSubpath</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-parametersDocPage">parametersDocPage</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#stories-backgroundlayer">stories/backgroundLayer</a><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-backgroundLayerScenarios">backgroundLayerScenarios</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#utils">utils</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-intToPix">intToPix</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-pixToInt">pixToInt</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-sumStyle">sumStyle</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-adjustRowTopPositionToViewport">adjustRowTopPositionToViewport</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-findAncestorWithClassName">findAncestorWithClassName</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getMaxOverlappingItems">getMaxOverlappingItems</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getNearestRowNumber">getNearestRowNumber</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getNearestRowObject">getNearestRowObject</a></span></span></li>
@@ -64,13 +69,13 @@
 </nav>
 
 <div class="content" data-ice="content"><div class="header-notice">
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import Timeline from &apos;<span><a href="file/src/timeline.js.html#lineNumber50">@crispico/react-timeline-10000/src/timeline.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import Timeline from &apos;<span><a href="file/src/timeline.js.html#lineNumber53">@crispico/react-timeline-10000/src/timeline.js</a></span>&apos;</code></pre></div>
   <span data-ice="access">public</span>
   <span data-ice="kind">class</span>
   
   
   
-  <span data-ice="source">| <span><a href="file/src/timeline.js.html#lineNumber50">source</a></span></span>
+  <span data-ice="source">| <span><a href="file/src/timeline.js.html#lineNumber53">source</a></span></span>
 </div>
 
 <div class="self-detail detail">
@@ -538,7 +543,7 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/timeline.js~Timeline.html#instance-member-state">state</a></span></span><span class="code" data-ice="signature">: {&quot;selection&quot;: <span>*</span>, &quot;cursorTime&quot;: <span>*</span>}</span>
+          <span class="code" data-ice="name"><span><a href="class/src/timeline.js~Timeline.html#instance-member-state">state</a></span></span><span class="code" data-ice="signature">: {&quot;selection&quot;: <span>*</span>, &quot;cursorTime&quot;: <span>*</span>, &quot;groups&quot;: <span>*</span>, &quot;verticalGridLines&quot;: <span>*</span>}</span>
         </p>
       </div>
       <div>
@@ -953,6 +958,35 @@
         
         
         
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/src/timeline.js~Timeline.html#instance-method-fillInTimelineWithEmptyRows">fillInTimelineWithEmptyRows</a></span></span><span class="code" data-ice="signature">(groups: <span><span>Group</span><span>[]</span></span>)</span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Compute the number of rows that fit inside the timeline.</p>
+</div>
       </div>
     </td>
     <td>
@@ -1641,6 +1675,35 @@ to moment or number/milliseconds according to <code>useMoment</code>.</p>
           
           
           
+          <span class="code" data-ice="name"><span><a href="class/src/timeline.js~Timeline.html#instance-method-setVerticalGridLines">setVerticalGridLines</a></span></span><span class="code" data-ice="signature">(verticalGridLines: <span> object </span>)</span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Setter for verticalGridLines (that will be passed to <code>BackgroundLayer</code>).</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
           <span class="code" data-ice="name"><span><a href="class/src/timeline.js~Timeline.html#instance-method-throttledMouseMoveFunc">throttledMouseMoveFunc</a></span></span><span class="code" data-ice="signature">(e: <span>*</span>)</span>
         </p>
       </div>
@@ -1705,7 +1768,7 @@ to moment or number/milliseconds according to <code>useMoment</code>.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber54">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber57">source</a></span></span>
     </span>
   </h3>
 
@@ -1748,7 +1811,7 @@ to moment or number/milliseconds according to <code>useMoment</code>.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber383">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber397">source</a></span></span>
     </span>
   </h3>
 
@@ -1792,7 +1855,7 @@ to moment or number/milliseconds according to <code>useMoment</code>.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber341">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber354">source</a></span></span>
     </span>
   </h3>
 
@@ -1835,7 +1898,7 @@ to moment or number/milliseconds according to <code>useMoment</code>.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber405">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber419">source</a></span></span>
     </span>
   </h3>
 
@@ -1879,7 +1942,7 @@ to moment or number/milliseconds according to <code>useMoment</code>.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber60">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber63">source</a></span></span>
     </span>
   </h3>
 
@@ -1925,7 +1988,7 @@ to moment or number/milliseconds according to <code>useMoment</code>.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber398">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber412">source</a></span></span>
     </span>
   </h3>
 
@@ -2009,7 +2072,7 @@ to moment or number/milliseconds according to <code>useMoment</code>.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber407">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber421">source</a></span></span>
     </span>
   </h3>
 
@@ -2055,7 +2118,7 @@ to moment or number/milliseconds according to <code>useMoment</code>.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber615">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber631">source</a></span></span>
     </span>
   </h3>
 
@@ -2098,7 +2161,7 @@ to moment or number/milliseconds according to <code>useMoment</code>.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber1274">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber1342">source</a></span></span>
     </span>
   </h3>
 
@@ -2141,7 +2204,7 @@ to moment or number/milliseconds according to <code>useMoment</code>.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber726">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber790">source</a></span></span>
     </span>
   </h3>
 
@@ -2185,7 +2248,7 @@ to moment or number/milliseconds according to <code>useMoment</code>.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber596">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber612">source</a></span></span>
     </span>
   </h3>
 
@@ -2228,7 +2291,7 @@ to moment or number/milliseconds according to <code>useMoment</code>.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber617">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber633">source</a></span></span>
     </span>
   </h3>
 
@@ -2271,7 +2334,7 @@ to moment or number/milliseconds according to <code>useMoment</code>.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber616">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber632">source</a></span></span>
     </span>
   </h3>
 
@@ -2314,7 +2377,7 @@ to moment or number/milliseconds according to <code>useMoment</code>.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber409">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber423">source</a></span></span>
     </span>
   </h3>
 
@@ -2353,11 +2416,11 @@ to moment or number/milliseconds according to <code>useMoment</code>.</p>
     
     
     
-    <span class="code" data-ice="name">state</span><span class="code" data-ice="signature">: {&quot;selection&quot;: <span>*</span>, &quot;cursorTime&quot;: <span>*</span>}</span>
+    <span class="code" data-ice="name">state</span><span class="code" data-ice="signature">: {&quot;selection&quot;: <span>*</span>, &quot;cursorTime&quot;: <span>*</span>, &quot;groups&quot;: <span>*</span>, &quot;verticalGridLines&quot;: <span>*</span>}</span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber410">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber424">source</a></span></span>
     </span>
   </h3>
 
@@ -2402,7 +2465,7 @@ to moment or number/milliseconds according to <code>useMoment</code>.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber1246">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber1314">source</a></span></span>
     </span>
   </h3>
 
@@ -2445,7 +2508,7 @@ to moment or number/milliseconds according to <code>useMoment</code>.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber1247">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber1315">source</a></span></span>
     </span>
   </h3>
 
@@ -2488,7 +2551,7 @@ to moment or number/milliseconds according to <code>useMoment</code>.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber1105">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber1173">source</a></span></span>
     </span>
   </h3>
 
@@ -2531,7 +2594,7 @@ to moment or number/milliseconds according to <code>useMoment</code>.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber746">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber814">source</a></span></span>
     </span>
   </h3>
 
@@ -2574,7 +2637,7 @@ to moment or number/milliseconds according to <code>useMoment</code>.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber1255">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber1323">source</a></span></span>
     </span>
   </h3>
 
@@ -2617,7 +2680,7 @@ to moment or number/milliseconds according to <code>useMoment</code>.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber747">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber815">source</a></span></span>
     </span>
   </h3>
 
@@ -2663,7 +2726,7 @@ to moment or number/milliseconds according to <code>useMoment</code>.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber1296">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber1364">source</a></span></span>
     </span>
   </h3>
 
@@ -2721,7 +2784,7 @@ the left offset is the sum of the widths of all tableColumns; otherwise returns 
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber1132">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber1200">source</a></span></span>
     </span>
   </h3>
 
@@ -2793,7 +2856,7 @@ the left offset is the sum of the widths of all tableColumns; otherwise returns 
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber674">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber738">source</a></span></span>
     </span>
   </h3>
 
@@ -2868,7 +2931,7 @@ the left offset is the sum of the widths of all tableColumns; otherwise returns 
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber695">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber759">source</a></span></span>
     </span>
   </h3>
 
@@ -2912,7 +2975,7 @@ the left offset is the sum of the widths of all tableColumns; otherwise returns 
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber446">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber461">source</a></span></span>
     </span>
   </h3>
 
@@ -2955,7 +3018,7 @@ the left offset is the sum of the widths of all tableColumns; otherwise returns 
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber470">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber486">source</a></span></span>
     </span>
   </h3>
 
@@ -3020,7 +3083,7 @@ the left offset is the sum of the widths of all tableColumns; otherwise returns 
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber450">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber465">source</a></span></span>
     </span>
   </h3>
 
@@ -3079,7 +3142,7 @@ the left offset is the sum of the widths of all tableColumns; otherwise returns 
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber463">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber479">source</a></span></span>
     </span>
   </h3>
 
@@ -3111,6 +3174,67 @@ the left offset is the sum of the widths of all tableColumns; otherwise returns 
   
 </div>
 <div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-fillInTimelineWithEmptyRows">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">fillInTimelineWithEmptyRows</span><span class="code" data-ice="signature">(groups: <span><span>Group</span><span>[]</span></span>)</span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber659">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>Compute the number of rows that fit inside the timeline. If there can fit
+more rows than the model, fill in with empty groups.</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">groups</td>
+      <td data-ice="type" class="code"><span><span>Group</span><span>[]</span></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
   <h3 data-ice="anchor" id="instance-method-getCursor">
     <span class="access" data-ice="access">public</span>
     
@@ -3122,7 +3246,7 @@ the left offset is the sum of the widths of all tableColumns; otherwise returns 
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber1227">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber1295">source</a></span></span>
     </span>
   </h3>
 
@@ -3177,7 +3301,7 @@ the left offset is the sum of the widths of all tableColumns; otherwise returns 
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber497">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber513">source</a></span></span>
     </span>
   </h3>
 
@@ -3233,7 +3357,7 @@ the left offset is the sum of the widths of all tableColumns; otherwise returns 
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber533">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber549">source</a></span></span>
     </span>
   </h3>
 
@@ -3314,7 +3438,7 @@ the component receives new props. Default value: <code>this.props.useMoment</cod
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber576">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber592">source</a></span></span>
     </span>
   </h3>
 
@@ -3386,7 +3510,7 @@ the component receives new props. Default value: <code>this.props.useMoment</cod
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber661">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber725">source</a></span></span>
     </span>
   </h3>
 
@@ -3460,7 +3584,7 @@ the component receives new props. Default value: <code>this.props.useMoment</cod
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber488">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber504">source</a></span></span>
     </span>
   </h3>
 
@@ -3516,7 +3640,7 @@ the component receives new props. Default value: <code>this.props.useMoment</cod
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber509">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber525">source</a></span></span>
     </span>
   </h3>
 
@@ -3597,7 +3721,7 @@ the component receives new props. Default value: <code>this.props.useMoment</cod
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber555">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber571">source</a></span></span>
     </span>
   </h3>
 
@@ -3669,7 +3793,7 @@ the component receives new props. Default value: <code>this.props.useMoment</cod
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber713">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber777">source</a></span></span>
     </span>
   </h3>
 
@@ -3725,7 +3849,7 @@ the component receives new props. Default value: <code>this.props.useMoment</cod
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber704">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber768">source</a></span></span>
     </span>
   </h3>
 
@@ -3799,7 +3923,7 @@ the component receives new props. Default value: <code>this.props.useMoment</cod
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber1245">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber1313">source</a></span></span>
     </span>
   </h3>
 
@@ -3860,7 +3984,7 @@ the component receives new props. Default value: <code>this.props.useMoment</cod
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber647">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber711">source</a></span></span>
     </span>
   </h3>
 
@@ -3934,7 +4058,7 @@ the component receives new props. Default value: <code>this.props.useMoment</cod
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber1286">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber1354">source</a></span></span>
     </span>
   </h3>
 
@@ -3993,7 +4117,7 @@ the component receives new props. Default value: <code>this.props.useMoment</cod
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber1309">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber1385">source</a></span></span>
     </span>
   </h3>
 
@@ -4048,7 +4172,7 @@ the component receives new props. Default value: <code>this.props.useMoment</cod
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber1236">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber1304">source</a></span></span>
     </span>
   </h3>
 
@@ -4120,7 +4244,7 @@ the component receives new props. Default value: <code>this.props.useMoment</cod
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber1254">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber1322">source</a></span></span>
     </span>
   </h3>
 
@@ -4181,7 +4305,7 @@ the component receives new props. Default value: <code>this.props.useMoment</cod
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber545">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber561">source</a></span></span>
     </span>
   </h3>
 
@@ -4261,7 +4385,7 @@ to moment or number/milliseconds according to <code>useMoment</code>.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber587">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber603">source</a></span></span>
     </span>
   </h3>
 
@@ -4328,7 +4452,7 @@ to moment or number/milliseconds according to <code>useMoment</code>.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber685">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber749">source</a></span></span>
     </span>
   </h3>
 
@@ -4389,7 +4513,7 @@ to moment or number/milliseconds according to <code>useMoment</code>.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber521">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber537">source</a></span></span>
     </span>
   </h3>
 
@@ -4469,7 +4593,7 @@ to moment or number/milliseconds according to <code>useMoment</code>.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber566">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber582">source</a></span></span>
     </span>
   </h3>
 
@@ -4536,7 +4660,7 @@ to moment or number/milliseconds according to <code>useMoment</code>.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber610">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber626">source</a></span></span>
     </span>
   </h3>
 
@@ -4619,7 +4743,7 @@ the component receives new props.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber735">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber803">source</a></span></span>
     </span>
   </h3>
 
@@ -4679,6 +4803,66 @@ the component receives new props.</p>
   
 </div>
 <div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-setVerticalGridLines">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">setVerticalGridLines</span><span class="code" data-ice="signature">(verticalGridLines: <span> object </span>)</span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber1381">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>Setter for verticalGridLines (that will be passed to <code>BackgroundLayer</code>).</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">verticalGridLines</td>
+      <td data-ice="type" class="code"><span> object </span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
   <h3 data-ice="anchor" id="instance-method-throttledMouseMoveFunc">
     <span class="access" data-ice="access">public</span>
     
@@ -4690,7 +4874,7 @@ the component receives new props.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber1262">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber1330">source</a></span></span>
     </span>
   </h3>
 
@@ -4751,7 +4935,7 @@ Only calls back if a new snap time is reached</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber594">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/timeline.js.html#lineNumber610">source</a></span></span>
     </span>
   </h3>
 

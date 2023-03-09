@@ -1,5 +1,11 @@
 window.esdocSearchIndex = [
   [
+    "@crispico/react-timeline-10000/src/components/backgroundlayer.js~backgroundlayer",
+    "class/src/components/BackgroundLayer.js~BackgroundLayer.html",
+    "<span>BackgroundLayer</span> <span class=\"search-result-import-path\">@crispico/react-timeline-10000/src/components/BackgroundLayer.js</span>",
+    "class"
+  ],
+  [
     "@crispico/react-timeline-10000/src/components/columnrenderer.js~columnheaderrenderer",
     "class/src/components/ColumnRenderer.js~ColumnHeaderRenderer.html",
     "<span>ColumnHeaderRenderer</span> <span class=\"search-result-import-path\">@crispico/react-timeline-10000/src/components/ColumnRenderer.js</span>",
@@ -12,6 +18,12 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
+    "@crispico/react-timeline-10000/src/components/highlightedinterval.js~highlightedinterval",
+    "class/src/components/HighlightedInterval.js~HighlightedInterval.html",
+    "<span>HighlightedInterval</span> <span class=\"search-result-import-path\">@crispico/react-timeline-10000/src/components/HighlightedInterval.js</span>",
+    "class"
+  ],
+  [
     "@crispico/react-timeline-10000/src/components/itemrenderer.js~itemrenderer",
     "class/src/components/ItemRenderer.js~ItemRenderer.html",
     "<span>ItemRenderer</span> <span class=\"search-result-import-path\">@crispico/react-timeline-10000/src/components/ItemRenderer.js</span>",
@@ -19,9 +31,9 @@ window.esdocSearchIndex = [
   ],
   [
     "@crispico/react-timeline-10000/src/components/marker.js~marker",
-    "function/index.html#static-function-Marker",
-    "<span>Marker</span> <span class=\"search-result-import-path\">@crispico/react-timeline-10000/src/components/marker.js</span>",
-    "function"
+    "class/src/components/Marker.js~Marker.html",
+    "<span>Marker</span> <span class=\"search-result-import-path\">@crispico/react-timeline-10000/src/components/Marker.js</span>",
+    "class"
   ],
   [
     "@crispico/react-timeline-10000/src/components/selector.js~selectbox",
@@ -48,6 +60,18 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
+    "@crispico/react-timeline-10000/src/utils/itemutils.js~adjustrowtoppositiontoviewport",
+    "function/index.html#static-function-adjustRowTopPositionToViewport",
+    "<span>adjustRowTopPositionToViewport</span> <span class=\"search-result-import-path\">@crispico/react-timeline-10000/src/utils/itemUtils.js</span>",
+    "function"
+  ],
+  [
+    "@crispico/react-timeline-10000/src/stories/backgroundlayer/backgroundlayerscenarios.js~backgroundlayerscenarios",
+    "variable/index.html#static-variable-backgroundLayerScenarios",
+    "<span>backgroundLayerScenarios</span> <span class=\"search-result-import-path\">@crispico/react-timeline-10000/src/stories/backgroundLayer/BackgroundLayerScenarios.js</span>",
+    "variable"
+  ],
+  [
     "@crispico/react-timeline-10000/src/utils/timeutils.js~convertdatetomoment",
     "function/index.html#static-function-convertDateToMoment",
     "<span>convertDateToMoment</span> <span class=\"search-result-import-path\">@crispico/react-timeline-10000/src/utils/timeUtils.js</span>",
@@ -63,6 +87,12 @@ window.esdocSearchIndex = [
     "@crispico/react-timeline-10000/src/stories/storybookutils.js~encodeapidocuriforsubpath",
     "function/index.html#static-function-encodeApiDocURIForSubpath",
     "<span>encodeApiDocURIForSubpath</span> <span class=\"search-result-import-path\">@crispico/react-timeline-10000/src/stories/StorybookUtils.js</span>",
+    "function"
+  ],
+  [
+    "@crispico/react-timeline-10000/src/utils/itemutils.js~findancestorwithclassname",
+    "function/index.html#static-function-findAncestorWithClassName",
+    "<span>findAncestorWithClassName</span> <span class=\"search-result-import-path\">@crispico/react-timeline-10000/src/utils/itemUtils.js</span>",
     "function"
   ],
   [
@@ -456,6 +486,90 @@ window.esdocSearchIndex = [
     "external"
   ],
   [
+    "src/components/backgroundlayer.js",
+    "file/src/components/BackgroundLayer.js.html",
+    "src/components/BackgroundLayer.js",
+    "file"
+  ],
+  [
+    "src/components/backgroundlayer.js~backgroundlayer#calculatehighlightedweekends",
+    "class/src/components/BackgroundLayer.js~BackgroundLayer.html#instance-method-calculateHighlightedWeekends",
+    "src/components/BackgroundLayer.js~BackgroundLayer#calculateHighlightedWeekends",
+    "method"
+  ],
+  [
+    "src/components/backgroundlayer.js~backgroundlayer#calculatehorizontalposition",
+    "class/src/components/BackgroundLayer.js~BackgroundLayer.html#instance-method-calculateHorizontalPosition",
+    "src/components/BackgroundLayer.js~BackgroundLayer#calculateHorizontalPosition",
+    "method"
+  ],
+  [
+    "src/components/backgroundlayer.js~backgroundlayer#componentdidmount",
+    "class/src/components/BackgroundLayer.js~BackgroundLayer.html#instance-method-componentDidMount",
+    "src/components/BackgroundLayer.js~BackgroundLayer#componentDidMount",
+    "method"
+  ],
+  [
+    "src/components/backgroundlayer.js~backgroundlayer#componentdidupdate",
+    "class/src/components/BackgroundLayer.js~BackgroundLayer.html#instance-method-componentDidUpdate",
+    "src/components/BackgroundLayer.js~BackgroundLayer#componentDidUpdate",
+    "method"
+  ],
+  [
+    "src/components/backgroundlayer.js~backgroundlayer#constructor",
+    "class/src/components/BackgroundLayer.js~BackgroundLayer.html#instance-constructor-constructor",
+    "src/components/BackgroundLayer.js~BackgroundLayer#constructor",
+    "method"
+  ],
+  [
+    "src/components/backgroundlayer.js~backgroundlayer#render",
+    "class/src/components/BackgroundLayer.js~BackgroundLayer.html#instance-method-render",
+    "src/components/BackgroundLayer.js~BackgroundLayer#render",
+    "method"
+  ],
+  [
+    "src/components/backgroundlayer.js~backgroundlayer#rendercustomcomponents",
+    "class/src/components/BackgroundLayer.js~BackgroundLayer.html#instance-method-renderCustomComponents",
+    "src/components/BackgroundLayer.js~BackgroundLayer#renderCustomComponents",
+    "method"
+  ],
+  [
+    "src/components/backgroundlayer.js~backgroundlayer#renderhighlightedweekends",
+    "class/src/components/BackgroundLayer.js~BackgroundLayer.html#instance-method-renderHighlightedWeekends",
+    "src/components/BackgroundLayer.js~BackgroundLayer#renderHighlightedWeekends",
+    "method"
+  ],
+  [
+    "src/components/backgroundlayer.js~backgroundlayer#rendernowmarker",
+    "class/src/components/BackgroundLayer.js~BackgroundLayer.html#instance-method-renderNowMarker",
+    "src/components/BackgroundLayer.js~BackgroundLayer#renderNowMarker",
+    "method"
+  ],
+  [
+    "src/components/backgroundlayer.js~backgroundlayer#renderverticalgrid",
+    "class/src/components/BackgroundLayer.js~BackgroundLayer.html#instance-method-renderVerticalGrid",
+    "src/components/BackgroundLayer.js~BackgroundLayer#renderVerticalGrid",
+    "method"
+  ],
+  [
+    "src/components/backgroundlayer.js~backgroundlayer#state",
+    "class/src/components/BackgroundLayer.js~BackgroundLayer.html#instance-member-state",
+    "src/components/BackgroundLayer.js~BackgroundLayer#state",
+    "member"
+  ],
+  [
+    "src/components/backgroundlayer.js~backgroundlayer.defaultprops",
+    "class/src/components/BackgroundLayer.js~BackgroundLayer.html#static-member-defaultProps",
+    "src/components/BackgroundLayer.js~BackgroundLayer.defaultProps",
+    "member"
+  ],
+  [
+    "src/components/backgroundlayer.js~backgroundlayer.proptypes",
+    "class/src/components/BackgroundLayer.js~BackgroundLayer.html#static-member-propTypes",
+    "src/components/BackgroundLayer.js~BackgroundLayer.propTypes",
+    "member"
+  ],
+  [
     "src/components/columnrenderer.js",
     "file/src/components/ColumnRenderer.js.html",
     "src/components/ColumnRenderer.js",
@@ -496,6 +610,48 @@ window.esdocSearchIndex = [
     "file/src/components/GroupRenderer.test.js.html",
     "src/components/GroupRenderer.test.js",
     "file"
+  ],
+  [
+    "src/components/highlightedinterval.js",
+    "file/src/components/HighlightedInterval.js.html",
+    "src/components/HighlightedInterval.js",
+    "file"
+  ],
+  [
+    "src/components/highlightedinterval.js~highlightedinterval#getclassname",
+    "class/src/components/HighlightedInterval.js~HighlightedInterval.html#instance-method-getClassName",
+    "src/components/HighlightedInterval.js~HighlightedInterval#getClassName",
+    "method"
+  ],
+  [
+    "src/components/highlightedinterval.js~highlightedinterval#getstyle",
+    "class/src/components/HighlightedInterval.js~HighlightedInterval.html#instance-method-getStyle",
+    "src/components/HighlightedInterval.js~HighlightedInterval#getStyle",
+    "method"
+  ],
+  [
+    "src/components/highlightedinterval.js~highlightedinterval#render",
+    "class/src/components/HighlightedInterval.js~HighlightedInterval.html#instance-method-render",
+    "src/components/HighlightedInterval.js~HighlightedInterval#render",
+    "method"
+  ],
+  [
+    "src/components/highlightedinterval.js~highlightedinterval#shouldcomponentupdate",
+    "class/src/components/HighlightedInterval.js~HighlightedInterval.html#instance-method-shouldComponentUpdate",
+    "src/components/HighlightedInterval.js~HighlightedInterval#shouldComponentUpdate",
+    "method"
+  ],
+  [
+    "src/components/highlightedinterval.js~highlightedinterval.defaultprops",
+    "class/src/components/HighlightedInterval.js~HighlightedInterval.html#static-member-defaultProps",
+    "src/components/HighlightedInterval.js~HighlightedInterval.defaultProps",
+    "member"
+  ],
+  [
+    "src/components/highlightedinterval.js~highlightedinterval.proptypes",
+    "class/src/components/HighlightedInterval.js~HighlightedInterval.html#static-member-propTypes",
+    "src/components/HighlightedInterval.js~HighlightedInterval.propTypes",
+    "member"
   ],
   [
     "src/components/itemrenderer.js",
@@ -600,6 +756,48 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
+    "src/components/marker.js",
+    "file/src/components/Marker.js.html",
+    "src/components/Marker.js",
+    "file"
+  ],
+  [
+    "src/components/marker.js~marker#getclassname",
+    "class/src/components/Marker.js~Marker.html#instance-method-getClassName",
+    "src/components/Marker.js~Marker#getClassName",
+    "method"
+  ],
+  [
+    "src/components/marker.js~marker#getstyle",
+    "class/src/components/Marker.js~Marker.html#instance-method-getStyle",
+    "src/components/Marker.js~Marker#getStyle",
+    "method"
+  ],
+  [
+    "src/components/marker.js~marker#render",
+    "class/src/components/Marker.js~Marker.html#instance-method-render",
+    "src/components/Marker.js~Marker#render",
+    "method"
+  ],
+  [
+    "src/components/marker.js~marker#shouldcomponentupdate",
+    "class/src/components/Marker.js~Marker.html#instance-method-shouldComponentUpdate",
+    "src/components/Marker.js~Marker#shouldComponentUpdate",
+    "method"
+  ],
+  [
+    "src/components/marker.js~marker.defaultprops",
+    "class/src/components/Marker.js~Marker.html#static-member-defaultProps",
+    "src/components/Marker.js~Marker.defaultProps",
+    "member"
+  ],
+  [
+    "src/components/marker.js~marker.proptypes",
+    "class/src/components/Marker.js~Marker.html#static-member-propTypes",
+    "src/components/Marker.js~Marker.propTypes",
+    "member"
+  ],
+  [
     "src/components/body.js",
     "file/src/components/body.js.html",
     "src/components/body.js",
@@ -622,12 +820,6 @@ window.esdocSearchIndex = [
     "class/src/components/body.js~TimelineBody.html#instance-method-shouldComponentUpdate",
     "src/components/body.js~TimelineBody#shouldComponentUpdate",
     "method"
-  ],
-  [
-    "src/components/marker.js",
-    "file/src/components/marker.js.html",
-    "src/components/marker.js",
-    "file"
   ],
   [
     "src/components/selector.js",
@@ -696,6 +888,12 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
+    "src/components/timebar.js~timebar#componentdidupdate",
+    "class/src/components/timebar.js~Timebar.html#instance-method-componentDidUpdate",
+    "src/components/timebar.js~Timebar#componentDidUpdate",
+    "method"
+  ],
+  [
     "src/components/timebar.js~timebar#componentwillmount",
     "class/src/components/timebar.js~Timebar.html#instance-method-componentWillMount",
     "src/components/timebar.js~Timebar#componentWillMount",
@@ -714,9 +912,21 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/components/timebar.js~timebar#getbottombar",
+    "class/src/components/timebar.js~Timebar.html#instance-method-getBottomBar",
+    "src/components/timebar.js~Timebar#getBottomBar",
+    "method"
+  ],
+  [
     "src/components/timebar.js~timebar#getpixelincrement",
     "class/src/components/timebar.js~Timebar.html#instance-method-getPixelIncrement",
     "src/components/timebar.js~Timebar#getPixelIncrement",
+    "method"
+  ],
+  [
+    "src/components/timebar.js~timebar#gettopbar",
+    "class/src/components/timebar.js~Timebar.html#instance-method-getTopBar",
+    "src/components/timebar.js~Timebar#getTopBar",
     "method"
   ],
   [
@@ -738,21 +948,9 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/components/timebar.js~timebar#renderbottombar",
-    "class/src/components/timebar.js~Timebar.html#instance-method-renderBottomBar",
-    "src/components/timebar.js~Timebar#renderBottomBar",
-    "method"
-  ],
-  [
     "src/components/timebar.js~timebar#rendercolumnheader",
     "class/src/components/timebar.js~Timebar.html#instance-method-renderColumnHeader",
     "src/components/timebar.js~Timebar#renderColumnHeader",
-    "method"
-  ],
-  [
-    "src/components/timebar.js~timebar#rendertopbar",
-    "class/src/components/timebar.js~Timebar.html#instance-method-renderTopBar",
-    "src/components/timebar.js~Timebar#renderTopBar",
     "method"
   ],
   [
@@ -783,6 +981,12 @@ window.esdocSearchIndex = [
     "src/stories/storybookutils.js",
     "file/src/stories/StorybookUtils.js.html",
     "src/stories/StorybookUtils.js",
+    "file"
+  ],
+  [
+    "src/stories/backgroundlayer/backgroundlayerscenarios.js",
+    "file/src/stories/backgroundLayer/BackgroundLayerScenarios.js.html",
+    "src/stories/backgroundLayer/BackgroundLayerScenarios.js",
     "file"
   ],
   [
@@ -879,6 +1083,12 @@ window.esdocSearchIndex = [
     "src/timeline.js~timeline#constructor",
     "class/src/timeline.js~Timeline.html#instance-constructor-constructor",
     "src/timeline.js~Timeline#constructor",
+    "method"
+  ],
+  [
+    "src/timeline.js~timeline#fillintimelinewithemptyrows",
+    "class/src/timeline.js~Timeline.html#instance-method-fillInTimelineWithEmptyRows",
+    "src/timeline.js~Timeline#fillInTimelineWithEmptyRows",
     "method"
   ],
   [
@@ -1059,6 +1269,12 @@ window.esdocSearchIndex = [
     "src/timeline.js~timeline#setupdragging",
     "class/src/timeline.js~Timeline.html#instance-method-setUpDragging",
     "src/timeline.js~Timeline#setUpDragging",
+    "method"
+  ],
+  [
+    "src/timeline.js~timeline#setverticalgridlines",
+    "class/src/timeline.js~Timeline.html#instance-method-setVerticalGridLines",
+    "src/timeline.js~Timeline#setVerticalGridLines",
     "method"
   ],
   [
