@@ -1,7 +1,7 @@
 {
-  "coverage": "57.39%",
-  "expectCount": 169,
-  "actualCount": 97,
+  "coverage": "57.27%",
+  "expectCount": 110,
+  "actualCount": 63,
   "files": {
     "src/components/BackgroundLayer.js": {
       "expectCount": 14,
@@ -122,37 +122,6 @@
       "actualCount": 0,
       "undocumentLines": [
         1
-      ]
-    },
-    "src/timeline.js": {
-      "expectCount": 59,
-      "actualCount": 34,
-      "undocumentLines": [
-        44,
-        45,
-        62,
-        353,
-        420,
-        422,
-        423,
-        460,
-        464,
-        478,
-        485,
-        611,
-        630,
-        631,
-        632,
-        809,
-        810,
-        1168,
-        1290,
-        1315,
-        1316,
-        1324,
-        1343,
-        1355,
-        1386
       ]
     },
     "src/utils/commonUtils.js": {
