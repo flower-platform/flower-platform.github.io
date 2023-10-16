@@ -29,7 +29,7 @@ Without this pattern, such an override is not doable in React.</p>
 <ul class="tsd-hierarchy">
 <li><span class="target">ItemRenderer</span></li></ul></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/flower-platform/react-timeline-10000/blob/e591666/src/components/ItemRenderer.js#L17">src/components/ItemRenderer.js:17</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/flower-platform/react-timeline-10000/blob/7697dc2/src/components/ItemRenderer.js#L17">src/components/ItemRenderer.js:17</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -94,7 +94,7 @@ Without this pattern, such an override is not doable in React.</p>
 <h4 class="tsd-returns-title">Returns <a href="ItemRenderer.html" class="tsd-signature-type tsd-kind-class">ItemRenderer</a></h4><aside class="tsd-sources">
 <p>Inherited from React.Component.constructor</p>
 <ul>
-<li>Defined in node_modules/@types/react/ts5.0/index.d.ts:483</li></ul></aside></li>
+<li>Defined in node_modules/@types/react/index.d.ts:506</li></ul></aside></li>
 <li class="tsd-signature tsd-anchor-link" id="constructor.new_ItemRenderer-1"><span class="tsd-kind-constructor-signature">new <wbr/>Item<wbr/>Renderer</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">props</span>, <span class="tsd-kind-parameter">context</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="ItemRenderer.html" class="tsd-signature-type tsd-kind-class">ItemRenderer</a><a href="#constructor.new_ItemRenderer-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-parameters">
@@ -172,12 +172,12 @@ If <code>true</code>, the order of the colors will be reversed.</p>
 </div><aside class="tsd-sources">
 <p>Inherited from React.Component.constructor</p>
 <ul>
-<li>Defined in node_modules/@types/react/ts5.0/index.d.ts:488</li></ul></aside></li></ul></section></section>
+<li>Defined in node_modules/@types/react/index.d.ts:511</li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Properties</h2>
 <section class="tsd-panel tsd-member tsd-is-inherited tsd-is-external"><a id="context" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>context</span><a href="#context" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">context</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">unknown</span></div>
+<div class="tsd-signature"><span class="tsd-kind-property">context</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 <div class="tsd-comment tsd-typography"><p>If using the new style context, re-declare this in your class to be the
 <code>React.ContextType</code> of your <code>static contextType</code>.
 Should be used with type annotation or static contextType.</p>
@@ -189,76 +189,13 @@ Should be used with type annotation or static contextType.</p>
 </div><aside class="tsd-sources">
 <p>Inherited from React.Component.context</p>
 <ul>
-<li>Defined in node_modules/@types/react/ts5.0/index.d.ts:481</li></ul></aside></section>
+<li>Defined in node_modules/@types/react/index.d.ts:504</li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-is-inherited tsd-is-external"><a id="props" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagReadonly">Readonly</code> <span>props</span><a href="#props" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">props</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type ">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span><br/><span>    </span><span class="tsd-kind-property">className</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">color</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">glowOnHover</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">gradientBrightness</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">gradientReverseDirection</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">gradientStop</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">height</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">item</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Item</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">style</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">title</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">tooltip</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span><span class="tsd-signature-symbol">&gt;</span></div>
-<div class="tsd-type-declaration">
-<h4>Type declaration</h4>
-<ul class="tsd-parameters">
-<li class="tsd-parameter">
-<h5><span class="tsd-kind-property">class<wbr/>Name</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
-<div class="tsd-comment tsd-typography"><p>Class name used to render the segment (item).</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li>
-<li class="tsd-parameter">
-<h5><span class="tsd-kind-property">color</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
-<div class="tsd-comment tsd-typography"><p>The renderer uses a <strong>linear gradient</strong> (top to bottom) as a background. The gradient is configured
-using two colors: a base color (<code>color</code>) and the base color lightened by a percentage (<code>gradientBrightness</code>).</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li>
-<li class="tsd-parameter">
-<h5><span class="tsd-kind-property">glow<wbr/>On<wbr/>Hover</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
-<div class="tsd-comment tsd-typography"><p>Used to show a glow effect around the segment (item) when the mouse is moved over the segment (item).</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li>
-<li class="tsd-parameter">
-<h5><span class="tsd-kind-property">gradient<wbr/>Brightness</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
-<div class="tsd-comment tsd-typography"><p>A number between 0 and 1; it represents the percentage by which <code>color</code> is lightened to obtain the second color used in the gradient.</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li>
-<li class="tsd-parameter">
-<h5><span class="tsd-kind-property">gradient<wbr/>Reverse<wbr/>Direction</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
-<div class="tsd-comment tsd-typography"><p>Default order of the colors in the gradient: lighter color, base color.
-If <code>true</code>, the order of the colors will be reversed.</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li>
-<li class="tsd-parameter">
-<h5><span class="tsd-kind-property">gradient<wbr/>Stop</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
-<div class="tsd-comment tsd-typography"><p>A number between 0 and 100 (percentage from the height of the item) and it represents the point where the first color stops in the gradient.</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li>
-<li class="tsd-parameter">
-<h5><span class="tsd-kind-property">height</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
-<div class="tsd-comment tsd-typography"><p>The height of the segment (item).</p>
-<p>This property is received from the parent and its based on <code>itemHeight</code> from <code>Timeline</code>. The parent adds a padding
-(@see rct9k-items-inner class) which must be subtracted from <code>itemHeight</code> resulting in <code>height</code>.</p>
-<p>NOTE: If you override the getter, the maximum <code>height</code> can be <code>itemHeight</code> minus the padding.</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li>
-<li class="tsd-parameter">
-<h5><span class="tsd-kind-property">item</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Item</span></h5>
-<div class="tsd-comment tsd-typography"><p>It&#39;s passed by the parent. Though not used by this component. It exists because maybe subclasses want to use it.</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li>
-<li class="tsd-parameter">
-<h5><span class="tsd-kind-property">style</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-<div class="tsd-comment tsd-typography"><p>The style of the segment used to render the segment (item).</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li>
-<li class="tsd-parameter">
-<h5><span class="tsd-kind-property">title</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
-<div class="tsd-comment tsd-typography"><p>The title (label) of the segment (item).</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li>
-<li class="tsd-parameter">
-<h5><span class="tsd-kind-property">tooltip</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
-<div class="tsd-comment tsd-typography"><p>Tooltip displayed on mouse over the segment (item).</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li></ul></div><aside class="tsd-sources">
+<div class="tsd-signature"><span class="tsd-kind-property">props</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type ">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span><br/><span>    </span><span class="tsd-kind-property">className</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">color</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">glowOnHover</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">gradientBrightness</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">gradientReverseDirection</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">gradientStop</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">height</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">item</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Item</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">style</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">title</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">tooltip</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type ">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span><br/><span>    </span><span class="tsd-kind-property">children</span><span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type ">ReactNode</span><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span><span class="tsd-signature-symbol">&gt;</span></div><aside class="tsd-sources">
 <p>Inherited from React.Component.props</p>
 <ul>
-<li>Defined in node_modules/@types/react/ts5.0/index.d.ts:501</li></ul></aside></section>
+<li>Defined in node_modules/@types/react/index.d.ts:529</li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-is-inherited tsd-is-external"><a id="refs" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span class="deprecated">refs</span><a href="#refs" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">refs</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span><br/><span>    </span>[<span class="tsd-kind-index-signature">key</span>: <span class="tsd-signature-type">string</span>]<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">ReactInstance</span><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span></div>
@@ -272,13 +209,13 @@ If <code>true</code>, the order of the colors will be reversed.</p>
 </div><aside class="tsd-sources">
 <p>Inherited from React.Component.refs</p>
 <ul>
-<li>Defined in node_modules/@types/react/ts5.0/index.d.ts:507</li></ul></aside></section>
+<li>Defined in node_modules/@types/react/index.d.ts:535</li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-is-inherited tsd-is-external"><a id="state" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>state</span><a href="#state" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">state</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type ">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></div><aside class="tsd-sources">
 <p>Inherited from React.Component.state</p>
 <ul>
-<li>Defined in node_modules/@types/react/ts5.0/index.d.ts:502</li></ul></aside></section>
+<li>Defined in node_modules/@types/react/index.d.ts:530</li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-is-inherited tsd-is-external"><a id="contextType" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagStatic">Static</code> <code class="tsd-tag ts-flagOptional">Optional</code> <span>context<wbr/>Type</span><a href="#contextType" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">context<wbr/>Type</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type ">Context</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></div>
@@ -292,7 +229,7 @@ If <code>true</code>, the order of the colors will be reversed.</p>
 </div><aside class="tsd-sources">
 <p>Inherited from React.Component.contextType</p>
 <ul>
-<li>Defined in node_modules/@types/react/ts5.0/index.d.ts:464</li></ul></aside></section>
+<li>Defined in node_modules/@types/react/index.d.ts:486</li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="defaultProps" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagStatic">Static</code> <span>default<wbr/>Props</span><a href="#defaultProps" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">default<wbr/>Props</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span><br/><span>    </span><span class="tsd-kind-property">className</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">color</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">glowOnHover</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">gradientBrightness</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">gradientReverseDirection</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">gradientStop</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">item</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">style</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">title</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">tooltip</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span><span class="tsd-signature-symbol"> = ...</span></div>
@@ -322,7 +259,7 @@ If <code>true</code>, the order of the colors will be reversed.</p>
 <li class="tsd-parameter">
 <h5><span class="tsd-kind-property">tooltip</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5></li></ul></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/flower-platform/react-timeline-10000/blob/e591666/src/components/ItemRenderer.js#L93">src/components/ItemRenderer.js:93</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/flower-platform/react-timeline-10000/blob/7697dc2/src/components/ItemRenderer.js#L93">src/components/ItemRenderer.js:93</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="propTypes" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagStatic">Static</code> <span>prop<wbr/>Types</span><a href="#propTypes" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">prop<wbr/>Types</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span><br/><span>    </span><span class="tsd-kind-property">className</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">color</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">glowOnHover</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">gradientBrightness</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">gradientReverseDirection</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">gradientStop</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">height</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">item</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Item</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">style</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">title</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">tooltip</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span><span class="tsd-signature-symbol"> = ...</span></div>
@@ -390,7 +327,7 @@ If <code>true</code>, the order of the colors will be reversed.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li></ul></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/flower-platform/react-timeline-10000/blob/e591666/src/components/ItemRenderer.js#L18">src/components/ItemRenderer.js:18</a></li></ul></aside></section></section>
+<li>Defined in <a href="https://github.com/flower-platform/react-timeline-10000/blob/7697dc2/src/components/ItemRenderer.js#L18">src/components/ItemRenderer.js:18</a></li></ul></aside></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Methods</h2>
 <section class="tsd-panel tsd-member tsd-is-inherited tsd-is-external"><a id="UNSAFE_componentWillMount" class="tsd-anchor"></a>
@@ -415,7 +352,7 @@ prevents this from being invoked.</p>
 </div><aside class="tsd-sources">
 <p>Inherited from React.Component.UNSAFE_componentWillMount</p>
 <ul>
-<li>Defined in node_modules/@types/react/ts5.0/index.d.ts:698</li></ul></aside></li></ul></section>
+<li>Defined in node_modules/@types/react/index.d.ts:742</li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited tsd-is-external"><a id="UNSAFE_componentWillReceiveProps" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <span>UNSAFE_<wbr/>component<wbr/>Will<wbr/>Receive<wbr/>Props</span><a href="#UNSAFE_componentWillReceiveProps" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited tsd-is-external">
@@ -447,7 +384,7 @@ prevents this from being invoked.</p>
 </div><aside class="tsd-sources">
 <p>Inherited from React.Component.UNSAFE_componentWillReceiveProps</p>
 <ul>
-<li>Defined in node_modules/@types/react/ts5.0/index.d.ts:730</li></ul></aside></li></ul></section>
+<li>Defined in node_modules/@types/react/index.d.ts:774</li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited tsd-is-external"><a id="UNSAFE_componentWillUpdate" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <span>UNSAFE_<wbr/>component<wbr/>Will<wbr/>Update</span><a href="#UNSAFE_componentWillUpdate" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited tsd-is-external">
@@ -479,7 +416,7 @@ prevents this from being invoked.</p>
 </div><aside class="tsd-sources">
 <p>Inherited from React.Component.UNSAFE_componentWillUpdate</p>
 <ul>
-<li>Defined in node_modules/@types/react/ts5.0/index.d.ts:758</li></ul></aside></li></ul></section>
+<li>Defined in node_modules/@types/react/index.d.ts:802</li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited tsd-is-external"><a id="componentDidCatch" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <span>component<wbr/>Did<wbr/>Catch</span><a href="#componentDidCatch" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited tsd-is-external">
@@ -499,7 +436,7 @@ the entire component tree to unmount.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from React.Component.componentDidCatch</p>
 <ul>
-<li>Defined in node_modules/@types/react/ts5.0/index.d.ts:627</li></ul></aside></li></ul></section>
+<li>Defined in node_modules/@types/react/index.d.ts:671</li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited tsd-is-external"><a id="componentDidMount" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <span>component<wbr/>Did<wbr/>Mount</span><a href="#componentDidMount" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited tsd-is-external">
@@ -511,7 +448,7 @@ the entire component tree to unmount.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from React.Component.componentDidMount</p>
 <ul>
-<li>Defined in node_modules/@types/react/ts5.0/index.d.ts:606</li></ul></aside></li></ul></section>
+<li>Defined in node_modules/@types/react/index.d.ts:650</li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited tsd-is-external"><a id="componentDidUpdate" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <span>component<wbr/>Did<wbr/>Update</span><a href="#componentDidUpdate" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited tsd-is-external">
@@ -533,7 +470,7 @@ the entire component tree to unmount.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from React.Component.componentDidUpdate</p>
 <ul>
-<li>Defined in node_modules/@types/react/ts5.0/index.d.ts:669</li></ul></aside></li></ul></section>
+<li>Defined in node_modules/@types/react/index.d.ts:713</li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited tsd-is-external"><a id="componentWillMount" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <span>component<wbr/>Will<wbr/>Mount</span><a href="#componentWillMount" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited tsd-is-external">
@@ -555,7 +492,7 @@ prevents this from being invoked.</p>
 </div><aside class="tsd-sources">
 <p>Inherited from React.Component.componentWillMount</p>
 <ul>
-<li>Defined in node_modules/@types/react/ts5.0/index.d.ts:684</li></ul></aside></li></ul></section>
+<li>Defined in node_modules/@types/react/index.d.ts:728</li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited tsd-is-external"><a id="componentWillReceiveProps" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <span>component<wbr/>Will<wbr/>Receive<wbr/>Props</span><a href="#componentWillReceiveProps" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited tsd-is-external">
@@ -586,7 +523,7 @@ prevents this from being invoked.</p>
 </div><aside class="tsd-sources">
 <p>Inherited from React.Component.componentWillReceiveProps</p>
 <ul>
-<li>Defined in node_modules/@types/react/ts5.0/index.d.ts:713</li></ul></aside></li></ul></section>
+<li>Defined in node_modules/@types/react/index.d.ts:757</li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited tsd-is-external"><a id="componentWillUnmount" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <span>component<wbr/>Will<wbr/>Unmount</span><a href="#componentWillUnmount" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited tsd-is-external">
@@ -599,7 +536,7 @@ cancelled network requests, or cleaning up any DOM elements created in <code>com
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from React.Component.componentWillUnmount</p>
 <ul>
-<li>Defined in node_modules/@types/react/ts5.0/index.d.ts:622</li></ul></aside></li></ul></section>
+<li>Defined in node_modules/@types/react/index.d.ts:666</li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited tsd-is-external"><a id="componentWillUpdate" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <span>component<wbr/>Will<wbr/>Update</span><a href="#componentWillUpdate" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited tsd-is-external">
@@ -630,7 +567,7 @@ prevents this from being invoked.</p>
 </div><aside class="tsd-sources">
 <p>Inherited from React.Component.componentWillUpdate</p>
 <ul>
-<li>Defined in node_modules/@types/react/ts5.0/index.d.ts:743</li></ul></aside></li></ul></section>
+<li>Defined in node_modules/@types/react/index.d.ts:787</li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited tsd-is-external"><a id="forceUpdate" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>force<wbr/>Update</span><a href="#forceUpdate" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited tsd-is-external">
@@ -650,7 +587,7 @@ prevents this from being invoked.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from React.Component.forceUpdate</p>
 <ul>
-<li>Defined in node_modules/@types/react/ts5.0/index.d.ts:498</li></ul></aside></li></ul></section>
+<li>Defined in node_modules/@types/react/index.d.ts:521</li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getBackgroundGradient" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Background<wbr/>Gradient</span><a href="#getBackgroundGradient" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -665,7 +602,7 @@ the brightness of that color using getGradientBrightness(). The default order of
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/flower-platform/react-timeline-10000/blob/e591666/src/components/ItemRenderer.js#L179">src/components/ItemRenderer.js:179</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/flower-platform/react-timeline-10000/blob/7697dc2/src/components/ItemRenderer.js#L179">src/components/ItemRenderer.js:179</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getClassName" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Class<wbr/>Name</span><a href="#getClassName" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -676,7 +613,7 @@ the brightness of that color using getGradientBrightness(). The default order of
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/flower-platform/react-timeline-10000/blob/e591666/src/components/ItemRenderer.js#L224">src/components/ItemRenderer.js:224</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/flower-platform/react-timeline-10000/blob/7697dc2/src/components/ItemRenderer.js#L224">src/components/ItemRenderer.js:224</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getColor" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Color</span><a href="#getColor" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -687,7 +624,7 @@ the brightness of that color using getGradientBrightness(). The default order of
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/flower-platform/react-timeline-10000/blob/e591666/src/components/ItemRenderer.js#L134">src/components/ItemRenderer.js:134</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/flower-platform/react-timeline-10000/blob/7697dc2/src/components/ItemRenderer.js#L134">src/components/ItemRenderer.js:134</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getGlowOnHoverClassName" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Glow<wbr/>On<wbr/>Hover<wbr/>Class<wbr/>Name</span><a href="#getGlowOnHoverClassName" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -698,7 +635,7 @@ the brightness of that color using getGradientBrightness(). The default order of
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/flower-platform/react-timeline-10000/blob/e591666/src/components/ItemRenderer.js#L216">src/components/ItemRenderer.js:216</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/flower-platform/react-timeline-10000/blob/7697dc2/src/components/ItemRenderer.js#L216">src/components/ItemRenderer.js:216</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getGradientBrightness" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Gradient<wbr/>Brightness</span><a href="#getGradientBrightness" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -709,7 +646,7 @@ the brightness of that color using getGradientBrightness(). The default order of
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/flower-platform/react-timeline-10000/blob/e591666/src/components/ItemRenderer.js#L142">src/components/ItemRenderer.js:142</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/flower-platform/react-timeline-10000/blob/7697dc2/src/components/ItemRenderer.js#L142">src/components/ItemRenderer.js:142</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getGradientReverseDirection" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Gradient<wbr/>Reverse<wbr/>Direction</span><a href="#getGradientReverseDirection" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -720,7 +657,7 @@ the brightness of that color using getGradientBrightness(). The default order of
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/flower-platform/react-timeline-10000/blob/e591666/src/components/ItemRenderer.js#L158">src/components/ItemRenderer.js:158</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/flower-platform/react-timeline-10000/blob/7697dc2/src/components/ItemRenderer.js#L158">src/components/ItemRenderer.js:158</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getGradientStop" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Gradient<wbr/>Stop</span><a href="#getGradientStop" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -731,7 +668,7 @@ the brightness of that color using getGradientBrightness(). The default order of
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/flower-platform/react-timeline-10000/blob/e591666/src/components/ItemRenderer.js#L150">src/components/ItemRenderer.js:150</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/flower-platform/react-timeline-10000/blob/7697dc2/src/components/ItemRenderer.js#L150">src/components/ItemRenderer.js:150</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getHeight" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Height</span><a href="#getHeight" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -742,7 +679,7 @@ the brightness of that color using getGradientBrightness(). The default order of
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/flower-platform/react-timeline-10000/blob/e591666/src/components/ItemRenderer.js#L126">src/components/ItemRenderer.js:126</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/flower-platform/react-timeline-10000/blob/7697dc2/src/components/ItemRenderer.js#L126">src/components/ItemRenderer.js:126</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited tsd-is-external"><a id="getSnapshotBeforeUpdate" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <span>get<wbr/>Snapshot<wbr/>Before<wbr/>Update</span><a href="#getSnapshotBeforeUpdate" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited tsd-is-external">
@@ -765,7 +702,7 @@ lifecycle events from running.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from React.Component.getSnapshotBeforeUpdate</p>
 <ul>
-<li>Defined in node_modules/@types/react/ts5.0/index.d.ts:663</li></ul></aside></li></ul></section>
+<li>Defined in node_modules/@types/react/index.d.ts:707</li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getStyle" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Style</span><a href="#getStyle" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -776,7 +713,7 @@ lifecycle events from running.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/flower-platform/react-timeline-10000/blob/e591666/src/components/ItemRenderer.js#L197">src/components/ItemRenderer.js:197</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/flower-platform/react-timeline-10000/blob/7697dc2/src/components/ItemRenderer.js#L197">src/components/ItemRenderer.js:197</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getTextColor" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Text<wbr/>Color</span><a href="#getTextColor" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -788,7 +725,7 @@ otherwise returns black.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/flower-platform/react-timeline-10000/blob/e591666/src/components/ItemRenderer.js#L167">src/components/ItemRenderer.js:167</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/flower-platform/react-timeline-10000/blob/7697dc2/src/components/ItemRenderer.js#L167">src/components/ItemRenderer.js:167</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getTitle" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Title</span><a href="#getTitle" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -799,7 +736,7 @@ otherwise returns black.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type ">Element</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/flower-platform/react-timeline-10000/blob/e591666/src/components/ItemRenderer.js#L110">src/components/ItemRenderer.js:110</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/flower-platform/react-timeline-10000/blob/7697dc2/src/components/ItemRenderer.js#L110">src/components/ItemRenderer.js:110</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getTooltip" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Tooltip</span><a href="#getTooltip" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -810,7 +747,7 @@ otherwise returns black.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/flower-platform/react-timeline-10000/blob/e591666/src/components/ItemRenderer.js#L118">src/components/ItemRenderer.js:118</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/flower-platform/react-timeline-10000/blob/7697dc2/src/components/ItemRenderer.js#L118">src/components/ItemRenderer.js:118</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="render" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>render</span><a href="#render" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -819,7 +756,7 @@ otherwise returns black.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Element</span></h4><aside class="tsd-sources">
 <p>Overrides React.Component.render</p>
 <ul>
-<li>Defined in <a href="https://github.com/flower-platform/react-timeline-10000/blob/e591666/src/components/ItemRenderer.js#L228">src/components/ItemRenderer.js:228</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/flower-platform/react-timeline-10000/blob/7697dc2/src/components/ItemRenderer.js#L228">src/components/ItemRenderer.js:228</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited tsd-is-external"><a id="setState" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>set<wbr/>State</span><a href="#setState" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited tsd-is-external">
@@ -846,7 +783,7 @@ otherwise returns black.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from React.Component.setState</p>
 <ul>
-<li>Defined in node_modules/@types/react/ts5.0/index.d.ts:493</li></ul></aside></li></ul></section>
+<li>Defined in node_modules/@types/react/index.d.ts:516</li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited tsd-is-external"><a id="shouldComponentUpdate" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <span>should<wbr/>Component<wbr/>Update</span><a href="#shouldComponentUpdate" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited tsd-is-external">
@@ -872,7 +809,7 @@ and <code>componentDidUpdate</code> will not be called.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from React.Component.shouldComponentUpdate</p>
 <ul>
-<li>Defined in node_modules/@types/react/ts5.0/index.d.ts:617</li></ul></aside></li></ul></section></section></div>
+<li>Defined in node_modules/@types/react/index.d.ts:661</li></ul></aside></li></ul></section></section></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
