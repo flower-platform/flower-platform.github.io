@@ -22,7 +22,7 @@
 <ul class="tsd-hierarchy">
 <li><span class="target">HighlightedInterval</span></li></ul></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/flower-platform/react-timeline-10000/blob/1f2e970/src/components/HighlightedInterval.js#L8">src/components/HighlightedInterval.js:8</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/flower-platform/react-timeline-10000/blob/38ff788/src/components/HighlightedInterval.js#L8">src/components/HighlightedInterval.js:8</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -145,7 +145,7 @@ to set the top edge if the element.</p>
 <div class="tsd-comment tsd-typography"><p>If using the new style context, re-declare this in your class to be the
 <code>React.ContextType</code> of your <code>static contextType</code>.
 Should be used with type annotation or static contextType.</p>
-<pre><code class="language-ts"><span class="hl-1">static</span><span class="hl-0"> </span><span class="hl-1">contextType</span><span class="hl-0"> = </span><span class="hl-1">MyContext</span><br/><span class="hl-5">// For TS pre-3.7:</span><br/><span class="hl-1">context</span><span class="hl-0">!: </span><span class="hl-1">React</span><span class="hl-0">.</span><span class="hl-1">ContextType</span><span class="hl-0">&lt;</span><span class="hl-6">typeof</span><span class="hl-0"> </span><span class="hl-1">MyContext</span><span class="hl-0">&gt;</span><br/><span class="hl-5">// For TS 3.7 and above:</span><br/><span class="hl-6">declare</span><span class="hl-0"> </span><span class="hl-7">context</span><span class="hl-0">: </span><span class="hl-1">React</span><span class="hl-0">.</span><span class="hl-1">ContextType</span><span class="hl-0">&lt;</span><span class="hl-6">typeof</span><span class="hl-0"> </span><span class="hl-1">MyContext</span><span class="hl-0">&gt;</span>
+<pre><code class="language-ts"><span class="hl-3">static</span><span class="hl-2"> </span><span class="hl-3">contextType</span><span class="hl-2"> = </span><span class="hl-3">MyContext</span><br/><span class="hl-0">// For TS pre-3.7:</span><br/><span class="hl-3">context</span><span class="hl-2">!: </span><span class="hl-3">React</span><span class="hl-2">.</span><span class="hl-3">ContextType</span><span class="hl-2">&lt;</span><span class="hl-5">typeof</span><span class="hl-2"> </span><span class="hl-3">MyContext</span><span class="hl-2">&gt;</span><br/><span class="hl-0">// For TS 3.7 and above:</span><br/><span class="hl-5">declare</span><span class="hl-2"> </span><span class="hl-6">context</span><span class="hl-2">: </span><span class="hl-3">React</span><span class="hl-2">.</span><span class="hl-3">ContextType</span><span class="hl-2">&lt;</span><span class="hl-5">typeof</span><span class="hl-2"> </span><span class="hl-3">MyContext</span><span class="hl-2">&gt;</span>
 </code><button>Copy</button></pre>
 </div>
 <div class="tsd-comment tsd-typography">
@@ -185,7 +185,7 @@ Should be used with type annotation or static contextType.</p>
 <div class="tsd-signature"><span class="tsd-kind-property">context<wbr/>Type</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type ">Context</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></div>
 <div class="tsd-comment tsd-typography"><p>If set, <code>this.context</code> will be set at runtime to the current value of the given Context.</p>
 <p>Usage:</p>
-<pre><code class="language-ts"><span class="hl-6">type</span><span class="hl-0"> </span><span class="hl-8">MyContext</span><span class="hl-0"> = </span><span class="hl-8">number</span><br/><span class="hl-6">const</span><span class="hl-0"> </span><span class="hl-9">Ctx</span><span class="hl-0"> = </span><span class="hl-1">React</span><span class="hl-0">.</span><span class="hl-10">createContext</span><span class="hl-0">&lt;</span><span class="hl-8">MyContext</span><span class="hl-0">&gt;(</span><span class="hl-11">0</span><span class="hl-0">)</span><br/><br/><span class="hl-6">class</span><span class="hl-0"> </span><span class="hl-8">Foo</span><span class="hl-0"> </span><span class="hl-6">extends</span><span class="hl-0"> </span><span class="hl-8">React</span><span class="hl-0">.</span><span class="hl-8">Component</span><span class="hl-0"> {</span><br/><span class="hl-0">  </span><span class="hl-6">static</span><span class="hl-0"> </span><span class="hl-1">contextType</span><span class="hl-0"> = </span><span class="hl-1">Ctx</span><br/><span class="hl-0">  </span><span class="hl-1">context</span><span class="hl-0">!: </span><span class="hl-8">React</span><span class="hl-0">.</span><span class="hl-8">ContextType</span><span class="hl-0">&lt;</span><span class="hl-6">typeof</span><span class="hl-0"> </span><span class="hl-1">Ctx</span><span class="hl-0">&gt;</span><br/><span class="hl-0">  </span><span class="hl-10">render</span><span class="hl-0"> () {</span><br/><span class="hl-0">    </span><span class="hl-3">return</span><span class="hl-0"> &lt;&gt;</span><span class="hl-1">My</span><span class="hl-0"> </span><span class="hl-1">context</span><span class="hl-4">&#39;s value: {this.context}&lt;/&gt;</span><span class="hl-12">;</span><br/><span class="hl-0">  }</span><br/><span class="hl-0">}</span>
+<pre><code class="language-ts"><span class="hl-5">type</span><span class="hl-2"> </span><span class="hl-7">MyContext</span><span class="hl-2"> = </span><span class="hl-7">number</span><br/><span class="hl-5">const</span><span class="hl-2"> </span><span class="hl-8">Ctx</span><span class="hl-2"> = </span><span class="hl-3">React</span><span class="hl-2">.</span><span class="hl-9">createContext</span><span class="hl-2">&lt;</span><span class="hl-7">MyContext</span><span class="hl-2">&gt;(</span><span class="hl-10">0</span><span class="hl-2">)</span><br/><br/><span class="hl-5">class</span><span class="hl-2"> </span><span class="hl-7">Foo</span><span class="hl-2"> </span><span class="hl-5">extends</span><span class="hl-2"> </span><span class="hl-7">React</span><span class="hl-2">.</span><span class="hl-7">Component</span><span class="hl-2"> {</span><br/><span class="hl-2">  </span><span class="hl-5">static</span><span class="hl-2"> </span><span class="hl-3">contextType</span><span class="hl-2"> = </span><span class="hl-3">Ctx</span><br/><span class="hl-2">  </span><span class="hl-3">context</span><span class="hl-2">!: </span><span class="hl-7">React</span><span class="hl-2">.</span><span class="hl-7">ContextType</span><span class="hl-2">&lt;</span><span class="hl-5">typeof</span><span class="hl-2"> </span><span class="hl-3">Ctx</span><span class="hl-2">&gt;</span><br/><span class="hl-2">  </span><span class="hl-9">render</span><span class="hl-2"> () {</span><br/><span class="hl-2">    </span><span class="hl-1">return</span><span class="hl-2"> &lt;&gt;</span><span class="hl-3">My</span><span class="hl-2"> </span><span class="hl-3">context</span><span class="hl-4">&#39;s value: {this.context}&lt;/&gt;</span><span class="hl-11">;</span><br/><span class="hl-2">  }</span><br/><span class="hl-2">}</span>
 </code><button>Copy</button></pre>
 </div>
 <div class="tsd-comment tsd-typography">
@@ -220,7 +220,7 @@ Should be used with type annotation or static contextType.</p>
 <li class="tsd-parameter">
 <h5><span class="tsd-kind-property">top</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5></li></ul></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/flower-platform/react-timeline-10000/blob/1f2e970/src/components/HighlightedInterval.js#L68">src/components/HighlightedInterval.js:68</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/flower-platform/react-timeline-10000/blob/38ff788/src/components/HighlightedInterval.js#L68">src/components/HighlightedInterval.js:68</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="propTypes" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagStatic">Static</code> <span>prop<wbr/>Types</span><a href="#propTypes" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">prop<wbr/>Types</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span><br/><span>    </span><span class="tsd-kind-property">calculateHorizontalPosition</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Function</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">className</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">end</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">height</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">shouldUpdate</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">start</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">style</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">top</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span><span class="tsd-signature-symbol"> = ...</span></div>
@@ -269,7 +269,7 @@ to set the top edge if the element.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li></ul></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/flower-platform/react-timeline-10000/blob/1f2e970/src/components/HighlightedInterval.js#L9">src/components/HighlightedInterval.js:9</a></li></ul></aside></section></section>
+<li>Defined in <a href="https://github.com/flower-platform/react-timeline-10000/blob/38ff788/src/components/HighlightedInterval.js#L9">src/components/HighlightedInterval.js:9</a></li></ul></aside></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Methods</h2>
 <section class="tsd-panel tsd-member tsd-is-inherited tsd-is-external"><a id="UNSAFE_componentWillMount" class="tsd-anchor"></a>
@@ -539,7 +539,7 @@ prevents this from being invoked.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/flower-platform/react-timeline-10000/blob/1f2e970/src/components/HighlightedInterval.js#L108">src/components/HighlightedInterval.js:108</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/flower-platform/react-timeline-10000/blob/38ff788/src/components/HighlightedInterval.js#L108">src/components/HighlightedInterval.js:108</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited tsd-is-external"><a id="getSnapshotBeforeUpdate" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <span>get<wbr/>Snapshot<wbr/>Before<wbr/>Update</span><a href="#getSnapshotBeforeUpdate" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited tsd-is-external">
@@ -572,7 +572,7 @@ lifecycle events from running.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/flower-platform/react-timeline-10000/blob/1f2e970/src/components/HighlightedInterval.js#L93">src/components/HighlightedInterval.js:93</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/flower-platform/react-timeline-10000/blob/38ff788/src/components/HighlightedInterval.js#L93">src/components/HighlightedInterval.js:93</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="render" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>render</span><a href="#render" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -581,7 +581,7 @@ lifecycle events from running.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Element</span></h4><aside class="tsd-sources">
 <p>Overrides React.Component.render</p>
 <ul>
-<li>Defined in <a href="https://github.com/flower-platform/react-timeline-10000/blob/1f2e970/src/components/HighlightedInterval.js#L112">src/components/HighlightedInterval.js:112</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/flower-platform/react-timeline-10000/blob/38ff788/src/components/HighlightedInterval.js#L112">src/components/HighlightedInterval.js:112</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited tsd-is-external"><a id="setState" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>set<wbr/>State</span><a href="#setState" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited tsd-is-external">
@@ -622,7 +622,7 @@ lifecycle events from running.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4><aside class="tsd-sources">
 <p>Overrides React.Component.shouldComponentUpdate</p>
 <ul>
-<li>Defined in <a href="https://github.com/flower-platform/react-timeline-10000/blob/1f2e970/src/components/HighlightedInterval.js#L77">src/components/HighlightedInterval.js:77</a></li></ul></aside></li></ul></section></section></div>
+<li>Defined in <a href="https://github.com/flower-platform/react-timeline-10000/blob/38ff788/src/components/HighlightedInterval.js#L77">src/components/HighlightedInterval.js:77</a></li></ul></aside></li></ul></section></section></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">

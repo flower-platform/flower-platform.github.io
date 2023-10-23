@@ -1,0 +1,14 @@
+import{M as s,A as c}from"./chunk-HLWAVYOI-89effc94.js";import{T as m}from"./timeline-f7939cca.js";import{e as n}from"./StorybookUtils-ad0167ac.js";import{j as e}from"./jsx-runtime-b3cc59b7.js";import{u as a}from"./index-4a013e66.js";import"./iframe-d891a21f.js";import"../sb-preview/runtime.js";import"./shim-e439b993.js";import"./index-f1d0b849.js";import"./_baseAssignValue-80f6ee9e.js";import"./util-fea827ce.js";import"./_commonjs-dynamic-modules-302442b1.js";import"./index-d37d4223.js";import"./_baseSet-58a335be.js";import"./index-356e4a49.js";import"./Scrollbar-5e9a6ca6.js";import"./inheritsLoose-b7013776.js";import"./Segment-1ca6e48e.js";function i(r){const t=Object.assign({h2:"h2",p:"p",ul:"ul",li:"li",code:"code"},a(),r.components);return e.jsxs(e.Fragment,{children:[e.jsx(s,{title:"Features/Drag to create/Doc"}),`
+`,e.jsx(t.h2,{id:"drag-to-create",children:"Drag to create"}),`
+`,e.jsxs(t.p,{children:["Drag to create mechanism requires the property ",e.jsx("code",{children:e.jsx("a",{href:n("/classes/Timeline.html#propTypes"),children:"Timeline.onDragToCreateEnded"})})," to be set."]}),`
+`,e.jsx(t.h2,{id:"entering-the-drag-to-create-mode",children:"Entering the drag to create mode"}),`
+`,e.jsx(t.p,{children:"It exists 2 ways for entering in ** Drag to create mode ** :"}),`
+`,e.jsxs(t.ul,{children:[`
+`,e.jsxs(t.li,{children:[`** The default one **: by clicking on "Drag to create" menu entry.
+In this case you can exit either by pressing the `,e.jsx(t.code,{children:"Cancel"}),` button displayed in the opened popup or by simply clicking the gantt diagram.
+After you finish creating a segment, it automatically exits the drag to create mode`]}),`
+`,e.jsxs(t.li,{children:["By setting ",e.jsx("code",{children:e.jsx("a",{href:n("/classes/Timeline.html#propTypes"),children:"Timeline.forceDragToCreateMode"})}),` to true. Setting it to false it exists the drag to create mode. If this property is set, the default mechanism doesn't work anymore (so there will be no "Drag to create" menu entry, no popup and the drag to create mode will remain active when clicking on gantt diagram)`]}),`
+`]}),`
+`,e.jsx(t.h2,{id:"timeline",children:e.jsx(t.code,{children:"Timeline"})}),`
+`,e.jsx(c,{of:m,sort:"none",include:["onDragToCreateEnded","onDragToCreateStarted","forceDragToCreateMode"]})]})}function d(r={}){const{wrapper:t}=Object.assign({},a(),r.components);return t?e.jsx(t,{...r,children:e.jsx(i,{...r})}):i(r)}const l=()=>{throw new Error("Docs-only story")};l.parameters={docsOnly:!0};const o={title:"Features/Drag to create/Doc",tags:["stories-mdx"],includeStories:["__page"]};o.parameters=o.parameters||{};o.parameters.docs={...o.parameters.docs||{},page:d};const F=["__page"];export{F as __namedExportsOrder,l as __page,o as default};
+//# sourceMappingURL=DragToCreate.stories-fd36693a.js.map
