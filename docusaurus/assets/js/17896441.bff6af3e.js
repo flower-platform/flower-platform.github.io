@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdocusaurus=self.webpackChunkdocusaurus||[]).push([[918],{2958:(s,u,c)=>{c.d(u,{Z:()=>e});c(7294);var n=c(8703),r=c(5130),t=c(5893);function e(s){const u=(0,r.k)();return(0,t.jsx)("div",{class:u.frontMatter.full_width?"":"container",children:(0,t.jsx)(n.Z,{...s})})}}}]);
