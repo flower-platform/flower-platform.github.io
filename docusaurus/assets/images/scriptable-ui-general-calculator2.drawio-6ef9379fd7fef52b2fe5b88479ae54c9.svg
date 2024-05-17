@@ -1,0 +1,169 @@
+<svg host="65bd71144e" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="951px" height="271px" viewBox="-0.5 -0.5 951 271" content="&lt;mxfile&gt;&lt;diagram id=&quot;e1Yf_5Se7rwB6G9Udodm&quot; name=&quot;Page-1&quot;&gt;vVlbb9s6DP41AZKHBo5vcR7bZN0GnA3DioNtj7It20Jly0dWmmS//kiW5LvdpElbFIhEUSRFkZ/IZGZt0+NnCvLkGwkhnplGeJxZu5lpmrZt8w9BOUmK424kIaYolKRVTXhCf6EiGoq6RyEsWoyMEMxQ3iYGJMtgwFo0QCk5tNkigttacxDDHuEpALhP/YVClkiq5xg1/QtEcaI1rwy1kgLNrAhFAkJyaJCsTzNrSwlhcpQetxAL52m/yH2PI6uVYRRm7KwNltzxAvBeHW5mupjvfUB8EIsB/wRpzgcl+csvzcClNniUyPWDOVvvhO8ThENuhiQmB04q5StZetcr2h72jJFsRCO/XqbP6f63Fz57MOsh5yDZFqPgWdowX4zYUCy1Al9LJ9kOxYhJ9VJGbUPFNRfH2nIJ5kIeWji6LX2ELC+fnXREUbLPQig8uOLLhwQx+JSDQKweeA5xWsJSrJYjhPGWYELLvVbkBTAIOL1glDzDxorvOTYPSr6De+oRpAiLhNuSPUWQcgO+w4NaVDm2sivjmjGkwuoFUgaPDZKKqc+QpJDRE2dRq3dVxJ90zqv5oZEvrqIljVzRiQFUisaV7DqK+UAF8khQ26NBHaKXRqBNRd5TQFHOgI/hv2gLcLDHgBFqLr8BNBaPOgOWy6W8d5TmGKbcjYAhojJB/NfbB+wZIIkbKuNd32wd4lYURSa//QZJ731s6JESOufM/CKXlguLJ40qcpC1IlarUzbd80Ua+3PTcVRG2KYaGPZCCpo0UCo4U6kPgue4TJm7hn6UIYYAHlHWPXNvPmXJhbgg7ZHhNw17DcFfs3zPBlGmFLSottAPu5xumHzcfbUD8iJl1xx6zMM9G66C70vAuIv1MtsHsD50fddx+QrAKBZYg2FU23odmq/bYG5ZTg/M7c0AmHu3AHO3520Y8mpMTTOSwSvcO+odBmgMNWktaULvpL8o5I8EemlXiUOHV1t/EFQCuy6MrU3bz5t1W0TBTxNAtavjwsqM87y6utCr8IjYbz42lmtHTf80lnbiCIaenNRk1LvyIO0S9L2965qb5abx57R97Rpn+bon1uncmW5ltBwZSD0595SCU4MtFwzFuPW8kGsXVBtj0qyVY0zx84G04M0BtH69cYj2WVAWPq2XA/Xg9pI30CjrJ2McqqdqpRBAL7q0VpqWyp8YMDfkw9L5WJxThhhvVcyPEwSGMVr6PZZplooCBJMYBaN63u8paz9dyvkDT5cbeNCPBtD59k+ZabXTwl73+5KKp/mU2bd4yryBnFFX9RMGhAq/88soO49mhA9UOcJVd0XpK1HprOz8+FohdaWkVn9yAzlXVIvGubrAASBWdvgcg+fDLZ2jWrqt7IMWs1dagdt4caL3u4H0SRB0oBfa1zWMw81ThdbLM78+MRfv7pGJzrYDfEUCcln7MGiK00gg/MfH52GhNGZnivJIABIKAL5XAMZI3oeza/oAdYkDYOqZvuW61QF70DgAoKNoaXeKCMvoo6VtDKDl6hZwaV5aow7WkWed98rS0nY7ftq8sZj0rA8pJm1r2N4xs3r8q8uKzw7/pcUnn9bfiEv2+ncF69P/&lt;/diagram&gt;&lt;/mxfile&gt;">
+    <defs/>
+    <g>
+        <rect x="0" y="0" width="860" height="20" rx="3" ry="3" fill="#f8cecc" stroke="#b85450" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)scale(0.9999999999999999)">
+            <switch>
+                <foreignObject pointer-events="none" width="101%" height="101%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 858px; height: 1px; padding-top: 10px; margin-left: 1px;">
+                        <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 14px; font-family: &quot;Courier New&quot;; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+                                <i>
+                                    &lt;HW
+                                </i>
+                                id={2} children={hw =&gt;
+                                <i>
+                                    &lt;Button
+                                </i>
+                                content="2" onClick={() =&gt; s.
+                                <b>
+                                    onDigitButtonClick
+                                </b>
+                                (hw, 2)} /&gt;} /&gt;
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="430" y="14" fill="rgb(0, 0, 0)" font-family="Courier New" font-size="14px" text-anchor="middle">
+                    &lt;HW id={2} children={hw =&gt; &lt;Button content="2" onClick={() =&gt; s.onDigitButtonClick(hw, 2)} /&gt;} /&gt;
+                </text>
+            </switch>
+        </g>
+        <rect x="30" y="95" width="490" height="80" rx="12" ry="12" fill="#fff2cc" stroke="#d6b656" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)scale(0.9999999999999999)">
+            <switch>
+                <foreignObject pointer-events="none" width="101%" height="101%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe flex-start; width: 488px; height: 1px; padding-top: 135px; margin-left: 32px;">
+                        <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: left;">
+                            <div style="display: inline-block; font-size: 14px; font-family: &quot;Courier New&quot;; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+                                <div>
+                                    <i>
+                                        &lt;ScriptableUiCalculator2.Main
+                                    </i>
+                                    id={...} implementation={{
+                                </div>
+                                <div>
+                                    <font color="#fff2cc">
+                                        /
+                                    </font>
+                                    ...
+                                </div>
+                                <span style="color: rgb(255, 242, 204);">
+                                    /
+                                </span>
+                                <span style="background-color: initial;">
+                                </span>
+                                <b>
+                                    onDigitButtonClick
+                                </b>
+                                : value =&gt;
+                                <b>
+                                    onInput
+                                </b>
+                                (value)
+                                <br/>
+                                <span style="color: rgb(255, 242, 204);">
+                                    /
+                                </span>
+                                <span style="background-color: initial;">
+                                    ...
+                                </span>
+                                <span style="color: rgb(255, 242, 204);">
+                                    <br/>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="32" y="139" fill="rgb(0, 0, 0)" font-family="Courier New" font-size="14px">
+                    &lt;ScriptableUiCalculator2.Main id={...} implementation={{...
+                </text>
+            </switch>
+        </g>
+        <path d="M 339 157 L 417.42 225.8" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 421.36 229.26 L 413.79 227.28 L 417.42 225.8 L 418.41 222.02 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/>
+        <path d="M 645 20 L 645 40 Q 645 50 635 50 L 260 50 Q 250 50 242.45 56.56 L 163.81 124.83" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 159.84 128.27 L 162.84 121.04 L 163.81 124.83 L 167.42 126.32 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/>
+        <rect x="330" y="230" width="230" height="40" rx="6" ry="6" fill="#dae8fc" stroke="#6c8ebf" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)scale(0.9999999999999999)">
+            <switch>
+                <foreignObject pointer-events="none" width="101%" height="101%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe flex-start; width: 228px; height: 1px; padding-top: 250px; margin-left: 332px;">
+                        <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: left;">
+                            <div style="display: inline-block; font-size: 14px; font-family: &quot;Courier New&quot;; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+                                <i>
+                                    function
+                                </i>
+                                <b>
+                                    onInput
+                                </b>
+                                (value) {
+                                <br/>
+                                <font color="#dae8fc">
+                                    /
+                                </font>
+                                <font color="rgba(0, 0, 0, 0)">
+                                </font>
+                                <font color="#cc00cc">
+                                    // some logic
+                                </font>
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="332" y="254" fill="rgb(0, 0, 0)" font-family="Courier New" font-size="14px">
+                    function onInput(value) {...
+                </text>
+            </switch>
+        </g>
+        <path d="M 550 60 L 925 60 L 950 85 L 950 200 L 550 200 L 550 60 Z" fill="#d5e8d4" stroke="#82b366" stroke-miterlimit="10" pointer-events="all"/>
+        <path d="M 925 60 L 925 85 L 950 85" fill="none" stroke="#82b366" stroke-miterlimit="10" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)scale(0.9999999999999999)">
+            <switch>
+                <foreignObject pointer-events="none" width="101%" height="101%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 398px; height: 1px; padding-top: 92px; margin-left: 552px;">
+                        <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: left;">
+                            <div style="display: inline-block; font-size: 14px; font-family: &quot;Courier New&quot;; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+                                // Recorded script
+                                <br style="font-size: 14px;"/>
+                                ...
+                                <br style="font-size: 14px;"/>
+                                <div style="font-size: 14px;">
+                                    <span style="background-color: initial; font-size: 14px;">
+                                        await s.get(ScriptableUiCalculator5.Main, ...)
+                                    </span>
+                                    <br style="font-size: 14px;"/>
+                                </div>
+                                <div style="font-size: 14px;">
+                                    <font color="#d5e8d4">
+                                        /
+                                    </font>
+                                    <b>
+                                        .onDigitButtonClick
+                                    </b>
+                                    (2);
+                                </div>
+                                <div style="font-size: 14px;">
+                                    ...
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="552" y="106" fill="rgb(0, 0, 0)" font-family="Courier New" font-size="14px">
+                    // Recorded script...
+                </text>
+            </switch>
+        </g>
+        <path d="M 560 150 L 540 150 Q 530 150 530 140 L 530 80 Q 530 70 520 70 L 260 70 Q 250 70 242.5 76.61 L 187.78 124.79" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 183.84 128.26 L 186.78 121.01 L 187.78 124.79 L 191.41 126.26 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+    <switch>
+        <g requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"/>
+        <a transform="translate(0,-5)" xlink:href="https://www.diagrams.net/doc/faq/svg-export-text-problems" target="_blank">
+            <text text-anchor="middle" font-size="10px" x="50%" y="100%">
+                Text is not SVG - cannot display
+            </text>
+        </a>
+    </switch>
+</svg>
