@@ -1,0 +1,59 @@
+{
+    "title": "My title",
+    "cells": [
+        {
+            "image": "TodosTestsAreDemo/screenTodos/Todos_todoItem_0.png",
+            "text": "Each TODO is a line in a list. The color on the top corresponds to the **priority**: low = *yellow*, normal = *blue*, red = *high*."
+        },
+        {
+            "image": "TodosTestsAreDemo/screenTodos/Todos_total.png",
+            "text": "The total for **all** TODOs."
+        },
+        {
+            "image": "TodosTestsAreDemo/screenTodos/Todos_totalNormal.png",
+            "text": "Totals per priority/color.",
+            "newLineAfter": true
+        },
+
+        {
+            "image": "TodosTestsAreDemo.Group1/whenAddThenForm/Todos__onAdd.png",
+            "text": "To **add a new TODO**: click here to open a form."
+        },
+        {
+            "image": "TodosTestsAreDemo.Group1/formTodo1/Todos_form_Todos_inputText__LAP_REP4.png",
+            "text": "Then input the title for the TODO, and maybe other properties as well."
+        },
+        {
+            "image": "TodosTestsAreDemo.Group1/formTodo1/Todos_save.png",
+            "text": "Then click here to add the newly created TODO at the end of the list.",
+            "newLineAfter": true
+        },
+
+        {
+            "image": "TodosTestsAreDemo/whenCheckbox/Todos_todoItem_1_Todos_todoItemCheckbox__LAP.png",
+            "text": "Click on the checkbox (or text) to toggle 'done'."
+        },
+        {
+            "image": "TodosTestsAreDemo.Group2/whenUp/Todos_todoItem_1_Todos_up.png",
+            "text": "Click here to **change the order** (move up/down). **NOTE:** sorting doesn't take into account the priority."
+        },
+        {
+            "image": "TodosTestsAreDemo.Group3/whenEditThenForm/Todos_todoItem_1_Todos_edit.png",
+            "text": "Click here to **edit** other properties ..."
+        },
+        {
+            "image": "TodosTestsAreDemo.Group3/formTodo2/Todos_form_Todos_formPriority__LAP.png",
+            "text": "... such as priority, percentage done, etc.",
+            "newLineAfter": true
+        },
+
+        {
+            "image": "TodosTestsAreDemo/whenDelete/Todos_todoItem_0_Todos_delete_REP1.png",
+            "text": "To **delete** a TODO: click here ..."
+        },
+        {
+            "image": "TodosTestsAreDemo/whenDelete/Todos_deleteYes.png",
+            "text": "... and then here (within the confirmation dialog)."
+        }
+    ]
+}
